@@ -1,0 +1,43 @@
+<f:layout name="Default" />
+<f:section name="contenidoPrincipal">
+	<f:if condition="{banner}">
+		<div class="cabecera">
+			<f:format.raw>{banner}</f:format.raw>
+			<f:cObject typoscriptObjectPath="lib.feeds"/>
+		</div>
+	</f:if>
+	<f:if condition="{portada}">
+		<section class="portada">
+			<div class="imgPortada">
+				<f:format.raw>{portada}</f:format.raw>
+			</div>
+		</section>
+	</f:if>
+	<f:render partial="BarraBuscador" arguments="{_all}" />
+	<main class="contenidoPrincipal">
+	<div class="ajuste" style="padding-top:20px;">
+		<f:render partial="Columna" arguments="{_all}" />
+		<div class="principal">
+			<f:if condition="{contenido1}">
+				<section class="paneles">
+					<article class="izq">
+						<f:format.raw>{contenido1}</f:format.raw>
+					</article>
+					<article class="der">
+						<f:format.raw>{contenido2}</f:format.raw>
+					</article>
+				</section>
+				<section class="paneles">
+					<article class="izq">
+						<f:format.raw>{contenido3}</f:format.raw>
+					</article>
+					<article class="der">
+						<f:format.raw>{contenido4}</f:format.raw>
+					</article>
+				</section>
+			</f:if>
+		</div>
+	</div>
+
+	</main>
+</f:section>

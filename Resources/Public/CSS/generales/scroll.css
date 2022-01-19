@@ -1,0 +1,153 @@
+﻿/************************************************************
+Este archivo es una de las hojas de estilos de la plantilla
+de los sitios web del Sistema de Investigación y Extensión
+de la Universidad Nacional de Colombia.
+
+En esta hoja de estilos se complementan la disposición, las
+dimensiones y las propiedades generales de los elementos de
+la plantilla de los sitios web tipo scroll y se importan las
+hojas de estilo individuales.
+*************************************************************/
+
+.portada {
+	position: relative;
+	overflow: hidden;
+}
+
+.imgPortada {
+	position: relative;
+}
+.imgPortada figure {
+	width: 100% !important;
+	margin: 0 !important;
+}
+.imgPortada img {
+	width: 100% !important;
+}
+.imgPortada div {
+	width: 100%;
+}
+.imgPortada figcaption {
+	display: none !important;
+}
+.imgPortada .csc-header {
+  display: none !important;
+}
+
+.encabezadoPortada {
+	width: 100%;
+	margin: 0;
+	padding: 0 40px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	text-align: center;
+	background: #5a5a5a;
+	opacity: 0.8;
+	z-index: 2;
+}
+
+.encabezadoPortada h1, .encabezadoPortada h2 {
+	margin: 0;
+}
+
+/************************************************************
+La región de la clase 'ajusteLista' limita el ancho de la
+página de los sitios web tipo scroll.
+*************************************************************/
+
+.bloqueLista {
+	padding: 2.25em 0;
+	color: #4c4c4c;
+}
+
+.bloqueLista a, .bloqueLista a:link, .bloqueLista a:visited, .bloqueLista a:hover, .bloqueLista a:active {
+	color: #14a5dc;
+}
+
+.bloqueLista .miga {
+	margin-bottom: 2.25em;
+}
+
+.bloqueLista .menu-miga {
+	border-bottom: 1px dotted #999;
+}
+
+.bloqueOscuro {
+	color: #eee;
+	background: #333;
+}
+
+.bloqueEnlaces {
+	background: #fff;
+	padding: 1.25em 0;
+}
+
+.ajusteLista {
+	width: 950px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.bloqueEnlaces .nubeEmergente .imgs a:hover {
+	opacity: 0.8
+}
+
+.bloqueEnlaces .row, .bloqueEnlaces [class*=col-] {
+	padding: 0;
+}
+
+.bloqueEnlaces p {
+	margin: 0;
+	padding: 0;
+}
+
+.nubeEmergente:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+.nubeEmergente .imgs {
+	width: 616px;
+	margin-left: -308px;
+	margin-top: -8px;
+	padding: 8px;
+	padding-top: 30px;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	color: #fff;
+	background: #555;
+	border-radius: 4px;
+	z-index: 30;
+}
+
+.nubeEmergente .imgs:before {
+	content: "Cerrar \00a0 \00a0 X";
+	position: absolute;
+	top: 0;
+	right: 12px;
+	line-height: 30px;
+}
+
+/* .nubeEmergente .mostrar {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;} 
+	to {opacity: 1;}
+}
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+} */

@@ -1,0 +1,30 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="General" />
+<f:section name="content">
+<f:if condition="{news}">
+	<f:then>
+		<f:switch expression="{settings.templateLayout}">
+			<f:case value="0">
+				<n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}">
+					<ul class="listaNoticias">
+						<f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
+							<f:render partial="News/List/listaNoticias" arguments="{newsItem:newsItem, settings:settings}" />
+						</f:for>
+					</ul>
+				</n:widget.paginate>
+			</f:case>
+			<f:case value="1">
+				<ul class="listaHorizontal listaNoticias">
+					<f:for each="{news}" as="newsItem" iteration="iterator">
+						<f:render partial="News/List/listaNoticias" arguments="{newsItem:newsItem,settings:settings}" />
+					</f:for>
+				</ul>
+			</f:case>
+			<f:defaultCase>
+				No template select.
+			</f:defaultCase>
+		</f:switch>
+	</f:then>
+</f:if>
+</f:section>
+</html>

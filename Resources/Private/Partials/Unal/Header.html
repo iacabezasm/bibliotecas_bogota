@@ -1,0 +1,55 @@
+<header id="unalTop">
+	<div class="logo">
+		<a href="http://unal.edu.co">
+		<!--[if (gte IE 9)|!(IE)]><!-->
+			<svg width="93%" height="93%">
+				<image xlink:href="typo3conf/ext/bibliotecas_unal/Resources/Public/Unal/images/escudoUnal.svg" width="100%" height="100%" class="hidden-print"></image>
+			</svg>
+		<!--<![endif]-->
+		<!--[if lt IE 9]>
+			<img src="EXT:bibliotecas_unal/Resources/Public/Unal/images/escudoUnal.png" width="93%" height="auto" alt="Escudo Universidad Nacional de Colombia" class="hidden-print"/>
+		<![endif]-->
+			<img src="EXT:bibliotecas_unal/Resources/Public/Unal/images/escudoUnal_black.png" alt="Escudo Universidad Nacional de Colombia" class="visible-print">
+		</a>
+	</div>
+	<div class="seal">
+		<f:image class="hidden-print" alt="Escudo de la República de Colombia" src="EXT:bibliotecas_unal/Resources/Public/Unal/images/sealColombia.png" width="66" height="66" title="Escudo de la República de Colombia"/>
+		<f:image class="visible-print" alt="Escudo de la República de Colombia" src="EXT:bibliotecas_unal/Resources/Public/Unal/images/sealColombia_black.png" width="66" height="66" title="Escudo de la República de Colombia"/>
+	</div>
+	<div class="firstMenu">
+		<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<f:cObject typoscriptObjectPath="menu.idioma"/>
+		<ul class="socialLinks hidden-xs">
+			<li><a href="mailto:{redesSocialesEmail}" target="_blank" class="email" title="Correo electrónico oficial"></a></li>
+			<li><a href="{redesSocialesFacebook}" target="_blank" class="facebook" title="Cuenta oficial en Facebook"></a></li>
+			<f:if condition="{redesSocialesGoogle}">
+				<li><a href="{redesSocialesGoogle}" target="_blank" class="google" title="Cuenta oficial en Google+"></a></li>
+			</f:if>
+			<f:if condition="{redesSocialesLinkedin}">
+				<li><a href="{redesSocialesLinkedin}" target="_blank" class="linkedin" title="Cuenta oficial en LinkedIn"></a></li>
+			</f:if>
+			<li><a href="{redesSocialesRss}" target="_blank" class="rss" title="Suscripción a canales de información RSS"></a></li>
+			<li><a href="{redesSocialesTwitter}" target="_blank" class="twitter" title="Cuenta oficial en Twitter"></a></li>
+			<li><a href="{redesSocialesYoutube}" target="_blank" class="youtube" title="Canal oficial en YouTube"></a></li>
+		</ul>
+	</div>
+	<div id="bs-navbar" class="navbar-collapse collapse navigation">
+		<div class="site-url">
+			<f:cObject typoscriptObjectPath="lib.dominio"/>
+		</div>
+		<div class="buscador">
+			<div class="gcse-searchbox-only" data-resultsUrl="http://unal.edu.co/resultados-de-la-busqueda/" data-newWindow="true"></div>
+		</div>
+		<div class="mainMenu">
+			<f:cObject typoscriptObjectPath="menu.main"/>
+			<f:cObject typoscriptObjectPath="menu.siun"/>
+		</div>
+		<div class="btn-group hidden-sm hidden-md hidden-lg hidden-print">
+			<div class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="unalOpenMenuServicios" data-target="#services">Servicios<span class="caret"></span></div>
+		</div>
+	</div>
+</header>

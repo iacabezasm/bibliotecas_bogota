@@ -1,0 +1,66 @@
+<div class="contenedorElementos">
+	<a class="tituloSitio" href="">
+		<div class="titulo">
+			bibliotecas
+		</div>
+		<f:image src="EXT:bibliotecas_unal/Resources/Public/Bibliotecas/images/iconos/unNegativo.png" alt="Sistema Nacional de Bibliotecas Universidad Nacional de Colombia" title="Bibliotecas Universidad Nacional de Colombia"/>
+	</a>
+	<ul class="nav nav-pills">
+		<li role="presentation" class="active"><a href="#descubridor" data-toggle="tab">Descubridor</a></li>
+		<li role="presentation"><a href="#catalogo" data-toggle="tab">Catálogo</a></li>
+		<li role="presentation"><a href="#recursos" data-toggle="tab">Recursos electrónicos</a></li>
+		<li role="presentation"><a href="#revistas" data-toggle="tab">Portal de revistas</a></li>
+		<li role="presentation"><a href="#repositorio" data-toggle="tab">Repositorio institucional</a></li>
+	</ul>
+	<div class="tab-content">
+		<div class="tab-pane active" id="descubridor">
+			<form class="campoBusqueda" id="sbEDS" onsubmit="return ebscoHostSearchGo(this);" method="post" action="" target="_blank">
+				<input type="hidden" id="ebscohostwindow" name="ebscohostwindow" value="1"/>
+				<input type="hidden" id="ebscohosturl" name="ebscohosturl" value="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=0&custid=s1229929&groupid=main&profid=eds&mode=all&lang=es&authtype=ip,guest"/>
+				<input type="hidden" id="ebscohostsearchsrc" name="ebscohostsearchsrc" value="db"/>
+				<input type="hidden" id="ebscohostsearchmode" name="ebscohostsearchmode" value="+"/>
+				<input type="hidden" id="ebscohostkeywords" name="ebscohostkeywords" value=""/>
+				<input type="hidden" id="searchFieldSelector" name="searchFieldSelector" value=""/>
+				<input type="text" id="ebscohostsearchtext" name="ebscohostsearchtext" placeholder="Busque en todos los recursos disponibles"/>
+				<button type="submit">Buscar</button>
+			</form>
+		</div>
+		<div class="tab-pane" id="catalogo">
+			<form class="campoBusqueda" method="get" action="http://168.176.5.96/F/" target="_blank">
+				<input type="hidden" name="func" value="find-b">
+				<input type="text" name="request" placeholder="Busque en los recursos físicos disponibles">
+				<input type="hidden" name="find_code" value="WRD">
+				<input type="hidden" name="adjacent" value="N">
+				<button type="submit">Buscar</button>
+			</form>
+			<!-- <form class="campoBusqueda" onsubmit="return ebscoHostSearchOther(this);" method="post" action="" target="_blank">
+				<input type="hidden" id="ebscohostwindow" name="ebscohostwindow" value="1"/>
+				<input type="hidden" id="ebscohosturl" name="ebscohosturl" value="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=0&custid=s1229929&groupid=main&profid=eds&mode=bool&lang=es&authtype=ip,guest,uid&cli0=FC&clv0=Y"/>
+				<input type="hidden" id="ebscohostsearchsrc" name="ebscohostsearchsrc" value="db"/>
+				<input type="hidden" id="ebscohostsearchmode" name="ebscohostsearchmode" value="+"/>
+				<input type="hidden" id="ebscohostkeywords" name="ebscohostkeywords" value=""/>
+				<input type="hidden" id="searchFieldSelector" name="searchFieldSelector" value=""/>
+				<input type="text" id="ebscohostsearchtext" name="ebscohostsearchtext" placeholder="Busque en los recursos físicos disponibles">
+				<button type="submit">Buscar</button>
+			</form> -->
+		</div>
+		<div class="tab-pane" id="recursos">
+			<form class="campoBusqueda" method="post" action="http://bases.unal.edu.co/subjects/databases.php" target="_blank">
+				<input type="text" name="searchterm" placeholder="Busque en los recursos electrónicos suscritos, diccionarios, enciclopedias y herramientas bibliográficas disponibles">
+				<button type="submit">Buscar</button>
+			</form>
+		</div>
+		<div class="tab-pane" id="revistas">
+			<form class="campoBusqueda" method="post" action="https://revistas.unal.edu.co/index.php/index/search/search" target="_blank">
+				<input type="text" name="query" value=""  placeholder="Busque en las revistas académicas publicadas por la Universidad Nacional de Colombia"/>
+				<button type="submit">Buscar</button>
+			</form>
+		</div>
+		<div class="tab-pane" id="repositorio">
+			<form class="campoBusqueda" method="get" action="https://repositorio.unal.edu.co/discover" target="_blank">
+				<input type="text" name="query" placeholder="Busque en los documentos de producción académica, científica y patrimonial de la Universidad Nacional de Colombia"/>
+				<button type="submit">Buscar</button>
+			</form>
+		</div>
+	</div>
+</div>

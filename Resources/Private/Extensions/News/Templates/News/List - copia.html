@@ -1,0 +1,40 @@
+{namespace n=Tx_News_ViewHelpers}
+<f:layout name="General" />
+<!--
+	=====================
+		Templates/News/List.html
+-->
+
+<f:section name="content">
+	<f:if condition="{news}">
+		<f:then>
+			<div class="news-list-view">
+				<div id="carousel-header" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<f:for each="{news}" as="newsItem" iteration="iterator">
+							<li data-target="#carousel-header" data-slide-to="{iterator.index}" {f:if(condition: iterator.isFirst, then: ' class="active"')}></li>
+						</f:for>
+					</ol>
+				
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<f:for each="{news}" as="newsItem" iteration="iterator">
+							<f:render partial="News/List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+						</f:for>
+					</div>
+					
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-header" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-header" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</f:then>
+	</f:if>
+</f:section>

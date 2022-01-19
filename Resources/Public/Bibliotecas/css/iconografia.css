@@ -1,0 +1,212 @@
+#bloqueContenidosInteriores .frame-type-menu_abstract ul li a span::before {
+    font-family: 'Feather' !important;
+}
+
+/* Formación y asistencia */
+
+#bloqueContenidosInteriores #c160.frame-type-menu_abstract ul li:nth-child(1) a span::before {
+    /* content: "\e109"; */
+    content: "\e927";
+}
+
+#bloqueContenidosInteriores #c160.frame-type-menu_abstract ul li:nth-child(2) a span::before,
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(2) a span::before {
+    /* content: "\e009"; */
+    content: "\e965";
+}
+
+#bloqueContenidosInteriores #c160.frame-type-menu_abstract ul li:nth-child(3) a span::before {
+    /* content: "\e218"; */
+    content: "\e999";
+}
+
+#bloqueContenidosInteriores #c160.frame-type-menu_abstract ul li:nth-child(4) a span::before {
+    /* content: "\e111"; */
+    content: "\e991";
+}
+
+#bloqueContenidosInteriores #c160.frame-type-menu_abstract ul li:nth-child(5) a span::before {
+    /* content: "\e085"; */
+    content: "\e978";
+}
+
+/* Servicios en sala */
+
+#bloqueContenidosInteriores #c5.frame-type-menu_abstract ul li:nth-child(1) a span::before,
+#bloqueContenidosInteriores #c157.frame-type-menu_abstract ul li:nth-child(1) a span::before,
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(15) a span::before {
+    /* content: "\e095"; */
+    content: "\e99d";
+}
+
+#bloqueContenidosInteriores #c5.frame-type-menu_abstract ul li:nth-child(2) a span::before,
+#bloqueContenidosInteriores #c157.frame-type-menu_abstract ul li:nth-child(2) a span::before,
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(16) a span::before {
+    /* content: "\e031"; */
+    content: "\e9b8";
+}
+
+#bloqueContenidosInteriores #c5.frame-type-menu_abstract ul li:nth-child(3) a span::before,
+#bloqueContenidosInteriores #c157.frame-type-menu_abstract ul li:nth-child(3) a span::before,
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(18) a span::before {
+    /* content: "\270f"; */
+    content: "\e95a";
+}
+
+#bloqueContenidosInteriores #c5.frame-type-menu_abstract ul li:nth-child(4) a span::before,
+#bloqueContenidosInteriores #c157.frame-type-menu_abstract ul li:nth-child(4) a span::before {
+    /* content: "\e240"; */
+    content: "\e929";
+}
+
+#bloqueContenidosInteriores #c5.frame-type-menu_abstract ul li:nth-child(5) a span::before,
+#bloqueContenidosInteriores #c157.frame-type-menu_abstract ul li:nth-child(5) a span::before {
+    /* content: "\e243"; */
+    content: "\e9eb";
+}
+
+/* Servicios en línea */
+
+#bloqueContenidosInteriores #c6.frame-type-menu_abstract ul li:nth-child(1) a span::before,
+#bloqueContenidosInteriores #c158.frame-type-menu_abstract ul li:nth-child(1) a span::before {
+    /* content: "\e129"; */
+    content: "\e9da";
+}
+
+#bloqueContenidosInteriores #c6.frame-type-menu_abstract ul li:nth-child(2) a span::before,
+#bloqueContenidosInteriores #c158.frame-type-menu_abstract ul li:nth-child(2) a span::before,
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(11) a span::before {
+    /* content: "\e224"; */
+    content: "\e96a";
+}
+
+#bloqueContenidosInteriores #c6.frame-type-menu_abstract ul li:nth-child(3) a span::before,
+#bloqueContenidosInteriores #c158.frame-type-menu_abstract ul li:nth-child(3) a span::before {
+    /* content: "\e044"; */
+    content: "\e924";
+}
+
+#bloqueContenidosInteriores #c6.frame-type-menu_abstract ul li:nth-child(4) a span::before,
+#bloqueContenidosInteriores #c158.frame-type-menu_abstract ul li:nth-child(4) a span::before,
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(1) a span::before {
+    /* content: "\e118"; */
+    content: "\e963";
+}
+
+#bloqueContenidosInteriores #c6.frame-type-menu_abstract ul li:nth-child(5) a span::before,
+#bloqueContenidosInteriores #c158.frame-type-menu_abstract ul li:nth-child(5) a span::before {
+    /* content: "\e067"; */
+    content: "\e92d";
+}
+
+/* Preguntas frecuentes */
+
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(3) a span::before,
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(14) a span::before,
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(19) a span::before,
+#bloqueContenidosInteriores #c159.frame-type-menu_abstract ul li:nth-child(1) a span::before,
+#bloqueContenidosInteriores #c159.frame-type-menu_abstract ul li:nth-child(2) a span::before,
+#bloqueContenidosInteriores #c159.frame-type-menu_abstract ul li:nth-child(3) a span::before,
+#bloqueContenidosInteriores #c159.frame-type-menu_abstract ul li:nth-child(4) a span::before,
+#bloqueContenidosInteriores #c159.frame-type-menu_abstract ul li:nth-child(5) a span::before,
+#bloqueContenidosInteriores #c159.frame-type-menu_abstract ul li:nth-child(6) a span::before,
+#bloqueContenidosInteriores #c159.frame-type-menu_abstract ul li:nth-child(7) a span::before,
+#bloqueContenidosInteriores #c159.frame-type-menu_abstract ul li:nth-child(8) a span::before {
+    content: "";
+    border-radius: 4px;
+    background: #2678bf url("../images/iconos/unNegativo.png") 0 0 no-repeat;
+    background-size: 20px 20px;
+}
+
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(3) a span:hover::before,
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(14) a span:hover::before,
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(19) a span:hover::before,
+#bloqueContenidosInteriores #c159.frame-type-menu_abstract ul li:nth-child(1) a span:hover::before,
+#bloqueContenidosInteriores #c159.frame-type-menu_abstract ul li:nth-child(2) a span:hover::before,
+#bloqueContenidosInteriores #c159.frame-type-menu_abstract ul li:nth-child(3) a span:hover::before,
+#bloqueContenidosInteriores #c159.frame-type-menu_abstract ul li:nth-child(4) a span:hover::before,
+#bloqueContenidosInteriores #c159.frame-type-menu_abstract ul li:nth-child(5) a span:hover::before,
+#bloqueContenidosInteriores #c159.frame-type-menu_abstract ul li:nth-child(6) a span:hover::before,
+#bloqueContenidosInteriores #c159.frame-type-menu_abstract ul li:nth-child(7) a span:hover::before,
+#bloqueContenidosInteriores #c159.frame-type-menu_abstract ul li:nth-child(8) a span:hover::before {
+    background: #203b7e url("../images/iconos/unNegativo.png") 0 0 no-repeat;
+    background-size: 20px 20px;
+}
+
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(4) a span::before {
+    /* content: "\e142"; */
+    content: "\e9bf";
+}
+
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(5) a span::before {
+    /* content: "\e028"; */
+    content: "\e90b";
+}
+
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(6) a span::before {
+    /* content: "\e064"; */
+    content: "\e96b";
+}
+
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(7) a span::before {
+    /* content: "\e233"; */
+    content: "\e919";
+}
+
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(8) a span::before {
+    /* content: "\e008"; */
+    content: "\e9f6";
+}
+
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(9) a span::before {
+    /* content: "\e023"; */
+    content: "\e939";
+}
+
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(10) a span::before {
+    /* content: "\e148"; */
+    content: "\e954";
+}
+
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(12) a span::before {
+    /* content: "\e084"; */
+    content: "\e92c";
+}
+
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(13) a span::before {
+    /* content: "\e086"; */
+    content: "\e902";
+}
+
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(17) a span::before {
+    /* content: "\e043"; */
+    content: "\e964";
+}
+
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(20) a span::before {
+    /* content: "\e163"; */
+    content: "\e98e";
+}
+
+#bloqueContenidosInteriores #c50.frame-type-menu_abstract ul li:nth-child(21) a span::before {
+    /* content: "\e161"; */
+    content: "\e995";
+}
+
+/* Menú Agenda de formación */
+
+#bloqueContenidosInteriores #c188.frame table a.enlaceInterno::before {
+    content: "\e927";
+}
+
+/* Menú Agenda cultural */
+
+#bloqueContenidosInteriores #c189.frame table a.enlaceInterno::before {
+    content: "\e965";
+}
+
+/* Menú Chat con el bibliotecario */
+
+#bloqueContenidosInteriores #c190.frame table a.enlaceInterno::before {
+    content: "\e991";
+}

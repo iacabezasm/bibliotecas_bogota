@@ -1,0 +1,5 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bibliotecas_bogota/Configuration/TypoScript/System/" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bibliotecas_bogota/Configuration/TypoScript/Extensions/" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bibliotecas_bogota/Configuration/TypoScript/Page/" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bibliotecas_bogota/Configuration/TypoScript/Lib/" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bibliotecas_bogota/Configuration/TypoScript/Menu/" extensions="typoscript">

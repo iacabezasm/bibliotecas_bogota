@@ -1,0 +1,47 @@
+﻿<f:layout name="Default" />
+<f:section name="contenidoPrincipal">
+	<f:if condition="{banner}">
+		<div class="cabecera">
+			<f:format.raw>{banner}</f:format.raw>
+			<f:cObject typoscriptObjectPath="lib.feeds"/>
+		</div>
+	</f:if>
+	<f:render partial="BarraBuscador" arguments="{_all}" />
+	<main class="contenidoPrincipal">
+		<div class="ajuste" style="padding-top:20px;">
+			<f:render partial="Columna" arguments="{_all}" />
+			<div class="principal">
+				<section class="bloque">
+					<h1>{data.title}</h1>
+				<f:if condition="{contenido}">
+					<f:format.raw>{contenido}</f:format.raw>
+				</f:if>
+				<f:if condition="{f:cObject(typoscriptObjectPath:'lib.contenidoError')}">
+					<f:cObject typoscriptObjectPath="lib.contenidoError"/>
+				</f:if>
+				<f:if condition="{f:cObject(typoscriptObjectPath:'lib.siteMap')}">
+					<f:cObject typoscriptObjectPath="lib.siteMap"/>
+				</f:if>
+				</section>
+				<f:if condition="{contenido1}">
+				<section class="paneles">
+					<article class="izq">
+						<f:format.raw>{contenido1}</f:format.raw>
+					</article>
+					<article class="der">
+						<f:format.raw>{contenido2}</f:format.raw>
+					</article>
+				</section>
+				<section class="paneles">
+					<article class="izq">
+						<f:format.raw>{contenido3}</f:format.raw>
+					</article>
+					<article class="der">
+						<f:format.raw>{contenido4}</f:format.raw>
+					</article>
+				</section>
+				</f:if>
+			</div>
+		</div>
+	</main>
+</f:section>

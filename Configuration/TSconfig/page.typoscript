@@ -1,0 +1,207 @@
+## Sets the default be user group for new pages
+TCEMAIN.permissions.groupid = 1
+
+## Sets page permissions for be users
+TCEMAIN.permissions {
+	user = 31
+	group = 27
+	everybody = show
+}
+
+# Desactiva carga de archivos directa
+# File upload directly in Doc. module
+setup.override.edit_docModuleUpload = 0
+setup.default.edit_RTE = 1
+# options.defaultUploadFolder
+# appareance.fileUploadAllowed = 0
+
+#
+# setup.rteCleanPasteBehaviour = pasteStructure
+setup.rteCleanPasteBehaviour = plainText
+# setup.override.rteCleanPasteBehaviour = pasteStructure
+setup.override.rteCleanPasteBehaviour = plainText
+
+TCEFORM.tt_content {
+    # Disable fields that specify/change image dimensions
+    imagewidth.disabled = 1
+    imageheight.disabled = 1
+    section_frame.disabled = 1
+    # Limit column selection
+    imagecols.keepItems = 1, 2, 3, 4
+    imagecols.types.textpic.keepItems = 1, 2
+}
+
+TCEFORM {
+	pages.layout.disabled = 1
+	# pages.layout.altLabels {
+		# 0 = Por defecto
+		# 1 = Primero
+		# 2 = Segundo
+	# }
+	tt_content {
+		layout.disabled = 1
+		# layout.altLabels {
+			# 0 = Por defecto
+			# 1 = Fondo X
+			# 2 = Fondo Y
+		# }
+		header_layout {
+			removeItems = 1,2
+			altLabels {
+				0 = Por defecto
+				3 = Encabezado 3
+				4 = Encabezado 4
+				5 = Encabezado 5
+				6 = Encabezado 6
+			}
+		}
+	}
+}
+
+TCEFORM.tt_content {
+	bodytext.RTEfullScreenWidth = 100%
+}
+
+# Type of content elements
+# Default language
+mod.SHARED {
+	defaultLanguageFlag = es
+	defaultLanguageLabel = Español
+}
+
+# configuraciones adicionales
+options.pageTree.separateNotinmenuPages = 1
+options.pageTree.alphasortNotinmenuPages = 1
+# setup.titleLen = número entero positivo
+setup.recursiveDelete = 1
+
+# Menú desplegable Plantillas News
+tx_news.templateLayouts {
+	# 0 = Noticias locales
+	# 1 = Boletín UN Investiga
+	# 2 = Noticias dependencias
+	0 = Páginas interiores
+	1 = Página de inicio
+}
+
+RTE.default.preset = bibliotecas
+
+# RTE.classesAnchor {
+# 	contenidoLightbox {
+# 		class = contenido-lightbox
+# 		type = url
+# 		image >
+# 	}
+# }
+
+# # RTE.default.proc.entryHTMLparser_db.tags.table {
+# 	# fixAttrib.style.unset = 1
+# 	# fixAttrib.width.unset = 1
+# 	# fixAttrib.height.unset = 1
+# # }
+#
+# # RTE.default.proc.entryHTMLparser_db.tags.tr {
+# 	# fixAttrib.style.unset = 1
+# 	# fixAttrib.width.unset = 1
+# 	# fixAttrib.height.unset = 1
+# # }
+#
+# # RTE.default.proc.entryHTMLparser_db.tags.td {
+# 	# fixAttrib.style.unset = 1
+# 	# fixAttrib.width.unset = 1
+# 	# fixAttrib.height.unset = 1
+# # }
+#
+#
+# RTE {
+# 	default {
+# 		defaultLinkTarget = _self
+# 		showButtons = about,bgcolor,big,bold,celldelete,cellinsertafter,cellinsertbefore,cellmerge,cellproperties,cellsplit,center,columndelete,		columninsertafter,columninsertbefore,columnproperties,columnsplit,copy,cut,deletedtext,emphasis,findreplace,formatblock,image,indent,insertcharacter,insertedtext,inserttag,italic,justifyfull,left,line,link,orderedlist,outdent,paste,pastebehaviour,redo,removeformat,right,rowdelete,rowinsertabove,rowinsertunder,rowproperties,rowsplit,small,strikethrough,strong,subscript,superscript,table,tableproperties,tablerestyle,textcolor,toggleborders,underline,undo,unlink,unorderedlist
+# 		keepButtonGroupTogether = 1
+# 		hideTableOperationsInToolbar = 0
+# 		disableEnterParagraphs = 0
+# 		hidePStyleItems = section
+# 		contentCSS = EXT:bibliotecas_unal/Resources/Public/CSS/generales/backend.css
+# 		buttons {
+# 			table {
+# 				removeFieldsets = description,spacing,alignment,borders
+# 				properties {
+# 					numberOfRows.defaultValue = 3
+# 					headers.removeItems = left,both
+# 				}
+# 				disableEnterParagraphs = 1
+# 			}
+# 			formatblock.removeItems = h1,h2,article,aside,div,section,nav
+# 			tableproperties.removeFieldsets = description,spacing,alignment,borders
+# 			pastetoggle.hidden = 1
+# 			link.properties.class.allowedClasses := addToList(contenido-lightbox)
+# 		}
+# 		disableContextMenu = 0
+# 		disableRightClick = 0
+# 		showStatusBar = 1
+# 		enableWordClean = 1
+# 		removeTags = center, font, span
+# 		removeTrailingBR = 1
+# 		removeComments = 1
+# 		removeTags = center, font, o:p, sdfield, u
+# 		hidePStyleItems = h1,h2,h3,h4,h5,h6,pre,address,div,p,span,a
+# 		# removeTagsAndContents = link, meta, script, style, title
+# 		showTagFreeClasses = 1
+# 		proc {
+# 			overruleMode = ts_css
+# 			dontConvBRtoParagraph = 1
+# 			preserveDIVSections = 1
+# 			preserveTables = 1
+# 			allowedClasses := addToList(contenido-lightbox)
+# 			allowTags := addToList(
+# 				a,abbr,acronym,address,b,bdo,big,blockquote,br,caption,center,cite,code,col,colgroup,dd,del,dfn,dl,div,dt,em,embed,font,
+# 				footer,header,h2,h3,h4,h5,h6,hr,i,iframe,img,ins,kbd,label,li,link,meta,object,ol,p,param,pre,q,samp,sdfield,small,span,strike,
+# 				strong,style,sub,sup,table,thead,tbody,tfoot,td,th,tr,title,tt,u,ul,var
+# 			)
+# 			HTMLparser_rte {
+# 				allowTags < RTE.default.proc.allowTags
+# 				denyTags < RTE.default.proc.denyTags
+# 				removeTags = font
+# 				removeComments = 1
+# 				keepNonMatchedTags = 0
+# 			}
+# 			entryHTMLparser_db.allowTags := addToList(
+# 				a,abbr,acronym,address,b,bdo,big,blockquote,br,caption,center,cite,code,col,colgroup,dd,del,dfn,dl,div,dt,em,embed,font,
+# 				footer,header,h2,h3,h4,h5,h6,hr,i,iframe,img,ins,kbd,label,li,link,meta,object,ol,p,param,pre,q,samp,sdfield,small,span,strike,
+# 				strong,style,sub,sup,table,thead,tbody,tfoot,td,th,tr,title,tt,u,ul,var
+# 			)
+# 			allowTagsOutside := addToList(embed,img,hr,table,tr,th,td,h1,h2,h3,h4,h5,h6,iframe,br,ul,object,ol,li,pre,address)
+# 			allowTagsInTypolists = br,b,i,u,a,img,span
+# 			dontRemoveUnknownTags_db = 1
+# 			entryHTMLparser_db = 1
+# 			entryHTMLparser_db {
+# 				allowTags < RTE.default.proc.allowTags
+# 				htmlSpecialChars = 0
+# 				removeTags = center, font, o:p, sdfield, strike, u
+# 				keepNonMatchedTags = protect
+# 			}
+# 		}
+# 		classesAnchor := (contenido-lightbox)
+# 		hideTags = font
+# 	}
+# 	classesAnchor {
+# 		contenidoLightbox {
+# 			class = contenido-lightbox
+# 			type = url
+# 			image >
+# 		}
+# 	}
+# }
+#
+# ### Eliminamos H1 en el backend ###
+# # RTE.default.buttons.formatblock.removeItems = h1,article,aside,div,section,nav
+#
+# RTE.default.FE < RTE.default
+# RTE.default.FE.proc < RTE.default.proc
+# RTE.config.tt_content.bodytext >
+# RTE.default.enableWordClean.HTMLparser < RTE.default.proc.entryHTMLparser_db
+# RTE.default.buttons.pastetoggle.setActiveOnRteOpen = 1
+#
+# [adminUser = 1]
+# 	RTE.default.showButtons := addToList (chMode)
+# [GLOBAL]

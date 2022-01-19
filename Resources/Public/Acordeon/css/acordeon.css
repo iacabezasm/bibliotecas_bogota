@@ -1,0 +1,57 @@
+.st-content {
+	min-height: auto;
+	margin: 1.5em 1em;
+}
+.st-accordion {
+	width: 100%;
+	margin: 0;
+}
+p + .st-accordion,
+.frame + .st-accordion {
+	margin: 1em 0 0;
+}
+.st-accordion > ul {
+	margin: 0;
+	list-style: none;
+}
+.st-accordion > ul > li {
+	list-style: none;
+	height: auto !important;
+	border-bottom: 1px dotted #ddd;
+}
+.st-accordion > ul > li > a {
+	padding: 0.75em 1em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.125em;
+	font-weight: normal;
+	-webkit-transition: color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+}
+.st-accordion > ul > li > a p {
+	margin: 0;
+	padding: 0;
+}
+.st-accordion > ul > li > a svg {
+	margin-left: 1em;
+}
+.st-accordion > ul > li > a svg:last-of-type {
+	display: none;
+}
+.st-accordion > ul > li.st-open {
+	height: auto;
+}
+.st-accordion > ul > li.st-open > a {
+	border-bottom: 1px dotted #ddd;
+}
+.st-accordion > ul > li.st-open > a svg {
+	display: none;
+}
+.st-accordion > ul > li.st-open > a svg:last-of-type {
+	display: block;
+}

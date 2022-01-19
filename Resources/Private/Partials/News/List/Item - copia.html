@@ -1,0 +1,36 @@
+{namespace n=Tx_News_ViewHelpers}<!--
+	=====================
+		Partials/List/Item.html
+-->
+
+<div class="item {f:if(condition: iterator.isFirst, then: 'active')}">
+	<f:if condition="{newsItem.falMedia}">
+		<!-- fal media preview element -->
+		<f:then>
+			<div class="news-img-wrap">
+				<f:if condition="{newsItem.falMediaPreviews}">
+					<f:then>
+						<n:link newsItem="{newsItem}" settings="{settings}">
+							<f:alias map="{mediaElement: newsItem.falMediaPreviews.0}">
+								<f:if condition="{mediaElement.originalResource.type} == 2">
+									<f:image class="img-responsive" src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="1600c" height="238c" />
+								</f:if>
+							</f:alias>
+						</n:link>
+					</f:then>
+				</f:if>
+
+			</div>
+		</f:then>
+	</f:if>
+	<div class="carousel-caption">
+		<h3>
+			<n:link newsItem="{newsItem}" settings="{settings}">
+				{newsItem.title}
+			</n:link>
+		</h3>
+		<n:link newsItem="{newsItem}" settings="{settings}" class="more">
+			<f:translate key="more-link"/>
+		</n:link>
+	</div>
+</div>

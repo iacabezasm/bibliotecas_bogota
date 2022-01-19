@@ -1,0 +1,171 @@
+# Título estándar
+lib.stdheader = CASE
+lib.stdheader {
+	key.field = header_layout
+	default = TEXT
+	default {
+		field = header
+		htmlspecialChars = 1
+		# stdWrap.wrapAlign.field = header_position
+		typolink.parameter.field = header_link
+		dataWrap = <h{$content.defaultHeaderType}>|</h{$content.defaultHeaderType}>
+	}
+	3 < .default
+	3 {
+		dataWrap = <h{field:header_layout}>|</h{field:header_layout}>
+	}
+	4 < .3
+	5 < .3
+	6 < .3
+	100 = TEXT
+	100.field >
+}
+
+# Imágenes emergentes plantilla eventos
+lib.bannerTS = CONTENT
+lib.bannerTS {
+	table = tt_content
+	select {
+		where = colPos=40
+		orderBy = sorting
+		languageField = sys_language_uid
+	}
+	renderObj = COA
+	renderObj {
+		stdWrap.dataWrap = <div class="nubeEmergente" onclick="mostrarOcultar('imgsEmergentes{field:uid}',4000)">|</div>
+		10 = TEXT
+		10.stdWrap.field = header
+		20 = FILES
+		20 {
+			stdWrap.dataWrap = <div class="imgs" id="imgsEmergentes{field:uid}" style="display:none;">|</div>
+			references {
+				table = tt_content
+				uid.data = uid
+				fieldName = assets
+			}
+			renderObj = COA
+			renderObj {
+				10 = IMAGE
+				10 {
+					file.import.data = file:current:originalUid
+					titleText.data = file:current:title
+					altText.data = file:current:alternative
+					stdWrap.typolink {
+						parameter.data = file:current:link
+						extTarget = _blank
+					}
+				}
+			}
+		}
+	}
+}
+
+# Desplegable lateral Servicios
+lib.servicios = CONTENT
+lib.servicios {
+	table = tt_content
+	wrap = <div id="services"><div class="indicator hidden-xs"></div><ul class="dropdown-menu">|</ul></div>
+	select {
+		pidInList = {$siun.pagina.servicios}
+		orderBy = sorting
+	}
+	renderObj = COA
+	renderObj {
+		wrap = <li>|</li>
+		10 = FILES
+		10 {
+			references {
+				table = tt_content
+				uid.data = uid
+				# fieldName = assets
+				fieldName = image
+			}
+			renderObj = COA
+			renderObj {
+				10 = IMAGE
+				10 {
+					file.import.data = file:current:originalUid
+					titleText.data = file:current:title
+					altText.data = file:current:alternative
+				}
+				20 = TEXT
+				20 {
+					field = header
+					wrap = <p>|</p>
+				}
+			}
+			stdWrap.typolink {
+				parameter.field = header_link
+				extTarget = _blank
+			}
+		}
+	}
+}
+
+# Galería del footer
+lib.destacados = CONTENT
+lib.destacados {
+	table = tt_content
+	wrap = <div class="slider-pie">|</div>
+	select {
+		pidInList = {$siun.pagina.destacados}
+		orderBy = sorting
+	}
+	renderObj = COA
+	renderObj {
+		wrap = <div class="slide"><div class="enlaces-pie">|</div></div>
+		10 = FILES
+		10 {
+			references {
+				table = tt_content
+				uid.data = uid
+				fieldName = assets
+			}
+			renderObj = IMAGE
+			renderObj {
+				file.import.data = file:current:originalUid
+				titleText.data = file:current:title
+				altText.data = file:current:alternative
+			}
+		}
+		20 = TEXT
+		20 {
+			wrap = |
+			field = header
+			typolink {
+				parameter.field = header_link
+				extTarget = _blank
+			}
+		}
+	}
+}
+
+# Tarjetas de enlaces destacados
+lib.tarjetasDestacados = COA
+lib.tarjetasDestacados {
+	wrap = <section id="serviciosBibliotecas"><ul class="listaHorizontal">|</ul></section>
+	10 = HMENU
+	10 {
+		special = list
+		special.value = {$siun.tarjetas.destacado1}, {$siun.tarjetas.destacado2}, {$siun.tarjetas.destacado3}, {$siun.tarjetas.destacado4}
+		1 = TMENU
+		1 {
+			NO {
+				allWrap =<li class="tarjeta">|</li>
+				ATagParams = class="contenedorTarjeta"
+				stdWrap.cObject = COA
+				stdWrap.cObject {
+					10 = TEXT
+					10.wrap = <i data-feather="|"></i>
+					10.field = subtitle
+					20 = TEXT
+					20.wrap = <div class="titulo">|</div>
+					20.field = title
+					30 = TEXT
+					30.wrap = <div class="texto">|</div>
+					30.field = abstract
+				}
+			}
+		}
+	}
+}

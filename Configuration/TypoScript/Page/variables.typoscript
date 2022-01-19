@@ -1,0 +1,28 @@
+## Constantes asociadas a variables de las plantillas
+page.10.variables {
+    # Menú bibliotecas
+    anunciosEventosNoticias = TEXT
+    anunciosEventosNoticias.value = {$siun.tarjetas.anunciosEventosNoticias}
+    # Formación y asistencia
+    agendaFormacion = TEXT
+    agendaFormacion.value = {$siun.tarjetas.agendaFormacion}
+    agendaCultural = TEXT
+    agendaCultural.value = {$siun.tarjetas.agendaCultural}
+    chatBibliotecario = TEXT
+    chatBibliotecario.value = {$siun.tarjetas.chat}
+    # Redes sociales
+    redesSocialesEmail = TEXT
+    redesSocialesEmail.value = {$siun.redesSociales.email}
+    redesSocialesFacebook = TEXT
+    redesSocialesFacebook.value = {$siun.redesSociales.facebook}
+    redesSocialesGoogle = TEXT
+    redesSocialesGoogle.value = {$siun.redesSociales.google}
+    redesSocialesLinkedin = TEXT
+    redesSocialesLinkedin.value = {$siun.redesSociales.linkedin}
+    redesSocialesRss = TEXT
+    redesSocialesRss.value = {$siun.redesSociales.rss}
+    redesSocialesTwitter = TEXT
+    redesSocialesTwitter.value = {$siun.redesSociales.twitter}
+    redesSocialesYoutube = TEXT
+    redesSocialesYoutube.value = {$siun.redesSociales.youtube}
+}

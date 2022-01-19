@@ -1,0 +1,243 @@
+/************************************************************
+Este archivo es una de las hojas de estilos de la plantilla
+de los sitios web del Sistema de Investigación y Extensión
+de la Universidad Nacional de Colombia.
+
+En esta hoja de estilos se definen los estilos tipográficos
+usados en las clases 'bloque' e 'isla'.
+*************************************************************/
+
+@font-face {
+	font-family:'Ancizar sans';
+	font-weight:bold;
+	font-style:italic;
+	src:url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_bold_italic-webfont.eot"),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_bold_italic-webfont.eot?#iefix") format('embedded-opentype'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_bold_italic-webfont.woff") format('woff'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_bold_italic-webfont.ttf") format('truetype'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_bold_italic-webfont.svg#ancizar_sansbold_italic") format('svg');
+}
+@font-face {
+	font-family:'Ancizar sans';
+	font-weight:bold;
+	font-style:normal;
+	src:url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_bold-webfont.eot"),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_bold-webfont.eot?#iefix") format('embedded-opentype'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_bold-webfont.woff") format('woff'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_bold-webfont.ttf") format('truetype'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_bold-webfont.svg#ancizar_sansbold_italic") format('svg');
+}
+@font-face {
+	font-family:'Ancizar sans';
+	font-weight:normal;
+	font-style:italic;
+	src:url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_italic-webfont.eot"),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_italic-webfont.eot?#iefix") format('embedded-opentype'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_italic-webfont.woff") format('woff'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_italic-webfont.ttf") format('truetype'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_italic-webfont.svg#ancizar_sansbold_italic") format('svg');
+}
+@font-face {
+	font-family:'Ancizar sans';
+	font-weight:normal;
+	font-style:normal;
+	src:url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_regular-webfont.eot"),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_regular-webfont.eot?#iefix") format('embedded-opentype'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_regular-webfont.woff") format('woff'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_regular-webfont.ttf") format('truetype'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarsans_regular-webfont.svg#ancizar_sansbold_italic") format('svg');
+}
+@font-face {
+	font-family:'Ancizar serif';
+	font-weight:bold;
+	font-style:italic;
+	src:url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_bold_italic-webfont.eot"),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_bold_italic-webfont.eot?#iefix") format('embedded-opentype'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_bold_italic-webfont.woff") format('woff'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_bold_italic-webfont.ttf") format('truetype'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_bold_italic-webfont.svg#ancizar_sansbold_italic") format('svg');
+}
+@font-face {
+	font-family:'Ancizar serif';
+	font-weight:bold;
+	font-style:normal;
+	src:url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_bold-webfont.eot"),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_bold-webfont.eot?#iefix") format('embedded-opentype'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_bold-webfont.woff") format('woff'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_bold-webfont.ttf") format('truetype'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_bold-webfont.svg#ancizar_sansbold_italic") format('svg');
+}
+@font-face {
+	font-family:'Ancizar serif';
+	font-weight:normal;
+	font-style:italic;
+	src:url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_italic-webfont.eot"),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_italic-webfont.eot?#iefix") format('embedded-opentype'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_italic-webfont.woff") format('woff'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_italic-webfont.ttf") format('truetype'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_italic-webfont.svg#ancizar_sansbold_italic") format('svg');
+}
+@font-face {
+	font-family:'Ancizar serif';
+	font-weight:normal;
+	font-style:normal;
+	src:url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_regular-webfont.eot"),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_regular-webfont.eot?#iefix") format('embedded-opentype'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_regular-webfont.woff") format('woff'),url("http://unal.edu.co/fileadmin/templates/fonts/ancizarserif_regular-webfont.ttf") format('truetype'),url("http: //unal.edu.co/fileadmin/templates/fonts/ancizarserif_regular-webfont.svg#ancizar_sansbold_italic") format('svg');
+}
+
+/************************************************************
+Contenido
+*************************************************************/
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+	margin: 0;
+}
+
+/* Títulos */
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0.75rem 0 0.5rem;
+	font-weight: bold;
+	color: #14a5dc;
+}
+
+h1,  h2,  h3 {
+    line-height: 30px;
+	font-family: "Ancizar sans";
+    border-bottom: 1px dotted #ccc;
+}
+
+h4,  h5,  h6 {
+	line-height: 20px;
+	font-family: "Ancizar serif";
+}
+
+h1, h1 + h2, h2:first-of-type {
+	margin-top: 0;
+}
+
+h1 {
+	line-height: 40px;
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.33rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1.15rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+/* Párrafo */
+
+p {
+    margin: 0.5rem 0;
+	font-family: "Ancizar sans";
+	font-size: 1rem;
+}
+
+footer p {
+	margin: 0;
+}
+
+p.align-center {
+	text-align: center;
+}
+
+p.align-justify {
+	text-align: justify;
+}
+
+p.align-right {
+	text-align: right;
+}
+
+p.align-left {
+	text-align: left;
+}
+
+/* Listas */
+
+ul {
+    margin-left: 2.5rem;
+    list-style: disc;
+	font-family: "Ancizar sans";
+	font-size: 1rem;
+}
+
+ol {
+    margin-left: 2.5rem;
+	list-style: decimal;
+	font-family: "Ancizar sans";
+	font-size: 1rem;
+}
+
+ol.lower-alpha {
+	list-style-type: lower-alpha;
+}
+
+ul li ul {
+    list-style: circle;
+}
+
+figcaption {
+	margin: 0.5rem 0;
+	font-size: 0.9rem;
+	font-style: italic;
+}
+
+header {
+	text-transform: uppercase;
+}
+
+footer {
+	padding: 15px;
+	border: none;
+	border-radius: 4px;
+	background: #666;
+	color: #ddd;
+}
+
+pre {
+	padding: 15px;
+	background: #00ffff;
+}
+
+cite, address, q {
+	font-style: italic;
+}
+
+blockquote {
+    margin: 0 1.5rem;
+    background: #ddd;
+    border: none;
+    border-radius: 4px;
+}
+
+blockquote p {
+	padding: 0.5rem 1rem;
+	font-style: italic;
+	font-size: 0.9rem;
+}
+
+table {
+	width: 100%;
+	font-size: 0.9rem;
+	font-family: "Ancizar sans";
+}
+
+table caption {
+	margin: 1rem 0 0.5rem;
+}
+
+table thead th, table tbody td {
+	padding: 0.5rem 1rem;
+}
+
+table tbody tr {
+	text-align: left;
+}
+
+table tbody tr:not(:last-child) {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+a, a:link, a:visited {
+	color: #14a5dc;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}

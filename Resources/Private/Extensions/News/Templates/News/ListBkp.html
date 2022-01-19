@@ -1,0 +1,46 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="General" />
+<f:section name="content">
+	<f:if condition="{news}">
+		<f:then>
+			<f:if condition="{settings.templateLayout} == 1">
+				<f:then>
+					<n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}">
+						<f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
+							<f:render partial="News/List/boletin" arguments="{newsItem:newsItem,settings:settings}" />
+						</f:for>
+					</n:widget.paginate>
+				</f:then>
+				<f:else>
+					<f:if condition="{settings.templateLayout} == 2">
+						<f:then>
+							<div class="listaImgNoticia">
+                            	<div class="contenedor">
+                            			<div id="slides">
+                            			    <f:for each="{news}" as="newsItem" iteration="iterator">
+                            				    <f:render partial="News/List/Item-dependencias" arguments="{newsItem: newsItem,settings:settings}" />
+                            			    </f:for>
+                            			 </div>
+                            		<div class="inferior">
+                                        <div class="boletin"><a href="http://investigacion.unal.edu.co/boletin/" target="_blank">Boletín SIUN</a></div>
+                                        <div class="calendario"><a href="https://calendar.google.com/calendar/embed?src=unal.edu.co_g584k3p910jgqdmu568lndk96g%40group.calendar.google.com&amp;ctz=America/Bogota" target="_blank">Calendario de actividades</a></div> 
+                            		</div>
+                            	</div>
+                            </div>
+						</f:then>
+						<f:else>
+							<div class="callbacks_container">
+								<ul class="rslides" id="galeria-boletin">
+									<f:for each="{news}" as="newsItem" iteration="iterator">
+										<f:render partial="News/List/noticiasLocales" arguments="{newsItem: newsItem,settings:settings}" />
+									</f:for>
+								</ul>
+							</div>
+						</f:else>
+					</f:if>
+				</f:else>
+			</f:if>
+		</f:then>
+	</f:if>
+</f:section>
+</html>

@@ -1,0 +1,20 @@
+<f:layout name="Bibliotecas" />
+<f:section name="contenidoPrincipal">
+<section id="buscadorBibliotecas">
+    <div class="imagenSede"></div>
+	<h1 class="elementoOculto">Sistema Nacional de Bibliotecas</h1>
+	<f:render partial="Bibliotecas/buscador" arguments="{_all}"/>
+    <div class="imagenSede"></div>
+</section>
+<main>
+    <div class="contenedorElementos">
+        <f:render partial="Bibliotecas/atajos" arguments="{_all}"/>
+        <f:cObject typoscriptObjectPath="lib.tarjetasDestacados"/>
+        <f:render partial="Bibliotecas/sedes" arguments="{_all}"/>
+        <f:render partial="Bibliotecas/asistenciaSedes" arguments="{_all}"/>
+        <f:render partial="Bibliotecas/noticias" arguments="{_all}"/>
+    </div>
+    <f:render partial="Bibliotecas/plataformas" arguments="{_all}"/>
+    <f:render partial="Bibliotecas/redesSociales" arguments="{_all}"/>
+</main>
+</f:section>

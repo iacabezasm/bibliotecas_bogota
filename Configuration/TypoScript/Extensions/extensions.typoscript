@@ -1,0 +1,39 @@
+### NEWS ###
+plugin.tx_news {
+	view {
+		templateRootPaths >
+		templateRootPaths {
+			0 = EXT:bibliotecas_unal/Resources/Private/Extensions/News/Templates/
+		}
+		partialRootPaths >
+		partialRootPaths {
+			0 = EXT:bibliotecas_unal/Resources/Private/Partials/
+		}
+		layoutRootPaths >
+		layoutRootPaths {
+			0 = EXT:bibliotecas_unal/Resources/Private/Extensions/News/Layouts/
+		}
+	}
+	settings {
+		link.skipControllerAndAction = 1
+		list {
+			paginate {
+				templatePath = EXT:bibliotecas_unal/Resources/Private/Extensions/News/Templates/ViewHelpers/Widget/Paginate/Index.html
+				insertAbove = 0
+				insertBelow = 1
+				itemsPerPage = 10
+				prevNextHeaderTags = 1
+				maximumNumberOfLinks = 3
+			}
+			rss.channel {
+				title = {$siun.rss.title}
+				description = Canal de información RSS: {$siun.rss.title}
+				link = http://{$siun.pagina.dominio}
+				language = es_CO
+				copyright = TYPO3 News
+				generator = TYPO3 EXT:news
+			}
+		}
+		
+	}
+}

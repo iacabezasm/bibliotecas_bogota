@@ -1,0 +1,73 @@
+# Elementos del menú de redes sociales
+lib.email = TEXT
+lib.email {
+	value = {$siun.red.email}
+	stdWrap {
+		wrap = <li><a href="mailto:|" target="_blank" class="email" title="Correo electrónico oficial"></a></li>
+		required = 1
+	}
+}
+lib.facebook = TEXT
+lib.facebook {
+	value = {$siun.red.facebook}
+	stdWrap {
+		wrap = <li><a href="|" target="_blank" class="facebook" title="Cuenta oficial en Facebook"></a></li>
+		required = 1
+	}
+}
+lib.google = TEXT
+lib.google {
+	value = {$siun.red.google}
+	stdWrap {
+		wrap = <li><a href="|" target="_blank" class="google" title="Cuenta oficial en Google+"></a></li>
+		required = 1
+	}
+}
+lib.linkedin = TEXT
+lib.linkedin {
+	value = {$siun.red.linkedin}
+	stdWrap {
+		wrap = <li><a href="|" target="_blank" class="linkedin" title="Cuenta oficial en LinkedIn"></a></li>
+		required = 1
+	}
+}
+lib.rss = TEXT
+lib.rss {
+	value = <!--  -->
+	wrap = <li>|</li>
+	stdWrap {
+		required = 1
+		typolink {
+			parameter.data = leveluid:0
+			additionalParams = &type=100
+			ATagParams = class="rss" title="Suscripción a canales de información RSS" target="_blank"
+		}
+	}
+}
+lib.twitter = TEXT
+lib.twitter {
+	value = {$siun.red.twitter}
+	stdWrap {
+		wrap = <li><a href="|" target="_blank" class="twitter" title="Cuenta oficial en Twitter"></a></li>
+		required = 1
+	}
+}
+lib.youtube = TEXT
+lib.youtube {
+	value = {$siun.red.youtube}
+	stdWrap {
+		wrap = <li><a href="|" target="_blank" class="youtube" title="Canal oficial en YouTube"></a></li>
+		required = 1
+	}
+}
+lib.redessociales = COA
+lib.redessociales {
+	wrap = <ul class="socialLinks hidden-xs">|</ul>
+	10 < lib.email
+	20 < lib.facebook
+	30 < lib.google
+	40 < lib.linkedin
+	50 < lib.rss
+	60 < lib.twitter
+	70 < lib.youtube
+}

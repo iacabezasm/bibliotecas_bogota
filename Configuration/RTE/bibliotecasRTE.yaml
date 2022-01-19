@@ -1,0 +1,129 @@
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+
+editor:
+    externalPlugins:
+        youtube: { resource: "EXT:bibliotecas_unal/Resources/Public/RTE/Plugins/youtube/plugin.js" }
+    config:
+        stylesSet:
+            # block level styles
+            # - { name: 'Enlace interno', element: 'a', attributes: { class: 'enlaceInterno' } }
+            # - { name: 'Enlace externo', element: 'a', attributes: { class: 'enlaceExterno' } }
+            - { name: "Quote / Citation", element: "blockquote" }
+            # Inline styles
+
+        format_tags: "p;h2;h3;h4;h5;h6"
+
+        toolbar:
+            - { name: clipboard, items: [ Cut, Copy, PasteText, PasteFromWord, -, Undo, Redo ] }
+            - { name: styles, items: [ Styles, Format, RemoveFormat ] }
+            - { name: editing, items: [ Find, Replace, SelectAll, -, Scayt ] }
+            - { name: tools, items: [ Maximize ] }
+            - "/"
+            - { name: basicstyles, items: [ Bold, Italic, Underline, Strike, Subscript, Superscript ] }
+            - { name: links, items: [ Link, Unlink ] }
+            - { name: paragraph, items: [ NumberedList, BulletedList, -, Outdent, Indent, -, JustifyLeft, JustifyCenter, JustifyRight, JustifyBlock ] }
+            - { name: insert, items: [ Table, SpecialChar, Image, Youtube ] }
+
+        justifyClasses:
+            - text-left
+            - text-center
+            - text-right
+            - text-justify
+
+        allowedContent: True
+        extraAllowedContent: "iframe"
+
+        extraPlugins:
+            - justify
+            - font
+            - find
+            - bidi
+            - selectall
+            - autolink
+            - wordcount
+            - youtube
+
+        removePlugins:
+            - image
+
+        youtube_width: 640
+        youtube_height: 480
+
+        youtube_disabled_fields:
+            - txtEmbed
+            - txtWidth
+            - txtHeight
+            - chkResponsive
+            - chkNoEmbed
+            - chkRelated
+            - chkOlderCode
+            - chkPrivacy
+            - chkAutoplay
+            - txtStartAt
+            - chkControls
+
+buttons:
+    link:
+        page:
+            properties:
+                class:
+                    default: 'enlaceInterno'
+        url:
+            properties:
+                class:
+                    default: 'enlaceExterno'
+        mail:
+            properties:
+                class:
+                    default: 'enlaceCorreo'
+        telephone:
+            properties:
+                class:
+                    default: 'enlaceTeléfono'
+        file:
+            properties:
+                class:
+                    default: 'enlaceArchivo'
+        properties:
+            class:
+                allowedClasses: 'enlaceInterno,enlaceExterno,enlaceCorreo,enlaceTeléfono'
+
+classes:
+    enlaceInterno:
+        name: 'Enlace interno'
+    enlaceExterno:
+        name: 'Enlace externo'
+    enlaceCorreo:
+        name: 'Enlace a correo electrónico'
+    enlaceTeléfono:
+        name: 'Enlace a número telefónico'
+    enlaceArchivo:
+        name: 'Enlace a descarga de archivo'
+
+classesAnchor:
+    internalLink:
+        class: 'enlaceInterno'
+        type: 'page'
+    externalLink:
+        class: 'enlaceExterno'
+        type: 'url'
+        target: '_blank'
+    linkMail:
+        class: 'enlaceCorreo'
+        type: 'mail'
+    linkTelephone:
+        class: 'enlaceTeléfono'
+        type: 'telephone'
+    linkFile:
+        class: 'enlaceArchivo'
+        type: 'file'
+        target: '_blank'
+
+processing:
+    allowTags:
+        - s
+        - u
+        - iframe

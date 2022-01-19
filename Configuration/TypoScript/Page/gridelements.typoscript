@@ -1,0 +1,68 @@
+tt_content.gridelements_pi1 {
+	10 =< lib.stdheader
+	20.10.setup {
+		# Dos columnas
+		1 < .default
+		1 {
+			cObject = FLUIDTEMPLATE
+			cObject {
+				file = EXT:bibliotecas_unal/Resources/Private/Partials/Grids/DosColumnas.html
+			}
+		}
+		# Contenido + Barra
+		2 < .default
+		2 {
+			cObject = FLUIDTEMPLATE
+			cObject {
+				file = EXT:bibliotecas_unal/Resources/Private/Partials/Grids/ContenidoBarra.html
+			}
+		}
+		# Barra + Contenido
+		3 < .default
+		3 {
+			cObject = FLUIDTEMPLATE
+			cObject {
+				file = EXT:bibliotecas_unal/Resources/Private/Partials/Grids/BarraContenido.html
+			}
+		}
+		# Tres columnas
+		4 < .default
+		4 {
+			cObject = FLUIDTEMPLATE
+			cObject {
+				file = EXT:bibliotecas_unal/Resources/Private/Partials/Grids/TresColumnas.html
+			}
+		}
+		# Acordeón
+		5 < .default
+		5 {
+			cObject = FLUIDTEMPLATE
+			cObject {
+				file = EXT:bibliotecas_unal/Resources/Private/Partials/Grids/Acordeon.html
+			}
+			columns.default.renderObj {
+				stdWrap.dataWrap = <li>|</li>
+				20 = COA
+				20 {
+					10 = TEXT
+					10 {
+						stdWrap.field = header
+						# wrap = <a href="#"><p>|</p><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+						wrap = <a href="#"><p>|</p><i data-feather="chevron-down"></i><i data-feather="chevron-up"></i></a>
+					}
+					20 =< tt_content
+					20.stdWrap.dataWrap = <div class="st-content">|</div>
+				}
+			}
+		}
+		# Carrusel
+		6 < .default
+		6 {
+			cObject = FLUIDTEMPLATE
+			cObject {
+				file = EXT:bibliotecas_unal/Resources/Private/Partials/Grids/Carrusel.html
+			}
+			columns.default.renderObj.stdWrap.dataWrap = <div class="item">|</div>
+		}
+	}
+}

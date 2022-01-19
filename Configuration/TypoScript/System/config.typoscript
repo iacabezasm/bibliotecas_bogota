@@ -1,0 +1,30 @@
+## Configuración general ##
+config {
+	doctype = html5
+	disablePrefixComment = 1
+	# Comentario en <head>
+	headerComment (
+	=========================================================================================================================
+													Diseño e implementación web:
+									Sistema Nacional de Bibliotecas Universidad Nacional de Colombia
+													dirsinab@unal.edu.co
+=========================================================================================================================
+	)
+	pageTitleFirst = 1
+	# pageTitleSeparator = /
+	typolinkCheckRootline = 1
+	typolinkEnableLinksAcrossDomains = 1
+	content_from_pid_allowOutsideDomain = 1
+	contentObjectExceptionHandler = 0
+	## RealURL ###
+	# simulateStaticDocuments = 0
+	# tx_realurl_enable = 1
+	# baseURL = {$siun.pagina.urlBase}
+	# absRefPrefix = {$siun.pagina.urlBase}
+}
+
+content.defaultHeaderType = 2
+
+styles.content.imgtext.responsive = 1
+styles.content.imgtext.linkWrap.lightboxEnabled = 1
+# styles.content.links.allowTags = iframe

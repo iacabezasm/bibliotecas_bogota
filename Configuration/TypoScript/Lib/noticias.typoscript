@@ -1,0 +1,92 @@
+# Feeds RSS
+lib.feeds = COA
+lib.feeds {
+	wrap = <div class="medios">|</div>
+	10 = COA
+	10 {
+		wrap = <div class="superior">|</div>
+		10 = TEXT
+		10 {
+			value = Boletín UN Investiga
+			stdWrap.typolink {
+				parameter = 27561
+				ATagParams = target="_blank"
+			}
+		}
+		20 < .10
+		20.value = <!--  -->
+	}
+	30 = COA
+	30 {
+	    stdWrap {
+			wrap = <div class="slider"><div class="flexslider"><ul class="slides">|</ul></div></div>
+			required = 1
+	    }
+        10 = USER
+        10 {
+    		includeLibs = EXT:bibliotecas_unal/Resources/Public/JavaScript/user_misc.php
+    		userFunc = user_misc->importRSS
+    		ruta = {$siun.noticias.externo}
+            }
+	}
+		
+	40 = TEXT
+	40.value (
+		<ul class="intermedio">
+			<li><a href="http://www.prismatv.unal.edu.co/" target="_blank">Prisma TV</a></li>
+			<li><a href="http://www.unperiodico.unal.edu.co/" target="_blank">UN Periodico</a></li>
+			<li><a href="http://www.unradio.unal.edu.co/" target="_blank">UN Radio</a></li>
+			<li><a href="http://www.agenciadenoticias.unal.edu.co/" target="_blank">Agencia UN</a></li>
+		</ul>
+		<ul class="inferior">
+			<li><a class="contenido-lightbox" href="https://calendar.google.com/calendar/embed?src=unal.edu.co_g584k3p910jgqdmu568lndk96g%40group.calendar.google.com&ctz=America/Bogota" target="_blank">Calendario SIUN</a></li>
+			<li>
+				<a href="http://circular.unal.edu.co/" target="_blank">Circular UN</a>
+				<a href="http://circular.unal.edu.co/" target="_blank"></a>
+			</li>
+		</ul>
+	)
+}
+
+# Título página detalle de noticias
+[globalVar = GP:tx_news_pil|news > 0]
+config.noPageTitle = 2
+lib.noticiasTitulo = COA
+lib.noticiasTitulo {
+	10 = RECORDS
+	10 {
+		source = {GP:tx_news_pi1|news}
+		source.insertData = 1
+		tables = tx_news_domain_model_news
+		conf {
+			tx_news_domain_model_news >
+			tx_news_domain_model_news = TEXT
+			tx_news_domain_model_news.field = title
+		}
+	}
+	20 = TEXT
+	20 {
+		field = title
+		noTrimWrap = |: |: |
+	}
+	30 = LOAD_REGISTER
+	30 {
+		sitetitle < sitetitle
+		sitetitle.htmlSpecialChars = 1
+		title {
+			field = title
+			htmlSpecialChars = 1
+		}
+	}
+	40 = TEXT
+	40 {
+		value = {register:sitetitle}
+		insertData = 1
+	}
+}
+page.headerData {
+	10 = COA
+	10 < lib.noticiasTitulo
+	10.wrap = <title>|</title>
+}
+[global]

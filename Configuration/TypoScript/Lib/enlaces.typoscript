@@ -1,0 +1,106 @@
+# Nombre de dominio
+lib.dominio = COA
+lib.dominio {
+	10 = TEXT
+	10 {
+		wrap = |
+		value = {$siun.pagina.dominio}
+	}
+	stdWrap.typolink {
+		parameter.data = leveluid:0
+		ATagParams = style="color:#fff; text-decoration:none;"
+	}
+}
+
+# # Ícono de acceso al inicio del sitio web
+# lib.casa = IMAGE
+# lib.casa {
+# 	file = EXT:bibliotecas_unal/Resources/Public/Images/iconos/general/casa.png
+# 	stdWrap.typolink {
+# 		parameter.data = leveluid:0
+# 		ATagParams = class="casa"
+# 	}
+# 	titleText = Ir al inicio
+# 	altText = Inicio
+# }
+
+# Logo de acceso al inicio del sitio web del SIEUN
+lib.sieun = IMAGE
+lib.sieun {
+	file = EXT:bibliotecas_unal/Resources/Public/Images/logos/sieunHome.png
+	file {
+		width = 200
+		height = 40
+	}
+	titleText = Sistema de Investigación UN
+	altText = Sistema de Investigación Universidad Nacional
+	wrap = |
+	stdWrap.typolink.parameter = 28608
+}
+
+# Logo de acceso al inicio del sitio web
+lib.logobarra = CASE
+lib.logobarra {
+	key.data = leveluid:0
+	default = COA
+	default {
+		stdWrap.typolink {
+			parameter.data = leveluid:0
+			ATagParams = class="logobarra-texto dependencias"
+		}
+		10 = COA
+		10 {
+			wrap = <div>|</div>
+			10 = TEXT
+			10 {
+				stdWrap {
+					wrap = <span class="logoTitulo">|</span>
+					required = 1
+				}
+				value = {$siun.pagina.logoBarraTitulo}
+			}
+			20 < .10
+			20.stdWrap.wrap = <span class="logoSubtitulo">|</span>
+			20.value = {$siun.pagina.logoBarraSubtitulo}
+		}
+		20 = IMAGE
+		20 {
+			file = EXT:bibliotecas_unal/Resources/Public/Images/iconos/general/logoUN.png
+			altText = Logotipo UN
+		}
+	}
+	19 < .default
+	19 {
+		stdWrap.typolink.ATagParams = class="logobarra-texto pensamiento"
+		10.10.value = CENTRO DE PENSAMIENTO UN
+		20 >
+	}
+	27162 < .19
+	27186 < .19
+	27194 < .19
+	27262 < .19
+	27304 < .19
+	27392 < .19
+	27660 < .19
+	27697 < .19
+	27770 < .19
+	27829 < .19
+	27830 < .19
+	27831 < .19
+	27832 < .19
+	27838 < .19
+	28047 < .19
+	28329 < .19
+	28335 < .19
+	28336 < .19
+	28903 < .19
+	29035 < .19
+	29265 < .19
+	29772 < .19
+	29802 < .19
+	30060 < .19
+	30090 < .19
+	30119 < .19
+
+
+}

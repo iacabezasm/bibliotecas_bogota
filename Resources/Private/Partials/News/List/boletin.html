@@ -1,0 +1,28 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers" data-namespace-typo3-fluid="true">
+<section class="bloque">
+	<n:link newsItem="{newsItem}" settings="{settings}">
+		<h2>{newsItem.title}</h2>
+	</n:link>
+	<f:if condition="{newsItem.mediaPreviews}">
+		<f:then>
+			<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+				<f:alias map="{mediaElement: '{newsItem.mediaPreviews.0}'}">
+					<f:if condition="{mediaElement.originalResource.type} == 2">
+						<f:image image="{mediaElement}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.maxWidth)}" maxHeight="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else: settings.list.media.image.maxHeight)}"/>
+					</f:if>
+				</f:alias>
+			</n:link>
+		</f:then>
+	</f:if>
+	<n:removeMediaTags>
+		<f:if condition="{newsItem.teaser}">
+			<f:then>
+				<p><time datetime="{f:format.date(date:newsItem.datetime,format:'Y-m-d')}"><f:format.date format="%d de %B de %Y">{newsItem.datetime}</f:format.date></time></p><p>{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()} <n:link newsItem="{newsItem}" settings="{settings}"><f:translate key="more-link"/></n:link></p>
+			</f:then>
+			<f:else>
+				<p><time datetime="{f:format.date(date:newsItem.datetime,format:'Y-m-d')}"><f:format.date format="%d de %B de %Y">{newsItem.datetime}</f:format.date></time></p>
+			</f:else>
+		</f:if>
+	</n:removeMediaTags>
+</section>
+</html>

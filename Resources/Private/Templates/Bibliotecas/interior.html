@@ -1,0 +1,20 @@
+<f:layout name="Bibliotecas"/>
+<f:section name="contenidoPrincipal">
+<main>
+	<section id="barraBuscador">
+		<div class="contenedorElementos">
+			<h1>{data.title}</h1>
+		</div>
+	</section>
+    <div class="contenedorElementos">
+        <f:render partial="Bibliotecas/atajos" arguments="{_all}"/>
+		<section id="bloqueContenidosInteriores">
+			<f:cObject typoscriptObjectPath="menu.miga"/>
+			<f:format.raw>{contenido}</f:format.raw>
+		</section>
+		<f:render partial="Bibliotecas/sedes" arguments="{_all}"/>
+    </div>
+	<f:render partial="Bibliotecas/plataformas" arguments="{_all}"/>
+    <f:render partial="Bibliotecas/redesSociales" arguments="{_all}"/>
+</main>
+</f:section>

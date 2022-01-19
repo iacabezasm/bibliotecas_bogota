@@ -1,0 +1,242 @@
+﻿/************************************************************
+Este archivo es una de las hojas de estilos de la plantilla
+de los sitios web del Sistema de Investigación y Extensión
+de la Universidad Nacional de Colombia.
+
+En esta hoja de estilos se definen los estilos tipográficos
+usados en las clases 'bloque' e 'isla'.
+*************************************************************/
+
+/************************************************************
+Columna principal
+*************************************************************/
+
+.contenidoPrincipal h1 p, .contenidoPrincipal h2 p, .contenidoPrincipal h3 p, .contenidoPrincipal h4 p, .contenidoPrincipal h5 p, .contenidoPrincipal h6 p {
+	margin: 0;
+}
+
+/* Títulos */
+
+.contenidoPrincipal h1, .contenidoPrincipal h2, .contenidoPrincipal h3, .contenidoPrincipal h4, .contenidoPrincipal h5, .contenidoPrincipal h6 {
+	margin: 0.75em 0 0.5em;
+	font-weight: bold;
+}
+
+.contenidoPrincipal h1, .contenidoPrincipal h2, .contenidoPrincipal h3 {
+    line-height: 30px;
+	font-family: "Ancizar sans";
+}
+
+.principal h1, .principal h2, .principal h3 {
+    border-bottom: 1px dotted #ccc;
+}
+
+.contenidoPrincipal h4, .contenidoPrincipal h5, .contenidoPrincipal h6 {
+	line-height: 20px;
+	font-family: "Ancizar serif";
+}
+
+.principal h1, .paneles h2, .contenidoPrincipal h1 + h2, .contenidoPrincipal h1 + .csc-header h2, .contenidoPrincipal h1 + .news h2, .contenidoPrincipal .csc-header-n1 h2, .ajusteLista h2.csc-firstHeader, .noticias .bloque h2 {
+	margin-top: 0;
+}
+
+.contenidoPrincipal h1 {
+	line-height: 40px;
+    font-size: 1.75em;
+}
+
+.contenidoPrincipal h2 {
+    font-size: 1.5em;
+}
+
+.contenidoPrincipal h3 {
+    font-size: 1.33em;
+}
+
+.contenidoPrincipal h4 {
+    font-size: 1.25em;
+}
+
+.contenidoPrincipal h5 {
+    font-size: 1.15em;
+}
+
+.contenidoPrincipal h6 {
+    font-size: 1em;
+}
+
+.contenidoPrincipal .st-content h2, .contenidoPrincipal .st-content h3, .contenidoPrincipal .st-content h4, .contenidoPrincipal .st-content h5, .contenidoPrincipal .st-content h6 {
+	font-weight: normal;
+	border: none;
+}
+
+/* Párrafo */
+
+.contenidoPrincipal p {
+    margin: 0.5em 0;
+}
+
+.contenidoPrincipal footer p {
+	margin: 0;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-justify {
+	text-align: justify;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-left {
+	text-align: left;
+}
+
+/* Listas */
+
+/* .contenidoPrincipal li {
+    margin: 0.5em 0;
+} */
+
+.contenidoPrincipal ul {
+    margin-left: 2.5em;
+    list-style: disc;
+}
+
+.contenidoPrincipal ol {
+    margin-left: 2.5em;
+	list-style: decimal;
+}
+
+.contenidoPrincipal ol.lower-alpha {
+	list-style-type: lower-alpha;
+}
+
+.contenidoPrincipal ul li ul {
+    list-style: circle;
+}
+
+.contenidoPrincipal figcaption {
+	margin: 0.5em 0;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.st-accordion li {
+	margin: 0;
+}
+
+.st-content ul {
+	list-style: disc !important;
+}
+
+.st-content ul li ul {
+	list-style: circle !important;
+}
+
+/* Otros */
+
+
+.contenidoPrincipal img, .contenidoPrincipal .bodytext img {
+	max-width: 100%;
+	height: auto;
+}
+
+.contenidoPrincipal object, .contenidoPrincipal iframe  {
+	max-width: 100%;
+	/* height: auto; */
+}
+
+.contenidoPrincipal header {
+	/* text-transform: uppercase; */
+}
+
+.contenidoPrincipal footer {
+	padding: 15px;
+	border: none;
+	border-radius: 4px;
+}
+
+.contenidoPrincipal pre {
+	padding: 15px;
+	background: #00ffff;
+}
+
+.contenidoPrincipal cite, .contenidoPrincipal  address, .contenidoPrincipal q {
+	font-style: italic;
+}
+
+.contenidoPrincipal time {
+	color: #aaa;
+	font-size: 0.85em;
+}
+
+.contenidoPrincipal blockquote {
+    margin: 0 1.5em;
+    background: #ddd;
+    border: none;
+    border-radius: 4px;
+}
+
+.contenidoPrincipal blockquote p {
+	padding: 0.5em 1em;
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+.contenidoPrincipal table {
+	width: 100%;
+	font-size: 0.9em;
+}
+
+.contenidoPrincipal table caption {
+	margin: 1em 0 0.5em;
+}
+
+.contenidoPrincipal table thead th, .contenidoPrincipal table tbody td {
+	padding: 0.5em 1em;
+}
+
+.contenidoPrincipal table tbody tr {
+	text-align: left;
+}
+
+.contenidoPrincipal table tbody tr:not(:last-child) {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+/************************************************************
+Columna lateral
+*************************************************************/
+
+.columna h2, .columna h3, .columna h4, .columna h5, .columna h6 {
+	margin: 1em 0 0.25em;
+    line-height: 18px;
+	font-family: "Ancizar serif";
+	font-weight: bold;
+}
+
+.columna h2 {
+    font-size: 1.25em;
+}
+
+.columna h3 {
+    font-size: 1.2em;
+}
+
+.columna h4 {
+    font-size: 1.15em;
+}
+
+.columna h5 {
+    font-size: 1.1em;
+}
+
+.columna h6 {
+    font-size: 1em;
+}

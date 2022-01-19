@@ -1,0 +1,21 @@
+﻿<f:layout name="Default"/>
+<f:section name="contenidoPrincipal">
+	<f:render partial="BarraBuscador" arguments="{_all}"/>
+</f:section>
+<f:section name="contenidoPrincipal">
+	<f:render partial="BarraBuscador" arguments="{_all}" />
+	<main class="contenidoPrincipal">
+		<section class="imgHome">
+			<h1 style="display:none;">{data.title}</h1>
+			<f:if condition="{contenido}">
+				<div class="listaImg">
+					<f:format.raw>{contenido}</f:format.raw>
+				</div>
+			</f:if>
+			<f:format.raw>{banner}</f:format.raw>
+			<f:if condition="{f:cObject(typoscriptObjectPath:'lib.feeds')}">
+				<f:cObject typoscriptObjectPath="lib.feeds"/>
+			</f:if>
+		</section>
+	</main>
+</f:section>

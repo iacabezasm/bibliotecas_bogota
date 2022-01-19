@@ -1,0 +1,40 @@
+# Página Mapa del sitio
+lib.sitemapPage = TEXT
+lib.sitemapPage {
+	value = Mapa del sitio
+	stdWrap.typolink {
+		parameter.data = leveluid:0
+		additionalParams = &type=500
+        extTarget = _self
+	}
+}
+
+# Información de contacto
+lib.contacto = TEXT
+lib.contacto.value (
+	{$siun.contact.direccion}<br/>
+	{$siun.contact.edificio}<br/>
+	{$siun.contact.ciudad}, Colombia<br/>
+	{$siun.contact.telefono}
+)
+
+# Correo electrónico del webmaster
+lib.webmaster = TEXT
+lib.webmaster.value = {$siun.contact.webmaster}
+
+# Página Acerca de
+lib.acercaDe = TEXT
+lib.acercaDe {
+	value = Acerca de este sitio web
+	stdWrap.typolink {
+		parameter = {$siun.contact.acercaDe}
+        extTarget = _self
+	}
+}
+
+# Fecha de actualización del contenido
+lib.cambios = TEXT
+lib.cambios {
+	data = page:SYS_LASTCHANGED
+	strftime = %d/%m/%Y
+}

@@ -1,0 +1,3 @@
+# Menu of subpages of selected pages including abstracts:
+# lib.contentElement.templateRootPaths.20 = EXT:bibliotecas_unal/Resources/Private/Content/Templates/
+# tt_content.menu_abstract.templateName = MenuAbstractBibliotecas

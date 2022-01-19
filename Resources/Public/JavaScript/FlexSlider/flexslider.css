@@ -1,0 +1,51 @@
+.flexslider {
+	position:relative;
+}
+.flex-viewport {
+	margin: 10px 10px 0;
+	max-height: 2000px;
+}
+.loading .flex-viewport {
+	max-height:300px;
+}
+.flexslider .slides {
+	zoom:1;
+}
+.flex-direction-nav {
+	display: none;
+}
+.flexslider:hover .flex-next:hover,.flexslider:hover .flex-prev:hover {
+	opacity:1;
+}
+ol.flex-control-nav {
+	width: 50%;
+	margin: 6px auto;
+	padding: 0;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+	list-style: none;
+}
+.flex-control-paging li a {
+	width: 6px;
+	height: 6px;
+	display: block;
+	background: #666;
+	background: rgba(0,0,0,0.5);
+	cursor: pointer;
+	text-indent: -9999px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px;
+}
+.flex-control-paging li a:hover {
+	background:#333;
+	background:rgba(0,0,0,0.7);
+}
+.flex-control-paging li a.flex-active {
+	background:#000;
+	background:rgba(0,0,0,0.9);
+	cursor:default;
+}

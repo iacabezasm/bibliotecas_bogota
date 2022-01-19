@@ -1,0 +1,46 @@
+###################################################
+# language handling
+###################################################
+
+config {
+	uniqueLinkVars          = 1
+	linkVars                = L(0-3)
+	sys_language_uid 		= 0
+	sys_language_overlay 	= hideNonTranslated
+	sys_language_mode 		= strict
+	
+	#Default language
+	language         		= es
+	locale_all       		= es_ES.UTF-8
+	htmlTag_langKey  		= es
+}
+
+[globalVar = GP:L = 1]
+	config {
+		sys_language_overlay = 0
+		sys_language_uid 	= 1
+		language 			= en
+		locale_all 			= en_GB.UTF-8
+		htmlTag_langKey 	= en
+	}
+[end]
+
+[globalVar = GP:L = 2]
+	config {
+		sys_language_overlay = 0
+		sys_language_uid 	= 2
+		language 			= fr
+		locale_all 			= fr_FR.UTF-8
+		htmlTag_langKey 	= fr
+	}
+[end]
+
+[globalVar = GP:L = 3]
+	config {
+		sys_language_overlay = 0
+		sys_language_uid 	= 3
+		language 			= pt
+		locale_all 			= pt_PT.UTF-8
+		htmlTag_langKey 	= pt
+	}
+[end]

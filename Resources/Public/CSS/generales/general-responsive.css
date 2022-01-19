@@ -1,0 +1,396 @@
+﻿/************************************************************
+Este archivo es una de las hojas de estilos de la plantilla
+de los sitios web del Sistema de Investigación y Extensión
+de la Universidad Nacional de Colombia.
+
+En esta hoja de estilos se define el ajuste para dispositivos
+móviles de los elementos de la plantilla de los sitios web.
+*************************************************************/
+
+/* Ajuste para ancho de pantalla menor a 1062px */
+
+@media screen and (max-width: 1062px) {
+	.cabecera > .medios .slider {
+		display: none;
+	}
+}
+
+/* Ajuste para ancho de pantalla menor a 885px */
+
+@media screen and (max-width: 885px) {
+	.cabecera > .medios {
+		right: 20px;
+	}
+}
+
+/* Ajuste para ancho de pantalla menor a 990px */
+
+@media screen and (max-width: 990px) {
+	/* Buscador unificado */
+	.logoBuscador, #menuBuscador {
+		width: 400px;
+	}
+	.logoBuscador .buscador .campo {
+		width: 310px;
+	}
+	.buscadorUnificado {
+		width: 100%;
+	}
+	.buscadorUnificado span {
+		margin-right: 40px;
+	}
+	/* Ancho general */
+	.ajuste {
+		width: 100%;
+		min-width: 320px;
+		margin: 0 auto;
+	}
+	.contenidoPrincipal .ajuste {
+		display: block;
+	}
+	.principal {
+		width: 100%;
+		padding: 0 20px;
+		display: block;
+	}
+	.ajuste > h1 {
+		padding: 0 20px;
+	}
+	/*Paneles página inicial*/
+	.paneles {
+		display: block;
+	}
+	.izq, .der {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	/* Columna lateral */
+	.columna {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+	.columna > a:last-child {
+		display: none;
+	}
+	.isla{
+		margin-bottom: 20px;
+	}
+}
+
+/* Ajuste para ancho de pantalla menor a 790px */
+
+@media screen and (max-width: 790px) {
+	.barra {
+		height: 60px;
+	}
+	.barra .buscadorUnificado {
+		margin: 17px 0;
+	}
+	.logoBuscador {
+		height: 26px;
+	}
+	.logoBuscador .buscador .campo {
+		width: 350px;
+	}
+	.barra .buscadorUnificado span {
+		padding: 0;
+		line-height: 13px;
+		font-size: 0.76em;
+	}
+	.barra .logoBuscador .buscador .flecha {
+		width: 20px;
+		height: 20px;
+		background: url(../../Images/iconos/buscador/flecha-peque.png) no-repeat right center transparent;
+	}
+	.barra .logoBuscador .buscador .campo {
+		height: 20px;
+		font-size: 0.95em;
+		line-height: 20px;
+	}
+	.barra .logoBuscador .buscador .boton {
+		width: 20px;
+		height: 20px;
+		background: url(../../Images/iconos/buscador/lupa-peque.png) no-repeat right center transparent;
+	}
+	#menuBuscador {
+		top: 43px;
+	}
+}
+
+/* Ajuste para ancho de pantalla menor a 768px */
+
+@media screen and (max-width: 768px) {
+	/* Plantilla unal */
+	.languageMenu {
+		margin: 12px 40px 0 0 !important;
+	}
+	.socialLinks {
+		margin: 12px 0 0 0 !important;
+	}
+	/* Barra */
+	.logobarra {
+		display: none;
+	}
+	.logobarra-movil {
+		display: block;
+		margin-left: 20px;
+	}
+	.logoBuscador, #menuBuscador {
+		width: 310px;
+	}
+	.logoBuscador .buscador .campo {
+		width: 260px;
+	}
+	.buscadorUnificado span {
+		margin: 0;
+	}
+	.imgHome {
+		height: auto;
+	}
+	.listaImg {
+		margin: 30px 0 30px 30px;
+	}
+	.listaImgNoticia {
+		margin-bottom: 30px;
+	}
+	.imgHome > .medios {
+		margin: 0 30px 30px 0;
+	}
+	.pie {
+		flex-direction: column;
+	}
+	.sesquicentenario {
+		margin: 0 auto;
+	}
+	/* Tablas */
+	table thead {
+		display: none;
+	}
+	table tbody td {
+		display: block;
+		padding: 5px 20px;
+	}
+	table tbody tr:first-child {
+		border-top: none;
+	}
+	table tbody td:before {
+		display: inline-block;
+		content: attr(data-th) "\00a0";
+		font-weight: bold;
+	}
+}
+
+/* Ajuste para ancho de pantalla menor a 648px */
+
+@media screen and (max-width: 648px) {
+	.cabecera > .medios {
+		display: none;
+	}
+	.imgHome {
+		flex-direction: column;
+	}
+	.listaImg {
+		margin: 45px auto;
+	}
+	.listaImgNoticia {
+		max-width: 280px;
+		margin: 0 auto 45px;
+	}
+	.imgHome > .medios {
+		width: 230px;
+		margin: 0 auto 45px;
+	}
+	.imgHome > .medios .intermedio {
+		flex-direction: column;
+	}
+	.imgHome > .medios .flexslider .etiqueta {
+		width: 120px;
+	}
+}
+
+/* Ajuste para ancho de pantalla menor a 600px */
+
+@media screen and (max-width: 600px) {
+	.logobarra-movil {
+		display: none;
+	}
+	.logoBuscador, #menuBuscador {
+		width: 280px;
+	}
+	.logoBuscador .buscador .campo {
+		width: 230px;
+	}
+	.buscadorUnificado span, .barra .logobarra-texto {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 481px) {
+	/* Plantilla unal */
+	.languageMenu {
+		margin-right: 0 !important;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	/* Plantilla unal */
+	.socialLinks {
+		display: none  !important;
+	}
+}
+
+/* Ajuste countdown FILUNI 2018 */
+
+@media (max-width: 990px) {
+     .containerCountdown {
+       width: auto;
+       height: auto;
+       background-position-x: center;
+       }
+     .containerCountdown li {
+       padding-bottom: 20px;
+      }
+      
+}
+@media (max-width: 790px) {
+     .containerCountdown {
+       width: auto;
+       height: auto;
+       background-position-x: center;
+      }
+     .containerCountdown li, .containerCountdown #dias, .containerCountdown #horas, .containerCountdown #minutos, .containerCountdown #segundos {
+       font-size: 20px;
+      }
+    .containerCountdown #head {
+       font-size: 25px; 
+     }
+}
+
+@media (max-width: 672px) {
+     .containerCountdown {
+       width: auto;
+       height: auto;
+       background-position-x: center;
+      }
+     .containerCountdown li, .containerCountdown #dias, .containerCountdown #horas, .containerCountdown #minutos, .containerCountdown #segundos {
+       font-size: 20px;
+      }
+    .containerCountdown #head {
+       font-size: 25px; 
+     }
+    .containerCountdown li {
+      padding-right: 50px;
+  }
+}
+
+@media (max-width: 552px) {
+     .containerCountdown {
+       width: auto;
+       height: auto;
+       background-position-x: center;
+      }
+     .containerCountdown li, .containerCountdown #dias, .containerCountdown #horas, .containerCountdown #minutos, .containerCountdown #segundos {
+       font-size: 20px;
+      }
+    .containerCountdown #head {
+       font-size: 25px; 
+     }
+    .containerCountdown li {
+      padding-right: 40px;
+  }
+}
+
+@media (max-width: 512px) {
+     .containerCountdown {
+       width: auto;
+       height: auto;
+       background-position-x: center;
+      }
+     .containerCountdown li, .containerCountdown #dias, .containerCountdown #horas, .containerCountdown #minutos, .containerCountdown #segundos {
+       font-size: 18px;
+      }
+    .containerCountdown #head {
+       font-size: 23px; 
+     }
+    .containerCountdown li {
+      padding-right: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+     .containerCountdown {
+       width: auto;
+       height: auto;
+       background-position-x: center;
+      }
+     .containerCountdown li, .containerCountdown #dias, .containerCountdown #horas, .containerCountdown #minutos, .containerCountdown #segundos {
+       font-size: 18px;
+      }
+    .containerCountdown #head {
+       font-size: 23px; 
+     }
+    .containerCountdown li {
+      padding-right: 20px;
+      padding-bottom: 30px; 
+  }
+}
+
+@media (max-width: 410px) {
+     .containerCountdown {
+       width: auto;
+       height: auto;
+       background-position-x: center;
+      }
+     .containerCountdown li, .containerCountdown #dias, .containerCountdown #horas, .containerCountdown #minutos, .containerCountdown #segundos {
+       font-size: 16px;
+      }
+    .containerCountdown #head {
+       font-size: 21px; 
+     }
+    .containerCountdown li {
+      padding-right: 20px;
+      padding-bottom: 30px; 
+  }
+}
+
+@media (max-width: 387px){
+     .containerCountdown {
+       width: auto;
+       height: auto;
+       background-position-x: center;
+      }
+     .containerCountdown li, .containerCountdown #dias, .containerCountdown #horas, .containerCountdown #minutos, .containerCountdown #segundos {
+       font-size: 14px;
+      }
+    .containerCountdown #head {
+       font-size: 19px; 
+     }
+    .containerCountdown li {
+      padding-right: 20px;
+      padding-bottom: 30px; 
+  } 
+}
+@media (max-width: 360px){
+     .containerCountdown {
+       width: auto;
+       height: auto;
+       background-position-x: center;
+      }
+     .containerCountdown li, .containerCountdown #dias, .containerCountdown #horas, .containerCountdown #minutos, .containerCountdown #segundos {
+       font-size: 14px;
+      }
+    .containerCountdown #head {
+       font-size: 17px; 
+     }
+    .containerCountdown li {
+      padding-right: 10px;
+      padding-bottom: 30px; 
+  } 
+}
+
+@media (max-width: 343px){
+     .containerCountdown {
+       display: none;  
+      }
+}

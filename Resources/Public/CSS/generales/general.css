@@ -1,0 +1,1152 @@
+﻿/************************************************************
+Este archivo es una de las hojas de estilos de la plantilla
+de los sitios web del Sistema de Investigación y Extensión
+de la Universidad Nacional de Colombia.
+
+En esta hoja de estilos se definen la disposición, las
+dimensiones y las propiedades generales de los elementos
+contenidos en la clase 'página'.
+*************************************************************/
+
+/************************************************************
+La región de la clase 'página' alberga el contenido de cada
+página.
+*************************************************************/
+
+.cuerpo {
+	width: 100%;
+	position: relative;
+}
+
+.cuerpo a, .cuerpo a:link, .cuerpo a:visited, .cuerpo a:hover, .cuerpo a:active {
+	text-decoration: none;
+}
+
+/************************************************************
+La región de la clase 'cabecera' contiene la galería de
+imágenes de notas y anuncios.
+*************************************************************/
+
+.cabecera {
+	width: 100%;
+	height: calc(100vw * 320 / 1440);
+	max-height: 320px;
+	position: relative;
+	overflow: hidden;
+}
+
+.cabecera a, .cabecera a:link, .cabecera a:visited, .cabecera a:hover, .cabecera a:active {
+	color: #fff;
+}
+
+.cabecera a:hover, .cabecera a:active {
+	font-weight: bold;
+}
+
+.imgHome a, .imgHome a:link, .imgHome a:visited, .imgHome a:hover, .imgHome a:active {
+	color: #fff;
+}
+
+.imgHome a:hover, .imgHome a:active {
+	font-weight: bold;
+}
+
+.cabecera .news {
+	font-size: 1.125em;
+}
+
+/* Medios de comunicación */
+
+.medios {
+	width: 305px;
+	z-index: 2;
+	opacity: 0.9;
+	box-shadow: 0 0 6px #555;
+}
+
+.cabecera > .medios {
+	position: absolute;
+	right: 44px;
+	bottom: 56px;
+}
+
+.medios:hover {
+	opacity: 1;
+}
+
+.medios ul {
+	margin: 0;
+	list-style: none;
+}
+
+.superior, .inferior, .intermedio {
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+}
+
+.superior, .inferior {
+	padding-left: 10px;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	line-height: 26px;
+	background: #666;
+}
+
+.superior a:last-child, .inferior li:last-child a:last-child {
+	width: 26px;
+}
+
+.superior a:last-child {
+	background: url(../../Images/iconos/general/mas-boletin.png) no-repeat right center transparent;
+}
+
+.inferior li:last-child {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+}
+
+.inferior li:last-child a:last-child {
+	margin-left: 10px;
+	background: url(../../Images/iconos/general/circular.png) no-repeat right center transparent;
+}
+
+.intermedio {
+	margin: 0;
+	padding: 0;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+	background: #fff;
+	border-top: 1px solid #888;
+}
+
+.intermedio li {
+	line-height: 26px;
+	text-align: center;
+}
+
+.intermedio li a, .intermedio li a:link, .intermedio li a:visited, .intermedio li a:hover, .intermedio li a:active {
+	color: #22a5de;
+}
+
+.slider {
+	width: 100%;
+	background: #fff;
+	line-height: 16px;
+	overflow: hidden;
+}
+
+.slider a, .slider a:link, .slider a:visited, .slider a:hover, .slider a:active {
+	color: #666;
+}
+
+.flexslider .imagen {
+	width: 80px;
+	height: 65px;
+	float: left;
+	overflow: hidden;
+}
+
+.flexslider .etiqueta {
+	width: 195px;
+	float: right;
+}
+
+.flexslider ul li div img {
+	height: 65px;
+}
+
+/************************************************************
+La región de la clase 'barra' contiene el logotipo del sitio
+web y otros elementos como buscadores y menús de seccciones.
+*************************************************************/
+
+.barraTop {
+	visibility: hidden;
+}
+
+.barra {
+	width: 100%;
+	height: 120px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	/* z-index: 20; */
+	z-index: 1;
+}
+
+.barraFija {
+	height: 60px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.logobarra-texto {
+	width: 240px;
+	display: flex;
+	justify-content: flex-end;
+	text-align: right;
+}
+
+.dependencias {
+	font-family: Ancizar serif;
+	font-size: 1.66em;
+	font-style: italic;
+}
+
+.pensamiento {
+	font-family: Ancizar sans;
+	font-style: normal;
+}
+
+.pensamiento div {
+	padding: 0.25em 0 0 0.33em;
+	border-top: 1px solid #14a5dc;
+	border-left: 1px solid #14a5dc;
+}
+
+.logobarra-texto, .logobarra-texto:link, .logobarra-texto:visited, .logobarra-texto:hover, .logobarra-texto:active {
+	color: #fff;
+	text-decoration: none;
+}
+
+.logobarra-texto img {
+	margin-left: 0.25em;
+}
+
+.logobarra-texto div, .logobarra-texto img {
+	align-self: center;
+}
+
+.logobarra-texto div {
+	display: flex;
+	flex-direction: column;
+}
+
+.dependencias .logoTitulo {
+	line-height: 1.125;
+}
+
+.logobarra-texto .logoSubtitulo {
+	color: #ccc;
+	z-index: -1;
+}
+
+.dependencias .logoSubtitulo {
+	font-family: "Ancizar sans";
+	font-style: normal;
+	font-size: 0.45em;
+}
+
+/* Buscador unificado */
+
+.buscadorUnificado {
+	width: 690px;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+}
+
+.barraFija .buscadorUnificado {
+	margin: 17px 0;
+}
+
+.buscadorUnificado > span {
+	width: 90px;
+	padding: 8px 0;
+	font-size: 0.85em;
+	line-height: 15px;
+	text-align: center;
+	color: #fff;
+}
+
+.barraFija .buscadorUnificado > span {
+	padding: 0;
+	line-height: 13px;
+}
+
+.logoBuscador {
+	width: 520px;
+	height: 46px;
+	padding: 2px;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+	background: #fff;
+	border: solid 1px #999;
+	border-radius: 4px;
+}
+
+.logoBuscador .buscador {
+	width: 100%;
+	display: none;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+
+.logoBuscador .buscador .flecha {
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: url(../../Images/iconos/buscador/flecha-grande.png) no-repeat right center transparent;
+}
+
+.barraFija .logoBuscador .buscador .flecha {
+	width: 20px;
+	height: 20px;
+	background: url(../../Images/iconos/buscador/flecha-peque.png) no-repeat right center transparent;
+}
+
+.logoBuscador .buscador .campo {
+	width: 430px;
+	height: 40px;
+	padding: 0 5px;
+	border: none;
+	line-height: 40px;
+	font-size: 1.125em;
+}
+
+.barraFija .logoBuscador {
+	height: 26px;
+}
+
+.barraFija .logoBuscador .buscador .campo {
+	height: 20px;
+	line-height: 20px;
+}
+
+.logoBuscador .buscador .boton {
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: url(../../Images/iconos/buscador/lupa-grande.png) no-repeat right center transparent;
+}
+
+.barraFija .logoBuscador .buscador .boton {
+	width: 20px;
+	height: 20px;
+	background: url(../../Images/iconos/buscador/lupa-peque.png) no-repeat right center transparent;
+}
+
+#menuBuscador {
+	width: 520px;
+	margin: 5px 0 0 0;
+	padding: 0;
+	position: absolute;
+	top: 83px;
+	list-style: none;
+	line-height: 20px;
+	background: #fff;
+	box-shadow: 0 0 6px #555;
+	border: none;
+	border-radius: 4px;
+	z-index: 1;
+}
+
+#menuBuscador li {
+	height: 32px;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+	padding: 6px;
+	cursor: pointer;
+}
+
+#menuBuscador li:hover {
+	background: #eee;
+	border: none;
+	border-radius: 4px;
+}
+
+#menuBuscador li img {
+	margin-right: 6px;
+}
+
+/************************************************************
+La región de la clase 'cuerpo' alberga el contenido principal
+del sitio web.
+*************************************************************/
+
+.contenidoPrincipal {
+	width: 100%;
+	min-height: unset;
+	position: relative;
+	font-size: 1.125rem;
+	line-height: 1.33em;
+}
+
+.imgHome {
+	width: 100%;
+	height: 668px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	font-size: 1rem;
+}
+
+.imgHome > .medios {
+	margin-right: 70px;
+	margin-bottom: 70px;
+}
+
+.listaImg {
+	width: 230px;
+	margin-bottom: 70px;
+	margin-left: 70px;
+	z-index: 2;
+	opacity: 0.9;
+	box-shadow: 0 0 6px #555;
+}
+
+.listaImg {
+	background:#fff;
+}
+
+.listaImg:hover {
+	opacity: 1;
+}
+
+/* ejercicio de prueba */
+.listaImg .csc-header .csc-firstHeader {
+  text-align:left;
+	width:100%;
+	margin:0;
+	height:26px;
+	width:230px;
+	line-height:26px;
+	padding-left:10px;
+	background-color:#666;
+	color:#fff;
+	font-weight:bold;
+	font-size:1em;
+	font-style:italic;
+	font-family:"Ancizar sans";
+}
+
+.listaImg .csc-header h2 {
+	height:55px;
+	width:175px;
+	text-align:right;
+	line-height:55px;
+	padding:0;
+	padding-right:5px;
+	margin:0;
+	color:#666;
+	font-weight:normal;
+	font-size:1.3em;
+	font-style:italic;
+	background-color:#fff;
+	float:left;
+}
+.listaImg .csc-textpic {
+	float:left;
+	width:55px;
+	height:55px;
+	margin:0;
+	align-items:left;
+	background-color:#fff;
+}
+.listaImg .csc-header-n2 a,.listaImg .csc-header-n2 a:link,.listaImg .csc-header-n2 a:visited,.listaImg .csc-header-n2 a:hover,.listaImg .csc-header-n2 a:active {
+	color:#1A354B;
+}
+.listaImg .csc-header-n3 a,.listaImg .csc-header-n3 a:link,.listaImg .csc-header-n3 a:visited,.listaImg .csc-header-n3 a:hover,.listaImg .csc-header-n3 a:active {
+	color:#D60F37;
+}
+.listaImg .csc-header-n4 a,.listaImg .csc-header-n4 a:link,.listaImg .csc-header-n4 a:visited,.listaImg .listaImg .csc-header-n4 a:active,.listaImg .csc-header-n6 a,.listaImg .csc-header-n6 a:link,.listaImg .csc-header-n6 a:visited,.listaImg .csc-header-n6 a:hover,.listaImg .csc-header-n6 a:active,.listaImg .csc-header-n7 a,.listaImg .csc-header-n7 a:link,.listaImg .csc-header-n7 a:visited,.listaImg .csc-header-n7 a:hover,.listaImg .csc-header-n7 a:active,.listaImg .csc-header-n8 a,.listaImg .csc-header-n8 a:link,.listaImg .csc-header-n8 a:visited,.listaImg .csc-header-n8 a:hover,.listaImg .csc-header-n8 a:active {
+	color:#0096DA;
+}
+.listaImg .csc-header-n5 a,.listaImg .csc-header-n5 a:link,.listaImg .csc-header-n5 a:visited,.listaImg .csc-header-n5 a:hover,.listaImg .csc-header-n5 a:active {
+	color:#00ACB9;
+}
+.listaImg .csc-header-n10 a,.listaImg .csc-header-n10 a:link,.listaImg .csc-header-n10 a:visited,.listaImg .csc-header-n10 a:active {
+	color:#fff;
+}
+.listaImg .csc-header-n10 h2 {
+	background-color:#666;
+}
+.listaImg div .csc-textpic-imagewrap {
+	 background-color:#fff;
+	align-content:left;
+	height:55px;
+	float:left;
+}
+.listaImg .csc-textpic:nth-last-child(1) div,.listaImg .csc-textpic:nth-last-child(4) div,.listaImg .csc-textpic:nth-last-child(6) div,.listaImg .csc-textpic:nth-last-child(8) div,.listaImg .csc-textpic:nth-last-child(10) div,.listaImg .csc-textpic:nth-last-child(12) div,.listaImg .csc-textpic:nth-last-child(14) div,.listaImg .csc-textpic:nth-last-child(16) div {
+	padding-top: 4px;
+}
+.listaImg .csc-textpic:last-child {
+	background-color:#666;
+}
+.listaImg .csc-textpic:last-child div {
+	background-color:#666;
+}
+.listaImg .csc-textpic:nth-last-child(3) div {
+	background-color:#ff7341;
+	width:230px;
+	height:70px;
+}
+.listaImg .csc-textpic:nth-last-child(3) {
+	height:70px;
+	width: 230px;
+}
+.listaImg a {
+	display: block;
+}
+
+/* bloque migración CSC -> FSC */
+
+.listaImg {
+  display: flex;
+  flex-direction: column;
+  opacity: 0.9;
+}
+
+.listaImg div {
+  display: flex;
+  justify-content: flex-end;
+	font-style: italic;
+	font-family: "Ancizar sans";
+}
+
+.listaImg img {
+	margin: 0.33em 0.85em;
+}
+
+.listaImg h2 {
+	margin: 0;
+	padding: 0.33em 0;
+  font-size: 1.25em;
+	line-height: 32px;
+	font-weight: normal
+}
+
+.listaImg > div:first-child,
+.listaImg > div:last-child {
+  background: #666;
+  color: #fff;
+}
+
+.listaImg > div:first-child {
+	justify-content: center;
+}
+
+.listaImg > div:nth-last-child(2) {
+	background: #ff7341;
+}
+
+.listaImg > div:nth-last-child(2) img {
+	margin: 0;
+}
+
+.listaImg div:nth-child(2) a {
+	color: #1A354B;
+}
+
+.listaImg div:nth-child(3) a {
+	color: #D60F37;
+}
+
+.listaImg div:nth-child(4) a,
+.listaImg div:nth-child(6) a,
+.listaImg div:nth-child(7) a,
+.listaImg div:nth-child(8) a {
+	color: #0096DA;
+}
+
+.listaImg div:nth-child(5) a {
+	color: #00ACB9;
+}
+
+.listaImg div:hover a {
+	font-weight: bold;
+}
+
+/* bloque migración CSC -> FSC */
+
+/************************************************************
+Lista antigua
+*************************************************************/
+/* .listaImg  h2 { */
+	/* width: 100%; */
+	/* height: 26px; */
+	/* margin: 0; */
+	/* padding-left: 10px; */
+	/* line-height: 26px; */
+	/* font-size: 1em; */
+	/* font-family: "Ancizar sans"; */
+	/* color: #fff; */
+	/* background: #666; */
+/* } */
+
+.listaImg figure {
+	margin: 0 !important;
+}
+
+/* .listaImg .csc-textpic-imagerow:last-child { */
+	/* background: #666; */
+/* } */
+
+/* .listaImg .csc-textpic-imagerow:nth-last-child(2) { */
+	/* background:  #ff7341; */
+/* } */
+
+/************************************************************/
+
+.listaImgNoticia {
+	width: 420px;
+	height: auto;
+	z-index: 2;
+	margin: 20px;
+	margin-bottom: 70px;
+	opacity: 0.9;
+}
+
+.listaImgNoticia:hover {
+	opacity: 1;
+}
+
+.listaImgNoticia img {
+	width: 100%;
+	height: auto;
+	box-shadow: 0 0 6px #555;
+}
+
+.listaImgNoticia .caption {
+	position:relative;
+	float:right;
+	width:420px;
+	height:25px;
+	line-height:25px;
+	top:0px;
+	color:#fff;
+	background-color: #7F8181;
+	opacity: 1.5;
+	padding: 0 10px 0 90px;
+}
+
+/************************************************************
+La región de la clase 'ajuste' limita el ancho de la página.
+*************************************************************/
+
+.ajuste {
+	width: 950px;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+
+/************************************************************
+La región de la clase 'columna' define una sección lateral de
+contenido en la página.
+*************************************************************/
+/************************************************************
+La región de la clase 'isla' define una entrada de contenido
+de la sección 'columna' de la página.
+*************************************************************/
+
+.columna {
+	width: 240px;
+	font-size: 1rem;
+}
+
+.columna, .columna a, .columna a:link, .columna a:visited, .columna a:hover, .columna a:active {
+	color: #999;
+}
+
+.columna ul {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.columna ul li {
+    padding: 0 0.5em;
+    height: 30px;
+    line-height: 30px;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+
+.columna ul li a:hover, .columna ul li a:active {
+	font-weight: bold;
+}
+
+.columna .menu-miga {
+	border-bottom: 1px dotted #ccc;
+}
+
+.isla {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 15px 20px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 6px #555;
+}
+
+.isla > div, .isla > nav {
+	margin-bottom: 1em;
+}
+
+/* Menú miga de pan */
+
+.miga {
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+}
+
+.casa {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	border-radius: 4px;
+}
+
+.menu-miga {
+	width: 100%;
+	line-height: 20px;
+	font-size: 0.8em;
+}
+
+
+/************************************************************
+La región de la clase 'principal' define una sección central
+de contenido en la página.
+*************************************************************/
+
+.principal {
+	width: 690px;
+}
+
+.principal, .principal a, .principal a:link, .principal a:visited, .principal a:hover, .principal a:active {
+	color: #666;
+}
+
+/* Paneles página inicial */
+
+.paneles {
+	margin-bottom: 20px;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	font-size: 1rem;
+}
+
+.paneles h2 {
+	margin-bottom: 0.33em;
+	line-height: 20px;
+	font-size: 1.33em;
+}
+
+.paneles a:hover, .paneles a:active {
+	color: #222;
+}
+
+.paneles ul {
+	margin-left: 1em;
+}
+
+.izq, .der {
+	width: 335px;
+	padding: 15px 20px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 6px #555;
+}
+
+/************************************************************
+La región de la clase 'bloque' define una entrada de
+contenido en la sección 'principal' de la página.
+*************************************************************/
+
+.bloque {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 15px 20px;
+	background: #fff;
+	text-align: left;
+	border: 0;
+	border-radius: 8px;
+	box-shadow: 0 0 6px #555;
+}
+
+.bloque a img:hover, .bloqueLista a img:hover {
+	opacity: 0.8;
+}
+
+/* NOTICIAS */
+
+.noticiasTeaser {
+	font-size: 1.15em;
+	padding-bottom: 0.75em;
+}
+
+.noticiasPags, .noticiasFooter {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.noticiasPags ul, ul.noticiasRedes, ul.noticiasNav {
+	margin: 0;
+	display: flex;
+	align-items: flex-end;
+	list-style: none;
+}
+
+ul.noticiasRedes, ul.noticiasNav {
+	margin: 1em 0 0;
+}
+
+ul.noticiasRedes {
+	justify-content: flex-start;
+}
+
+.noticiasPags ul, ul.noticiasNav {
+	justify-content: flex-end;
+}
+
+.noticiasPags ul li:not(:first-child), ul.noticiasNav li:not(:first-child) {
+	margin-left: .75em;
+}
+
+ul.noticiasRedes li:not(:last-child) {
+	margin-right: .75em;
+}
+
+ul.noticiasRedes a {
+	width: 32px;
+	height: 32px;
+	display: block;
+}
+
+a.noticiasFacebook {
+	background: url(../../Images/iconos/social/facebook.png) no-repeat 0 0;
+}
+
+a.noticiasGoogle {
+	background: url(../../Images/iconos/social/google.png) no-repeat 0 0;
+}
+
+a.noticiasTwitter {
+	background: url(../../Images/iconos/social/twitter.png) no-repeat 0 0;
+}
+
+a.noticiasRSS {
+	background: url(../../Images/iconos/social/rss.png) no-repeat 0 0;
+}
+
+a.noticiasFacebook:hover {
+	background: url(../../Images/iconos/social/facebook-hover.png) no-repeat 0 0;
+}
+
+a.noticiasGoogle:hover {
+	background: url(../../Images/iconos/social/google-hover.png) no-repeat 0 0;
+}
+
+a.noticiasTwitter:hover {
+	background: url(../../Images/iconos/social/twitter-hover.png) no-repeat 0 0;
+}
+
+a.noticiasRSS:hover {
+	background: url(../../Images/iconos/social/rss-hover.png) no-repeat 0 0;
+}
+
+/************************************************************
+La región de la clase 'pie' alberga el contenido del pie de
+página de la página.
+*************************************************************/
+
+.pie {
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	background: #333;
+	clear: both;
+	opacity: 0.8;
+}
+
+.pie, .pie a, .pie a:link, .pie a:visited, .pie a:hover, .pie a:active {
+	color: #fff;
+}
+
+/* Sesquicentenario */
+.sesquicentenario {
+	width: 287px;
+	height: 61px;
+	padding: 0 36px;
+	line-height: 61px;
+	letter-spacing: 1.5px;
+	font-size: 1.14em;
+	background: url(../../Images/logos/sesquicentenario_rollover.png) no-repeat right content-box;
+}
+
+.sesquicentenario:hover {
+	color: #0f6277 !important;
+	background: url(../../Images/logos/sesquicentenario.png) no-repeat right content-box;
+}
+
+/* Carrusel del pie de página */
+
+.enlaces-pie {
+	width: 220px;
+	height: 61px;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	background: #666;
+}
+
+.enlaces-pie img {
+	width: 45px;
+	height: 45px;
+	margin: 4px 0 4px 4px;
+}
+
+.enlaces-pie a {
+	width: 160px;
+	margin: 0;
+	padding: 0;
+	line-height: 53px;
+}
+
+.enlaces-pie a:hover {
+	font-weight: bold;
+}
+
+.bx-viewport {
+	padding-left: 61px;
+	position: static !important;
+}
+/************************************************************************
+La región de la clase 'clockTotal' contiene estilos countdown editorial
+************************************************************************/
+
+.containerCountdown {
+	height: 336px;
+	width: 950px;
+	background: url(../../Images/fondos/BannerPrincipal.png) no-repeat right center transparent;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.containerCountdown #head {
+	padding-top: 150px;
+	color: #fff;
+	font-size:30px;
+	text-align: center;
+}
+.containerCountdown #dias, .containerCountdown #horas, .containerCountdown #minutos, .containerCountdown #segundos {
+	color: #fff;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+.containerCountdown li {
+  display: inline-block;
+  font-size: 25px;
+  color: #fff;
+  list-style-type: none;
+	padding-right: 80px;
+}
+.containerCountdown li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+/********************************************************************************************************************
+La región de la clase 'imgHomeHermes' contiene las secciones 1.Lista de imágenes; 2.Banner; 3. Pestaña redes sociales
+********************************************************************************************************************/
+.imgHomehermes {
+	width: 100%;
+	height: 385px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	font-size: 1rem;
+	background-color: #fd7341;
+}
+
+.imgHomeHermes {
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	font-size: 1rem;
+	background-color: #fd7341;
+}
+.listaImgHermes {
+	height: 300px;
+	width: 230px;
+	background-color: #EDEBF1;
+	margin-left: 400px;
+	margin-bottom: 40px;
+	margin-top: 60px;
+  padding: 0;
+  overflow: hidden;
+	text-align: right;
+}
+.imgHomeHermes .totalcontainer {
+	width: 290px;
+	height: 320px;
+	margin-right: 450px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+/* Estilo pestaña*/
+.imgHomeHermes .tabHermes {
+    float: right;
+    background-color: #f1f1f1;
+    width: 25px;
+    height: 30px;
+	position: relative;
+	top: 20px;
+}
+/* Style the buttons inside the tab */
+.imgHomeHermes .tabHermes button {
+	height: 30px;
+	width: 25px;
+    display: block;
+    color: black;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+	padding: 0;
+}
+.imgHomeHermes .tabHermes img {
+	padding-top: 3px;
+	padding-right: 3px;
+}
+.imgHomeHermes .twittertab {
+	background-color: #6ba3d6;
+}
+.imgHomeHermes .fbtab {
+	background-color: #41538a;
+}
+.imgHomeHermes .redes {
+	height: 100%;
+	width: 265px;
+}
+.imgHomeHermes .encabezadoCalendario {
+	height: 40px;
+	width: 100%;
+	background-color: #0096da;
+}
+.imgHomeHermes .encabezadoCalendario p {
+	margin: 0;
+	padding-left: 10px;
+	padding-top:5px;
+}
+/* Create an active/current "tab button" class */
+.imgHomeHermes .tabscontainer {
+	width: 265px;
+    height: 255px;
+}
+/* Style the tab content */
+.imgHomeHermes .tabcontent {
+    width: 265px;
+    height: 255px;
+    float: left;
+    padding: 0;
+    border-left: none;
+}
+.imgHomeHermes .pietabs {
+	height: 25px;
+	width: 100%;
+	background-color: #7C7A7D;
+}
+.listaImgHermes .csc-header .csc-firstHeader {
+  text-align:left;
+	width:100%;
+	margin:0;
+	height:26px;
+	width:230px;
+	line-height:26px;
+	padding-left:10px;
+	background-color:#666;
+	color:#fff;
+	font-weight:bold;
+	font-size:1em;
+	font-style:italic;
+	font-family:"Ancizar sans";
+}
+
+.listaImgHermes .csc-header h2 {
+	height:55px;
+	width:175px;
+	text-align:right;
+	line-height:55px;
+	padding:0;
+	padding-right:5px;
+	margin:0;
+	color:#666;
+	font-weight:normal;
+	font-size:1.3em;
+	font-style:italic;
+	background-color:#0096DA;
+	float:left;
+}
+.listaImgHermes .csc-textpic {
+	float:left;
+	width:55px;
+	height:55px;
+	margin:0;
+	align-items:left;
+	background-color:#0096DA;
+}
+.listaImgHermes .csc-header-n2 a,.listaImgHermes .csc-header-n2 a:link,.listaImgHermes .csc-header-n2 a:visited,.listaImgHermes .csc-header-n2 a:hover,.listaImgHermes .csc-header-n2 a:active,.listaImgHermes .csc-header-n3 a,.listaImgHermes .csc-header-n3 a:link,.listaImgHermes .csc-header-n3 a:visited,.listaImgHermes .csc-header-n3 a:hover,.listaImgHermes .csc-header-n3 a:active,.listaImgHermes .csc-header-n4 a,.listaImgHermes .csc-header-n4 a:link,.listaImgHermes .csc-header-n4 a:visited,.listaImgHermes .csc-header-n4 a:hover,.listaImgHermes .csc-header-n4 a:active,.listaImgHermes .csc-header-n6 a,.listaImgHermes .csc-header-n6 a:link,.listaImgHermes .csc-header-n6 a:visited,.listaImgHermes .csc-header-n6 a:hover,.listaImgHermes .csc-header-n6 a:active,.listaImgHermes .csc-header-n5 a,.listaImgHermes .csc-header-n5 a:link,.listaImgHermes .csc-header-n5 a:visited,.listaImgHermes .csc-header-n5 a:hover,.listaImgHermes .csc-header-n5 a:active {
+	color:#fff;
+}
+.listaImgHermes .csc-textpic:nth-last-child(1) div,.listaImgHermes .csc-textpic:nth-last-child(3) div,.listaImgHermes .csc-textpic:nth-last-child(5) div,.listaImgHermes .csc-textpic:nth-last-child(7) div,.listaImgHermes .csc-textpic:nth-last-child(9) div{
+	padding-top: 4px;
+}
+.listaImgHermes .csc-header-n6 h2 {
+	background-color:#666;
+}
+.listaImgHermes .csc-header-n5 h2 {
+	background-color:#099a39;
+}
+.listaImgHermes .csc-textpic:nth-last-child(3) {
+	background-color:#099a39;
+}
+.listaImgHermes .csc-textpic:last-child {
+	background-color:#666;
+}
+.imgHomeHermes .listaImgNoticia {
+  margin: 60px 0px 40px 0;
+}
+.listaImgHermes .csc-header h2 {
+  border-bottom: solid 2px #fff;
+}
+.listaImgHermes .csc-header-n1 h2,.listaImgHermes .csc-header-n6 h2  {
+	border-bottom: none;
+}
+.listaImgHermes .csc-textpic {
+   border-bottom: solid 2px #fff;
+}
+.listaImgHermes .csc-textpic:nth-child(11) {
+  border: none;
+}

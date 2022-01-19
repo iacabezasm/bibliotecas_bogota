@@ -1,0 +1,215 @@
+[system == android,iOS]
+page.cssInline {
+    10 = TEXT
+    10.value (
+        li.tarjeta .contenedorTarjeta {justify-content: space-between}
+        li.tarjeta .feather {margin: 0}
+        li.tarjeta .texto {display: block}
+        #ayudaBibliotecas ul.listaHorizontal li.tarjeta ul.texto {display: flex;flex-flow: row wrap;justify-content: space-between;font-size: 0.9em;}
+        #ayudaBibliotecas ul.listaHorizontal li.tarjeta ul.texto li {width: 75px;height: 32px;display: flex;justify-content: center;align-items: center;color: #fff;text-shadow: 1px 1px 2px #203b7e;border: 2px solid #fff;border-radius: 0.5em;}
+        #ayudaBibliotecas ul.listaHorizontal li.tarjeta:nth-child(1) ul.texto li {background: #fbba3a;border-color: #fbba3a;}
+        #ayudaBibliotecas ul.listaHorizontal li.tarjeta:nth-child(2) ul.texto li {background: #33b3bc;border-color: #33b3bc;}
+        #ayudaBibliotecas ul.listaHorizontal li.tarjeta:nth-child(3) ul.texto li {background: #e15e42;border-color: #e15e42;}
+        #ayudaBibliotecas ul.listaHorizontal li.tarjeta ul.texto li:not(:last-child) {margin: 0 0 8px}
+        #ayudaBibliotecas ul.listaHorizontal li.tarjeta ul.texto li {background: none;border: 2px solid #fff;}
+        #ayudaBibliotecas ul.listaHorizontal li.tarjeta:nth-child(1) ul.texto li {border-color: #fbba3a;}
+        #ayudaBibliotecas ul.listaHorizontal li.tarjeta:nth-child(2) ul.texto li {border-color: #33b3bc;}
+        #ayudaBibliotecas ul.listaHorizontal li.tarjeta:nth-child(3) ul.texto li {border-color: #e15e42;}
+    )
+}
+[END]
+
+page.cssInline {
+    20 = CASE
+    20 {
+        key.data = leveluid:0
+        8 = TEXT
+        8.value.field = title
+        8.stdWrap.wrap = #buscadorBibliotecas .tituloSitio::after {content: "|"}
+        9 < .8
+        10 < .8
+        11 < .8
+        12 < .8
+        13 < .8
+        14 < .8
+    }
+    30 = CASE
+    30 {
+        key.data = leveluid:0
+        8 = TEXT
+        8.wrap = #buscadorBibliotecas .imagenSede {background: url("/typo3conf/ext/bibliotecas_unal/Resources/Public/Bibliotecas/images/sedes/|.jpg"); background-position: 0 0; background-size: cover;}
+        8.value = amazonia
+        9 < .8
+        9.value = bogota
+        10 < .8
+        10.value = caribe
+        11 < .8
+        11.value = manizales
+        12 < .8
+        12.value = medellin
+        13 < .8
+        13.value = orinoquia
+        14 < .8
+        14.value = palmira
+    }
+}
+
+# 10 = TEXT
+# 10.value (
+# 	.barra {
+# 		background: linear-gradient({$siun.estilo.color1},{$siun.estilo.color2});
+# 	}
+# 	.casa, .st-accordion > ul > li > a span, .st-accordion > ul > li.st-open > a span {
+    # 		background-color: {$siun.estilo.color1};
+    # 	}
+    # 	.principal h2, .principal h3, .principal h4, .principal h5, .principal h6,
+    # 	.bloque a, .bloque a:link, .bloque a:visited, .bloque a:hover, .bloque a:active,
+    # 	.columna a, .columna a:link, .columna a:visited, .columna a:hover, .columna a:active {
+    # 		color: {$siun.estilo.color1};
+    # 	}
+    # )
+    # 20 = CASE
+    # 20 {
+    # 	key.data = page:uid
+    # 	19 = TEXT
+    # 	19.value (
+    # 		.bloqueOscuro .row p {
+    # 			margin-top: 1em;
+    # 			padding: 0.25em 0.5em;
+    # 			border-top: solid 1px #14a5dc;
+    # 			border-left: solid 1px #14a5dc;
+    # 		}
+    # 	)
+    # 	28854 = TEXT
+    # 	28854.value (
+    # 		.bloqueLista:last-child {padding: 0;}
+    # 		.bloqueLista:last-child .ajusteLista {width: 100%; padding: 0; line-height: 0;}
+    # 		.bloqueEnlaces .ajusteLista {display: flex; display: -webkit-flex; justify-content: space-between; -webkit-justify-content: space-between;}
+    # 	)
+    # 	29369 < .28854
+    # 	29034 = COA
+    # 	29034 {
+    # 		10 = TEXT
+    # 		10.value = .imgHome {
+    # 		20 = TEXT
+    # 		20.value (
+    # 				background: url("/typo3conf/ext/bibliotecas_unal/Resources/Public/Images/fondos/vri.JPG") center no-repeat;
+    # 		)
+    # 		30 = TEXT
+    # 		30.value (
+    # 				background-size: cover;
+    # 				background-attachment: fixed;
+    # 			}
+    # 		)
+    # 	}
+    # 	29236 < .29034
+    # 	29236.20.value (
+    # 			background: url("/typo3conf/ext/bibliotecas_unal/Resources/Public/Images/fondos/vri") center no-repeat;
+    # 	)
+    # 	29237 < .29034
+    # 	29237.20.value (
+    # 			background: url("/typo3conf/ext/bibliotecas_unal/Resources/Public/Images/fondos/dnil") center no-repeat;
+    # 	)
+    # 	29238 < .29034
+    # 	29238.20.value (
+    # 			background: url("/typo3conf/ext/bibliotecas_unal/Resources/Public/Images/fondos/dnb") center no-repeat;
+    # 	)
+    # 	29239 < .29034
+    # 	29239.20.value (
+    # 			background: url("/typo3conf/ext/bibliotecas_unal/Resources/Public/Images/fondos/editorial") center no-repeat;
+    # 	)
+    # 	29806 = TEXT
+    #     29806.value (
+    #             .barra {display: none;}
+    #             .imgHome {backColor: #fd7341;}
+    #     )
+    #     29833 = TEXT
+    # 	29833.value (
+    # 		.encabezadoPortada {display: none;}
+    # 		.imgPortada {max-height: 520px;}
+    # 		.imgPortada img {max-height: 520px;}
+    # 	    .bloqueLista:last-child {padding: 0;}
+    # 		.bloqueLista:last-child .ajusteLista {width: 100%; padding: 0; line-height: 0;}
+    # 		.bloqueEnlaces .ajusteLista {display: flex; display: -webkit-flex; justify-content: space-between; -webkit-justify-content: space-between;}
+    # 	)
+    # 	27673 = TEXT
+    # 	27673.value (
+    # 	    .logobarra-texto .logoTitulo { padding-top: 12px;}
+    # 	)
+    # 	27674 < .27673
+    # 	27675 < .27673
+    # 	27676 < .27673
+    # 	28839 < .27673
+    # 	29351 < .27673
+    # 	27677 < .27673
+    # 	30485 = TEXT
+    # 	30485.value (
+    # 		.bloqueLista:last-child {padding: 0;}
+    # 		.bloqueLista:last-child .ajusteLista {width: 100%; padding: 0; line-height: 0;}
+    # 	)
+    # 	30496 < .30485
+    # }
+    # 30 = CASE
+    # 30 {
+    # 	key.data = leveluid:0
+    # 	27399 = TEXT
+    # 	27399.value (
+    # 		.logoBuscador .descubridor { display: flex; display: -webkit-flex; }
+    # 		#menuBuscador #opciondescubridor {display: none;}
+    # 	)
+    # 	29238 < .27390
+    # 	27391 = TEXT
+    # 	27391.value (
+    # 		.logoBuscador .libreria { display: flex; display: -webkit-flex; }
+    # 		#menuBuscador #opcionlibreria {display: none;}
+    # 	)
+    # 	27703 < .27391
+    # 	29239 < .27391
+    # 	29273 < .27391
+    # 	29796 < .27391
+    # 	default = TEXT
+    # 	default.value (
+    # 		.logoBuscador .hermes { display: flex; display: -webkit-flex; }
+    # 		#menuBuscador #opcionhermes {display: none;}
+    # 	)
+    # }
+    # 40 = CASE
+    # 40 {
+    # 	key.data = page:backend_layout
+    # 	key.ifEmpty.data = levelfield:-1, backend_layout_next_level, slide
+    # 	11 = TEXT
+    # 	11.value (
+    # 		.bloque {display: none;}
+    # 	)
+    # 	18 = TEXT
+    # 	18.value (
+    # 		.imgPortada {max-height: 520px;}
+    # 		.imgPortada img {height: calc(100vw * 520 / 1440);}
+    # 		.barra {display: none;}
+    # 		.miga {display: none;}
+    # 	)
+    # 	19 = TEXT
+    # 	19.value (
+    # 		.imgPortada {max-height: 320px;}
+    # 		.imgPortada img {height: calc(100vw * 320 / 1440);}
+    # 		.barra {display: none;}
+    # 	)
+    # 	22 = TEXT
+    # 	22.value (
+    # 		.contenidoPrincipal h1 {
+    # 		color: {$siun.estilo.color1};
+    # 		}
+    # 	)
+    # 	23 = TEXT
+    # 	23.value (
+    # 	    .bloque {display: none;}
+    # 		.imgPortada {max-height: 320px;}
+    # 		.imgPortada img {height: calc(100vw * 320 / 1440);}
+    # 		.imgPortada img {max-height: 320px;}
+    # 	)
+    # 	24 = TEXT
+    # 	24.value (
+    # 	    .miga {display: none;}
+    # 	)
+    # 	default < .22
+    # }

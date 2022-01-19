@@ -1,0 +1,66 @@
+[globalVar = TSFE:type = 100]
+config {
+	disableAllHeaderCode = 1
+	xhtml_cleaning = none
+	admPanel = 0
+	debug = 0
+	disablePrefixComment = 1
+	metaCharset = utf-8
+	additionalHeaders = Content-Type:text/xml;charset=utf-8
+}
+
+xmlRSS = PAGE
+xmlRSS {
+	typeNum = 100
+	10 < tt_content.list.20.news_pi1
+	10 {
+		switchableControllerActions {
+			News {
+				1 = list
+			}
+		}
+		settings < plugin.tx_news.settings
+		settings {
+			limit = 30
+			detailPid = {$siun.rss.pagina}
+			startingpoint = {$siun.rss.local}
+			format = xml
+		}
+	}
+}
+[global]
+
+[globalVar = TSFE:type = 300]
+config {
+    disableAllHeaderCode = 1
+    xhtml_cleaning = none
+    admPanel = 0
+    disablePrefixComment = 1
+    metaCharset = utf-8
+    additionalHeaders = Content-Type:text/calendar;charset=utf-8
+}
+
+pageNewsICalendar = PAGE
+pageNewsICalendar {
+    typeNum = 300
+    10 < tt_content.list.20.news_pi1
+    10 {
+		switchableControllerActions {
+				News {
+						1 = list
+				}
+		}
+		settings < plugin.tx_news.settings
+		settings {
+				# categories = 9
+				# categoryConjunction = notor
+				limit = 30
+				detailPid = {$siun.rss.pagina}
+				startingpoint = {$siun.rss.local}
+				format = ical
+				domain.data = getEnv:HTTP_HOST
+				useStdWrap = domain
+		}
+    }
+}
+[global]

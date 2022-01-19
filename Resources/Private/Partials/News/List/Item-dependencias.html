@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers" data-namespace-typo3-fluid="true">
+    <li>
+        <n:link newsItem="{newsItem}" settings="{settings}" class="caption">
+    	   {newsItem.title}
+    	</n:link>
+    	<f:if condition="{newsItem.mediaPreviews}">
+    		<f:then>
+    			<f:alias map="{mediaElement: '{newsItem.mediaPreviews.0}'}">
+    				<f:if condition="{mediaElement.originalResource.type} == 2">
+    					<n:link newsItem="{newsItem}" settings="{settings}">
+    						<f:image image="{mediaElement}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.maxWidth)}" maxHeight="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else: settings.list.media.image.maxHeight)}"/>
+    					</n:link>
+    				</f:if>
+    			</f:alias>
+    		</f:then>
+    	</f:if>
+    </li>
+</html>

@@ -1,0 +1,17 @@
+﻿<f:layout name="Default" />
+<f:section name="contenidoPrincipal">
+	<f:render partial="BarraBuscador" arguments="{_all}" />
+	<main class="contenidoPrincipal noticias">
+		<div class="ajuste">
+			<h1>{data.title}</h1>
+		</div>
+		<div class="ajuste">
+			<f:render partial="Columna" arguments="{_all}" />
+			<div class="principal">
+				<f:if condition="{contenido}">
+					<f:format.raw>{contenido}</f:format.raw>
+				</f:if>
+			</div>
+		</div>
+	</main>
+</f:section>

@@ -1,0 +1,142 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers" xmlns:rx="http://typo3.org/ns/Reelworx/RxShariff/ViewHelper" data-namespace-typo3-fluid="true">
+<f:layout name="Detail.html" />
+
+<f:section name="content">
+	<f:if condition="{newsItem}">
+		<f:then>
+			<section class="bloque">
+				<f:if condition="{newsItem.alternativeTitle}">
+					<f:then>
+						<h2>{newsItem.alternativeTitle}</h2>
+					</f:then>
+					<f:else>
+						<h2>{newsItem.title}</h2>
+					</f:else>
+				</f:if>
+				<f:render partial="News/Detail/Opengraph" arguments="{newsItem: newsItem, settings:settings}" />
+				<!-- category -->
+				<f:if condition="{newsItem.categories}">
+					<f:render partial="News/Category/Items" arguments="{categories:newsItem.categories, settings:settings}" />
+				</f:if>
+				<!-- Date & Tags -->
+				<div class="row">
+					<div class="col-sm-4">
+						<p><time datetime="{f:format.date(date:newsItem.datetime,format:'Y-m-d')}"><f:format.date format="%d de %B de %Y">{newsItem.datetime}</f:format.date></time><p>
+					</div>
+					<div class="col-sm-8">
+						<p class="align-right">
+							<f:for each="{newsItem.tags}" as="tag">
+								<f:link.page title="Etiqueta: {tag.title}" class="active" pageUid="{settings.listPid}" additionalParams="{tx_news_pi1:{overwriteDemand:{tags: tag}}}">
+									&nbsp;#{tag.title}
+								</f:link.page>
+							</f:for>
+						</p>
+					</div>
+				</div>
+				<f:if condition="{newsItem.teaser}">
+					<!-- teaser -->
+					<p class="noticiasTeaser">{newsItem.teaser}</p>
+				</f:if>
+
+				<n:renderMedia news="{newsItem}" imgClass="img-responsive" videoClass="video-wrapper" audioClass="audio-wrapper">
+					<f:if condition="{newsItem.contentElements}">
+						<!-- content elements -->
+						<f:cObject typoscriptObjectPath="lib.tx_news.contentElementRendering">{newsItem.contentElementIdList}</f:cObject>
+					</f:if>
+
+					<f:render partial="News/Detail/MediaContainer" arguments="{media: newsItem.media, settings:settings}" />
+
+					<f:format.html>{newsItem.bodytext}</f:format.html>
+				</n:renderMedia>
+
+				<!-- Related news records -->
+				<f:if condition="{newsItem.allRelatedSorted}">
+					<h3><f:translate key="related-news" /></h3>
+					<p></p>
+					<ul>
+						<f:for each="{newsItem.allRelatedSorted}" as="related">
+							<li>
+								<n:link newsItem="{related}" settings="{settings}">{related.title}</n:link><br/>
+								<time datetime="{f:format.date(date:related.datetime,format:'Y-m-d')}"><f:format.date format="%d de %B de %Y">{related.datetime}</f:format.date></time>
+							</li>
+						</f:for>
+					</ul>
+				</f:if>
+				<!-- Related files -->
+				<f:if condition="{newsItem.relatedFiles}">
+					<h3><f:translate key="related-files" /></h3>
+					<p></p>
+					<ul>
+						<f:for each="{newsItem.relatedFiles}" as="relatedFile">
+							<li>
+								<a href="{relatedFile.originalResource.publicUrl -> f:format.htmlspecialchars()}" target="_blank">
+									{f:if(condition:relatedFile.originalResource.title, then:relatedFile.originalResource.title, else:relatedFile.originalResource.name)}
+								</a>
+								&nbsp;[{relatedFile.originalResource.size -> f:format.bytes()}]
+							</li>
+						</f:for>
+					</ul>
+				</f:if>
+				<!-- Related links -->
+				<f:if condition="{newsItem.relatedLinks}">
+					<h3><f:translate key="related-links" /></h3>
+					<p></p>
+					<ul>
+						<f:for each="{newsItem.relatedLinks}" as="relatedLink">
+							<li>
+								<f:link.page pageUid="{relatedLink.uri}" title="{relatedLink.title}" target="{n:targetLink(link:relatedLink.uri)}">{f:if(condition: relatedLink.title, then: relatedLink.title, else: relatedLink.uri)}</f:link.page>
+								<f:if condition="{relatedLink.description}"><p>{relatedLink.description}</p></f:if>
+							</li>
+						</f:for>
+					</ul>
+				</f:if>
+				<div class="noticiasFooter">
+					<!-- <ul class="noticiasRedes">
+						<li>
+							<f:link.external class="noticiasFacebook" title="Compartir en Facebook" uri="http://www.facebook.com/sharer.php?u={n:link(newsItem:newsItem,settings:settings,uriOnly:1,configuration:'{forceAbsoluteUrl:1}')}&t={newsItem.title}" target="_blank"></f:link.external>
+						</li>
+						<li>
+							<f:link.external class="noticiasGoogle" title="Compartir en Google+" uri="https://plus.google.com/share?url={n:link(newsItem:newsItem,settings:settings,uriOnly:1,configuration:'{forceAbsoluteUrl:1}')}" target="_blank"></f:link.external>
+						</li>
+						<li>
+							<f:link.external class="noticiasTwitter" title="Twittear" uri="http://twitter.com/?status={newsItem.title}%20{n:link(newsItem:newsItem,settings:settings,uriOnly:1,configuration:'{forceAbsoluteUrl:1}')}%20via%20@VRI_UN" target="_blank"></f:link.external>
+						</li>
+						<li>
+							<a href="/rss.xml" class="noticiasRSS" title="Suscribirse al canal RSS" target="_blank"></a>
+						</li>
+					</ul> -->
+					<ul class="noticiasNav">
+						<!-- Previous/Next Page -->
+						<n:simplePrevNext pidList="{newsItem.pid}" news="{newsItem}" as="paginated" sortField="tstamp">
+							<f:if condition="{paginated}">
+								<f:if condition="{paginated.next}">
+									<li>
+										<n:link newsItem="{paginated.next}" settings="{settings}" title="{paginated.next.title}">
+											<f:translate key="paginate_previous" />
+										</n:link>
+									</li>
+								</f:if>
+								<f:if condition="{paginated.prev}">
+									<li>
+										<n:link newsItem="{paginated.prev}" settings="{settings}" title="{paginated.prev.title}">
+											<f:translate key="paginate_next" />
+										</n:link>
+									</li>
+								</f:if>
+							</f:if>
+						</n:simplePrevNext>
+						<!-- Link Back -->
+						<li>
+							<f:if condition="{settings.backPid}">
+								<f:link.page pageUid="{settings.backPid}" title="Boletín UN Investiga">
+									<f:translate key="back-link" />
+								</f:link.page>
+							</f:if>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</f:then>
+	</f:if>
+</f:section>
+</html>

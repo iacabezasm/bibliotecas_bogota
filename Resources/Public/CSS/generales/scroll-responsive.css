@@ -1,0 +1,39 @@
+﻿/************************************************************
+Este archivo es una de las hojas de estilos de la plantilla
+de los sitios web del Sistema de Investigación y Extensión
+de la Universidad Nacional de Colombia.
+
+En esta hoja de estilos se define el ajuste para dispositivos
+móviles de los elementos de la plantilla de los sitios web
+tipo scroll.
+*************************************************************/
+
+/* Ajuste para ancho de pantalla menor a 990px */
+
+@media screen and (max-width: 990px) {
+	.ajusteLista {
+		width: 100vw;
+		min-width: 320px;
+		padding: 0 40px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.nubeEmergente .imgs {
+		width: 416px;
+		margin-left: -208px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.nubeEmergente .imgs {
+		width: 216px;
+		margin-left: -108px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.encabezadoPortada h1, .encabezadoPortada h2 {
+		font-size: 1em;
+		line-height: 20px;
+	}
+}

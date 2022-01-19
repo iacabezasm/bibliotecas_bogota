@@ -1,0 +1,20 @@
+lib.contenidoError = RECORDS
+lib.contenidoError {
+	tables = tt_content
+	source = 249
+}
+
+errorPage < page
+errorPage {
+	typeNum = 404
+	10 {
+		file >
+		file = EXT:bibliotecas_unal/Resources/Private/Templates/Default.html
+		variables >
+	}
+	cssInline {
+		40.11 >
+		50 = TEXT
+		50.value = h1{display:none}
+	}
+}

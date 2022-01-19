@@ -1,0 +1,70 @@
+<div class="barraTop"></div>
+<div class="barra">
+	<div class="ajuste">
+		<f:cObject typoscriptObjectPath="lib.logobarra"/>
+		<div class="buscadorUnificado">
+			<div class="logoBuscador">
+				<!-- Buscador Hermes -->
+				<form class="buscador hermes" action="http://www.hermes.unal.edu.co/" method="get" target="_blank">
+					<div class="flecha" onclick="mostrarOcultar('menuBuscador',8000);"></div>
+					<input class="campo" type="text" placeholder="Hermes - Sistema de Información Investigación" name="busq"/>
+					<input class="boton" value="" type="submit"/>
+				</form>
+				<!-- Buscador Bibliotecas -->
+				<form class="buscador descubridor" id="sbEDS" action="" onsubmit="return ebscoHostSearchGo(this);" method="post" target="_blank">
+					<input id="ebscohostwindow" name="ebscohostwindow" value="1" type="hidden"/>
+					<input id="ebscohosturl" name="ebscohosturl" value="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=0&custid=s1229929&groupid=main&profid=eds&mode=all&lang=es&authtype=ip,guest" type="hidden"/>
+					<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" value="db" type="hidden"/>
+					<input id="ebscohostsearchmode" name="ebscohostsearchmode" value="+" type="hidden" />
+					<input id="ebscohostkeywords" name="ebscohostkeywords" value="" type="hidden"/>
+					<input id="searchFieldSelector" name="searchFieldSelector" value="" type="hidden"/>
+					<div class="flecha" onclick="mostrarOcultar('menuBuscador',8000);"></div>
+					<input class="campo" id="ebscohostsearchtext" name="ebscohostsearchtext" autocomplete="off" onkeyup="autocomp()" type="text" placeholder="Descubridor - Sistema Nacional de Bibliotecas"/>
+					<span id="edsSearchWrapper" style="display:none;"></span>
+					<input class="boton" value="" type="submit"/>
+				</form>
+				<!-- Buscador Repositorio -->
+				<form class="buscador bdigital" method="get" action="https://repositorio.unal.edu.co/discover" target="_blank">
+					<div class="flecha" onclick="mostrarOcultar('menuBuscador',8000);"></div>
+					<input class="campo" name="query" placeholder="Repositorio Institucional UN - Bdigital" type="text"/>
+					<input class="boton" value="" type="submit"/>
+				</form>
+				<!-- Buscador Revistas -->
+				<form class="buscador revistas" method="post" action="https://revistas.unal.edu.co/index.php/index/search/search" target="_blank">
+					<div class="flecha" onclick="mostrarOcultar('menuBuscador',8000);"></div>
+					<input class="campo" name="query" value="" type="text" placeholder="Portal de Revistas UN - Bdigital"/>
+					<input class="boton" value="" type="submit"/>
+				</form>
+				<!-- Buscador Librería -->
+				<form class="buscador libreria" action="http://www.uneditorial.com/catalogsearch/result/" method="get" target="_blank">
+					<div class="flecha" onclick="mostrarOcultar('menuBuscador',8000);"></div>
+					<input class="campo" type="text" placeholder="Librería UN - Editorial UN" name="q"/>
+					<input class="boton" value="" type="submit"/>
+				</form>
+			</div>
+			<span>Elija un buscador del <b>SIUN</b></span>
+		</div>
+	</div>
+	<ul id="menuBuscador" style="display:none;">
+		<li id="opcionhermes" onclick="activar('hermes');">
+			<f:image alt="Buscador - Hermes Sistema de Información de la Investigación" src="EXT:bibliotecas_unal/Resources/Public/Images/iconos/buscador/hermes.png" height="20" width="20" title=""/>
+			<span>Buscador - Hermes Sistema de Información de la Investigación</span>
+		</li>
+		<li id="opcionbdigital" onclick="activar('bdigital');">
+			<f:image alt="Buscador - Repositorio Institucional UN - BDigital" src="EXT:bibliotecas_unal/Resources/Public/Images/iconos/buscador/bdigital.png" height="20" width="20" title=""/>
+			<span>Buscador - Repositorio Institucional UN - BDigital</span>
+		</li>
+		<li id="opciondescubridor" onclick="activar('descubridor');">
+			<f:image alt="Buscador - Sistema Nacional de Bibliotecas" src="EXT:bibliotecas_unal/Resources/Public/Images/iconos/buscador/descubridor.png" height="20" width="20" title=""/>
+			<span>Buscador - Sistema Nacional de Bibliotecas</span>
+		</li>
+		<li id="opcionrevistas" onclick="activar('revistas');">
+			<f:image alt="Buscador - Portal de Revistas UN - BDigital" src="EXT:bibliotecas_unal/Resources/Public/Images/iconos/buscador/revistas.png" height="20" width="20" title=""/>
+			<span>Buscador - Portal de Revistas UN - BDigital</span>
+		</li>
+		<li id="opcionlibreria" onclick="activar('libreria');">
+			<f:image alt="Buscador - Librería UN - Editorial UN" src="EXT:bibliotecas_unal/Resources/Public/Images/iconos/buscador/libreria.png" height="20" width="20" title=""/>
+			<span>Buscador - Librería UN - Editorial UN</span>
+		</li>
+	</ul>
+</div>

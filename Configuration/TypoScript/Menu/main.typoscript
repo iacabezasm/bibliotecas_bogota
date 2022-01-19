@@ -1,0 +1,191 @@
+# Menú principal
+menu.main = HMENU
+menu.main {
+	special = directory
+	special.value.data = leveluid:0
+	entryLevel = 0
+	wrap = |
+	1 = TMENU
+	1 {
+		expAll = 1
+		noBlur = 1
+		NO {
+			wrapItemAndSub = <div class="btn-group">|</div>
+			ATagParams = class="btn btn-default dropdown-toggle"
+		}
+		IFSUB = 1
+		IFSUB {
+			wrapItemAndSub = <div class="btn-group">|</div>
+			allWrap = <div class="btn btn-default dropdown-toggle" data-toggle="dropdown">|<span class="caret"></span></div>
+			doNotLinkIt = 1
+		}
+	}
+	2 = TMENU
+	2 {
+		noBlur = 1
+		wrap = <ul class="dropdown-menu">|</ul>
+		NO.wrapItemAndSub = <li>|<span class="caret-right"></span></li>
+	}
+}
+
+# Último ítem del menú principal
+menu.siun = CONTENT
+menu.siun {
+	table = tt_content
+	select {
+		pidInList = 27643
+		uidInList = 34029
+	}
+	renderObj = COA
+	renderObj {
+		wrap = <div class="btn-group">|</div>
+		10 = TEXT
+		10 {
+			field = header
+			wrap = <div class="btn btn-default dropdown-toggle" data-toggle="dropdown">|<span class="caret"></span></div>
+		}
+		20 = HMENU
+		20 {
+			special = list
+			special.value.field = pages
+			1 = TMENU
+			1 {
+				wrap = <ul class="dropdown-menu dropItem-16">|</ul>
+				NO.wrapItemAndSub = <li>|<span class="caret-right"></span></li>
+				NO.ATagParams = target="_blank"
+			}
+		}
+	}
+}
+
+# Menú de secciones para plantilla Scroll
+# http://docs.typo3.org/typo3cms/TyposcriptReference/MenuObjects/Sectionindex/Index.html#menuobj-sectionindex
+menu.scroll = < tt_content.menu.20.3
+menu.scroll {
+	stdWrap.outerWrap = <div class="menu-responsive"><ul>|</ul></div>
+	10 {
+		# A negative value drops the filter "colPos=x" completely.
+		sectionIndex.useColPos = -1
+		sectionIndex.includeHiddenHeaders = 1
+
+		# Field sorting is changed through gridelements, sort first on colPos
+		alternativeSortingField = colPos
+		NO.wrapItemAndSub = <li>|</li>
+	}
+}
+
+# Menú de miga de pan
+menu.miga = COA
+menu.miga {
+	wrap = <nav class="migaDePan">|</nav>
+	10 = TEXT
+	10 {
+		wrap = <div class="icono">|</div>
+		value = <i data-feather="home"></i>
+		stdWrap.typolink {
+			parameter.data = leveluid:0
+		}
+	}
+	20 = HMENU
+	20 {
+		wrap = <div class="ruta"><span>Est&aacute;&nbsp;en: </span>|</div>
+		special = rootline
+		special.range = 0|-1
+		includeNotInMenu = 1
+		1 = TMENU
+		1 {
+			NO = 1
+			NO.allWrap = ||<span> / </span>
+			NO.stdWrap.htmlSpecialChars = 1
+			NO.ATagTitle.field = title
+			CUR = 1
+			CUR.allWrap = ||<span> / </span>
+			CUR.doNotLinkIt = 1
+		}
+	}
+}
+
+# menu.miga2 = COA
+# menu.miga2 {
+# 	wrap = <div class="menu-miga">|</div>
+# 	10 = HMENU
+# 	10 {
+# 		wrap = <div class="menu-miga">|</div>
+# 		special = rootline
+# 		special.range = 0|-1
+# 		includeNotInMenu = 1
+# 		1 = TMENU
+# 		1 {
+# 			NO = 1
+# 			NO.allWrap = <span>Est&aacute;&nbsp;en: </span>||<span> / </span>
+# 			NO.stdWrap.htmlSpecialChars = 1
+# 			NO.ATagTitle.field = title
+# 			CUR = 1
+# 			CUR.allWrap = <span>Est&aacute;&nbsp;en: </span>||<span> / </span>
+# 			CUR.doNotLinkIt = 1
+# 		}
+# 	}
+# 	20 = TEXT
+# 	20 {
+#
+# 	}
+# }
+
+# Menú de idiomas
+menu.idioma = COA
+menu.idioma {
+	wrap = <div class="btn-group languageMenu hidden-xs">|</div>
+	10 = HMENU
+	10 {
+		special = language
+		special {
+			value = 0,1,2,3
+			normalWhenNoLanguage = 0
+		}
+		1 = TMENU
+		1 {
+			NO.doNotShowLink = 1
+			ACT = 1
+			ACT {
+				doNotLinkIt = 1
+				linkWrap = <div class="btn btn-default dropdown-toggle" data-toggle="dropdown">|<span class="caret"></span></div>
+				stdWrap.override = ES || EN || FR || PT
+				stdWrap.typolink >
+			}
+		}
+	}
+	20 = HMENU
+	20 {
+		special = language
+		special {
+			value = 0,1,2,3
+			normalWhenNoLanguage = 0
+		}
+		1 = TMENU
+		1 {
+			wrap = <ul class="dropdown-menu">|</ul>
+			noBlur = 1
+			NO = 1
+			NO {
+				stdWrap.override = ES || EN || FR || PT
+				linkWrap = <li>|</li>
+				doNotLinkIt = 1
+				stdWrap {
+					typolink {
+						parameter.data = page:uid
+						additionalParams = &L=0 || &L=1 || &L=2 || &L=3
+						addQueryString = 1
+						addQueryString.exclude = L,id,cHash,no_cache
+						addQueryString.method = GET
+						useCacheHash = 1
+						no_cache = 0
+					}
+				}
+			}
+			ACT = 1
+			ACT.doNotShowLink = 1
+			USERDEF1 = 1
+			USERDEF1.doNotShowLink = 1
+		}
+	}
+}

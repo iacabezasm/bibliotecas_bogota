@@ -1,0 +1,57 @@
+// [adminUser = 1]
+	# Shows the page id as a prefix of the title !!Only for admin users
+	options.pageTree.showPageIdWithTitle = 1
+	admPanel.override.tsdebug.forceTemplateParsing = 1
+// [GLOBAL]
+
+options {
+	# No alert box ad type change
+	alertPopups = 254
+	pageTree {
+		# Shows the navigation title instead of the title if available
+		showNavTitle = 1
+		backgroundColor {
+			7 = rgba(0, 0, 255, 0.1)
+			27188 = rgba(0, 255, 0, 0.1)
+			28876 < .27188
+			29266 < .27188
+			29274 < .27188
+			29276 < .27188
+			29278 < .27188
+			29280 < .27188
+			29282 < .27188
+			29284 < .27188
+			29286 < .27188
+			29288 < .27188
+			29290 < .27188
+			29292 < .27188
+			29294 < .27188
+			28817 < .27188
+			28719 < .27188
+			28714 < .27188
+			27259 < .27188
+			27306 < .27188
+			27308 < .27188
+			27312 < .27188
+			27314 < .27188
+			28000 < .27188
+			28010 < .27188
+			28019 < .27188
+			28021 < .27188
+			28024 < .27188
+			28048 < .27188
+			28051 < .27188
+			28250 < .27188
+			29296 < .27188
+			29358 < .27188
+			29363 < .27188
+			29365 < .27188
+			29544 < .27188
+			29775 < .27188
+			29805 < .27188
+			30061 < .27188
+			30091 < .27188
+			30120 < .27188
+		}
+	}
+}
