@@ -37,7 +37,7 @@ page.cssInline {
     30 {
         key.data = leveluid:0
         8 = TEXT
-        8.wrap = #buscadorBibliotecas .imagenSede {background: url("/typo3conf/ext/bibliotecas_unal/Resources/Public/Bibliotecas/images/sedes/|.jpg"); background-position: 0 0; background-size: cover;}
+        8.wrap = #buscadorBibliotecas .imagenSede {background: url("/typo3conf/ext/bibliotecas_bogota/Resources/Public/Bibliotecas/images/sedes/|.jpg"); background-position: 0 0; background-size: cover;}
         8.value = amazonia
         9 < .8
         9.value = bogota
@@ -93,7 +93,7 @@ page.cssInline {
     # 		10.value = .imgHome {
     # 		20 = TEXT
     # 		20.value (
-    # 				background: url("/typo3conf/ext/bibliotecas_unal/Resources/Public/Images/fondos/vri.JPG") center no-repeat;
+    # 				background: url("/typo3conf/ext/bibliotecas_bogota/Resources/Public/Images/fondos/vri.JPG") center no-repeat;
     # 		)
     # 		30 = TEXT
     # 		30.value (
@@ -104,19 +104,19 @@ page.cssInline {
     # 	}
     # 	29236 < .29034
     # 	29236.20.value (
-    # 			background: url("/typo3conf/ext/bibliotecas_unal/Resources/Public/Images/fondos/vri") center no-repeat;
+    # 			background: url("/typo3conf/ext/bibliotecas_bogota/Resources/Public/Images/fondos/vri") center no-repeat;
     # 	)
     # 	29237 < .29034
     # 	29237.20.value (
-    # 			background: url("/typo3conf/ext/bibliotecas_unal/Resources/Public/Images/fondos/dnil") center no-repeat;
+    # 			background: url("/typo3conf/ext/bibliotecas_bogota/Resources/Public/Images/fondos/dnil") center no-repeat;
     # 	)
     # 	29238 < .29034
     # 	29238.20.value (
-    # 			background: url("/typo3conf/ext/bibliotecas_unal/Resources/Public/Images/fondos/dnb") center no-repeat;
+    # 			background: url("/typo3conf/ext/bibliotecas_bogota/Resources/Public/Images/fondos/dnb") center no-repeat;
     # 	)
     # 	29239 < .29034
     # 	29239.20.value (
-    # 			background: url("/typo3conf/ext/bibliotecas_unal/Resources/Public/Images/fondos/editorial") center no-repeat;
+    # 			background: url("/typo3conf/ext/bibliotecas_bogota/Resources/Public/Images/fondos/editorial") center no-repeat;
     # 	)
     # 	29806 = TEXT
     #     29806.value (

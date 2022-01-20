@@ -48,7 +48,7 @@ page {
 		# )
 	# }
 	includeCSS {
-		# tipografia = EXT:bibliotecas_unal/Resources/Public/CSS/generales/tipo.css
+		# tipografia = EXT:bibliotecas_bogota/Resources/Public/CSS/generales/tipo.css
 		# Unal
 		unal1 = EXT:bibliotecas_bogota/Resources/Public/Unal/css/bootstrap.min.css
 		unal2 = EXT:bibliotecas_bogota/Resources/Public/Unal/css/bootstrap-theme.min.css
@@ -56,18 +56,18 @@ page {
 		unal4 = EXT:bibliotecas_bogota/Resources/Public/Unal/css/reset.css
 		unal5 = EXT:bibliotecas_bogota/Resources/Public/Unal/css/unal.css
 		# Generales
-		# ajustes = EXT:bibliotecas_unal/Resources/Public/CSS/generales/ajustes.css
-		# general1 = EXT:bibliotecas_unal/Resources/Public/CSS/generales/general.css
-		# general2 = EXT:bibliotecas_unal/Resources/Public/CSS/generales/general-responsive.css
-		# scroll1 = EXT:bibliotecas_unal/Resources/Public/CSS/generales/scroll.css
-		# scroll2 = EXT:bibliotecas_unal/Resources/Public/CSS/generales/scroll-responsive.css
-		# notas = EXT:bibliotecas_unal/Resources/Public/JavaScript/galeria-notas/galeria-notas.css
-		# medios = EXT:bibliotecas_unal/Resources/Public/JavaScript/FlexSlider/flexslider.css
-		# footer = EXT:bibliotecas_unal/Resources/Public/JavaScript/carrusel-destacados/jquery.bxslider.css
-		# lightbox = EXT:bibliotecas_unal/Resources/Public/JavaScript/lightbox/lightbox.css
-		# carrusel1 = EXT:bibliotecas_unal/Resources/Public/JavaScript/carrusel-eventos/owl.carousel.min.css
-		# carrusel2 = EXT:bibliotecas_unal/Resources/Public/JavaScript/carrusel-eventos/owl.theme.default.min.css
-		# galeria = EXT:bibliotecas_unal/Resources/Public/JavaScript/galeria-eventos/estilos.css
+		# ajustes = EXT:bibliotecas_bogota/Resources/Public/CSS/generales/ajustes.css
+		# general1 = EXT:bibliotecas_bogota/Resources/Public/CSS/generales/general.css
+		# general2 = EXT:bibliotecas_bogota/Resources/Public/CSS/generales/general-responsive.css
+		# scroll1 = EXT:bibliotecas_bogota/Resources/Public/CSS/generales/scroll.css
+		# scroll2 = EXT:bibliotecas_bogota/Resources/Public/CSS/generales/scroll-responsive.css
+		# notas = EXT:bibliotecas_bogota/Resources/Public/JavaScript/galeria-notas/galeria-notas.css
+		# medios = EXT:bibliotecas_bogota/Resources/Public/JavaScript/FlexSlider/flexslider.css
+		# footer = EXT:bibliotecas_bogota/Resources/Public/JavaScript/carrusel-destacados/jquery.bxslider.css
+		# lightbox = EXT:bibliotecas_bogota/Resources/Public/JavaScript/lightbox/lightbox.css
+		# carrusel1 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/carrusel-eventos/owl.carousel.min.css
+		# carrusel2 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/carrusel-eventos/owl.theme.default.min.css
+		# galeria = EXT:bibliotecas_bogota/Resources/Public/JavaScript/galeria-eventos/estilos.css
 		# Bibliotecas
 		bibliotecas = EXT:bibliotecas_bogota/Resources/Public/Bibliotecas/css/estilosBibliotecas.css
 		tipografia = EXT:bibliotecas_bogota/Resources/Public/Bibliotecas/css/tipografia.css
@@ -103,30 +103,30 @@ page {
 	includeJS {
 		# Librerías
 		unal1 = EXT:bibliotecas_bogota/Resources/Public/Unal/js/jquery.js
-		# notas1 = EXT:bibliotecas_unal/Resources/Public/JavaScript/galeria-notas/responsiveslides.min.js
-		# medios1 = EXT:bibliotecas_unal/Resources/Public/JavaScript/FlexSlider/jquery.flexslider.js
-		# footer1 = EXT:bibliotecas_unal/Resources/Public/JavaScript/carrusel-destacados/jquery.bxslider.min.js
-		# lightbox1 = EXT:bibliotecas_unal/Resources/Public/JavaScript/lightbox/lightbox.js
-		# carrusel1 = EXT:bibliotecas_unal/Resources/Public/JavaScript/carrusel-eventos/owl.carousel.min.js
-		# galeria1 = EXT:bibliotecas_unal/Resources/Public/JavaScript/galeria-eventos/jquery.slides.min.js
+		# notas1 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/galeria-notas/responsiveslides.min.js
+		# medios1 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/FlexSlider/jquery.flexslider.js
+		# footer1 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/carrusel-destacados/jquery.bxslider.min.js
+		# lightbox1 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/lightbox/lightbox.js
+		# carrusel1 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/carrusel-eventos/owl.carousel.min.js
+		# galeria1 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/galeria-eventos/jquery.slides.min.js
 		# Scripts
 		bibliotecas = EXT:bibliotecas_bogota/Resources/Public/JavaScript/bibliotecas.js
 		unal2 = EXT:bibliotecas_bogota/Resources/Public/Unal/js/unal.js
-		# lib = EXT:bibliotecas_unal/Resources/Public/JavaScript/lib.js
-		# pestana = EXT:bibliotecas_unal/Resources/Public/JavaScript/tabs.js
-		# noticiasBibliotecas = EXT:bibliotecas_unal/Resources/Public/Bibliotecas/js/carruselNoticias.js
+		# lib = EXT:bibliotecas_bogota/Resources/Public/JavaScript/lib.js
+		# pestana = EXT:bibliotecas_bogota/Resources/Public/JavaScript/tabs.js
+		# noticiasBibliotecas = EXT:bibliotecas_bogota/Resources/Public/Bibliotecas/js/carruselNoticias.js
 	}
 	includeJSFooter {
-		# barra = EXT:bibliotecas_unal/Resources/Public/JavaScript/barra.js
-		# buscador = EXT:bibliotecas_unal/Resources/Public/JavaScript/buscador.js
+		# barra = EXT:bibliotecas_bogota/Resources/Public/JavaScript/barra.js
+		# buscador = EXT:bibliotecas_bogota/Resources/Public/JavaScript/buscador.js
 		tablas = EXT:bibliotecas_bogota/Resources/Public/JavaScript/tablas.js
-		# carrusel2 = EXT:bibliotecas_unal/Resources/Public/JavaScript/carrusel.js
-		# footer2 = EXT:bibliotecas_unal/Resources/Public/JavaScript/destacados.js
-		# galeria2 = EXT:bibliotecas_unal/Resources/Public/JavaScript/galeria.js
-		# lightbox3 = EXT:bibliotecas_unal/Resources/Public/JavaScript/contenidoLightbox.js
-		# lightbox2 = EXT:bibliotecas_unal/Resources/Public/JavaScript/lightbox.js
-		# medios2 = EXT:bibliotecas_unal/Resources/Public/JavaScript/agencia.js
-		# notas2 = EXT:bibliotecas_unal/Resources/Public/JavaScript/notas.js
+		# carrusel2 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/carrusel.js
+		# footer2 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/destacados.js
+		# galeria2 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/galeria.js
+		# lightbox3 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/contenidoLightbox.js
+		# lightbox2 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/lightbox.js
+		# medios2 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/agencia.js
+		# notas2 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/notas.js
 		# Bibliotecas
 		acordeon1 = EXT:bibliotecas_bogota/Resources/Public/Acordeon/js/jquery.accordion.js
 		acordeon2 = EXT:bibliotecas_bogota/Resources/Public/Acordeon/js/jquery.easing.1.3.js

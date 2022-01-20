@@ -3,22 +3,22 @@ plugin.tx_news {
 	view {
 		templateRootPaths >
 		templateRootPaths {
-			0 = EXT:bibliotecas_unal/Resources/Private/Extensions/News/Templates/
+			0 = EXT:bibliotecas_bogota/Resources/Private/Extensions/News/Templates/
 		}
 		partialRootPaths >
 		partialRootPaths {
-			0 = EXT:bibliotecas_unal/Resources/Private/Partials/
+			0 = EXT:bibliotecas_bogota/Resources/Private/Partials/
 		}
 		layoutRootPaths >
 		layoutRootPaths {
-			0 = EXT:bibliotecas_unal/Resources/Private/Extensions/News/Layouts/
+			0 = EXT:bibliotecas_bogota/Resources/Private/Extensions/News/Layouts/
 		}
 	}
 	settings {
 		link.skipControllerAndAction = 1
 		list {
 			paginate {
-				templatePath = EXT:bibliotecas_unal/Resources/Private/Extensions/News/Templates/ViewHelpers/Widget/Paginate/Index.html
+				templatePath = EXT:bibliotecas_bogota/Resources/Private/Extensions/News/Templates/ViewHelpers/Widget/Paginate/Index.html
 				insertAbove = 0
 				insertBelow = 1
 				itemsPerPage = 10

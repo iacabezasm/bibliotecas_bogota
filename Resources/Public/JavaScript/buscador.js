@@ -37,7 +37,7 @@
 	document.getElementById("opcion" + seleccion).style.display = "none";
 	
 	// cambia la imagen del buscador
-	// document.getElementById("imgBuscador").setAttribute("src","typo3conf/ext/bibliotecas_unal/Resources/Public/Images/iconos/buscador/" + seleccion + ".png");
+	// document.getElementById("imgBuscador").setAttribute("src","typo3conf/ext/bibliotecas_bogota/Resources/Public/Images/iconos/buscador/" + seleccion + ".png");
 }
 
 var cont;

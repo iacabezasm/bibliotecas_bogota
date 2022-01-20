@@ -121,7 +121,7 @@ RTE.default.preset = bibliotecas
 # 		hideTableOperationsInToolbar = 0
 # 		disableEnterParagraphs = 0
 # 		hidePStyleItems = section
-# 		contentCSS = EXT:bibliotecas_unal/Resources/Public/CSS/generales/backend.css
+# 		contentCSS = EXT:bibliotecas_bogota/Resources/Public/CSS/generales/backend.css
 # 		buttons {
 # 			table {
 # 				removeFieldsets = description,spacing,alignment,borders

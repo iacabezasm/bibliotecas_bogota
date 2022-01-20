@@ -24,7 +24,7 @@ lib.feeds {
 	    }
         10 = USER
         10 {
-    		includeLibs = EXT:bibliotecas_unal/Resources/Public/JavaScript/user_misc.php
+    		includeLibs = EXT:bibliotecas_bogota/Resources/Public/JavaScript/user_misc.php
     		userFunc = user_misc->importRSS
     		ruta = {$siun.noticias.externo}
             }

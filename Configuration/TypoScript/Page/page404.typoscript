@@ -9,7 +9,7 @@ errorPage {
 	typeNum = 404
 	10 {
 		file >
-		file = EXT:bibliotecas_unal/Resources/Private/Templates/Default.html
+		file = EXT:bibliotecas_bogota/Resources/Private/Templates/Default.html
 		variables >
 	}
 	cssInline {

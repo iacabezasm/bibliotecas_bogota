@@ -6,7 +6,7 @@ tt_content.gridelements_pi1 {
 		1 {
 			cObject = FLUIDTEMPLATE
 			cObject {
-				file = EXT:bibliotecas_unal/Resources/Private/Partials/Grids/DosColumnas.html
+				file = EXT:bibliotecas_bogota/Resources/Private/Partials/Grids/DosColumnas.html
 			}
 		}
 		# Contenido + Barra
@@ -14,7 +14,7 @@ tt_content.gridelements_pi1 {
 		2 {
 			cObject = FLUIDTEMPLATE
 			cObject {
-				file = EXT:bibliotecas_unal/Resources/Private/Partials/Grids/ContenidoBarra.html
+				file = EXT:bibliotecas_bogota/Resources/Private/Partials/Grids/ContenidoBarra.html
 			}
 		}
 		# Barra + Contenido
@@ -22,7 +22,7 @@ tt_content.gridelements_pi1 {
 		3 {
 			cObject = FLUIDTEMPLATE
 			cObject {
-				file = EXT:bibliotecas_unal/Resources/Private/Partials/Grids/BarraContenido.html
+				file = EXT:bibliotecas_bogota/Resources/Private/Partials/Grids/BarraContenido.html
 			}
 		}
 		# Tres columnas
@@ -30,7 +30,7 @@ tt_content.gridelements_pi1 {
 		4 {
 			cObject = FLUIDTEMPLATE
 			cObject {
-				file = EXT:bibliotecas_unal/Resources/Private/Partials/Grids/TresColumnas.html
+				file = EXT:bibliotecas_bogota/Resources/Private/Partials/Grids/TresColumnas.html
 			}
 		}
 		# Acordeón
@@ -38,7 +38,7 @@ tt_content.gridelements_pi1 {
 		5 {
 			cObject = FLUIDTEMPLATE
 			cObject {
-				file = EXT:bibliotecas_unal/Resources/Private/Partials/Grids/Acordeon.html
+				file = EXT:bibliotecas_bogota/Resources/Private/Partials/Grids/Acordeon.html
 			}
 			columns.default.renderObj {
 				stdWrap.dataWrap = <li>|</li>
@@ -60,7 +60,7 @@ tt_content.gridelements_pi1 {
 		6 {
 			cObject = FLUIDTEMPLATE
 			cObject {
-				file = EXT:bibliotecas_unal/Resources/Private/Partials/Grids/Carrusel.html
+				file = EXT:bibliotecas_bogota/Resources/Private/Partials/Grids/Carrusel.html
 			}
 			columns.default.renderObj.stdWrap.dataWrap = <div class="item">|</div>
 		}

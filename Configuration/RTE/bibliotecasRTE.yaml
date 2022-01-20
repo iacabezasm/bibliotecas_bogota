@@ -5,7 +5,7 @@ imports:
 
 editor:
     externalPlugins:
-        youtube: { resource: "EXT:bibliotecas_unal/Resources/Public/RTE/Plugins/youtube/plugin.js" }
+        youtube: { resource: "EXT:bibliotecas_bogota/Resources/Public/RTE/Plugins/youtube/plugin.js" }
     config:
         stylesSet:
             # block level styles

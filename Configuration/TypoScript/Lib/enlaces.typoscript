@@ -15,7 +15,7 @@ lib.dominio {
 # # Ícono de acceso al inicio del sitio web
 # lib.casa = IMAGE
 # lib.casa {
-# 	file = EXT:bibliotecas_unal/Resources/Public/Images/iconos/general/casa.png
+# 	file = EXT:bibliotecas_bogota/Resources/Public/Images/iconos/general/casa.png
 # 	stdWrap.typolink {
 # 		parameter.data = leveluid:0
 # 		ATagParams = class="casa"
@@ -27,7 +27,7 @@ lib.dominio {
 # Logo de acceso al inicio del sitio web del SIEUN
 lib.sieun = IMAGE
 lib.sieun {
-	file = EXT:bibliotecas_unal/Resources/Public/Images/logos/sieunHome.png
+	file = EXT:bibliotecas_bogota/Resources/Public/Images/logos/sieunHome.png
 	file {
 		width = 200
 		height = 40
@@ -65,7 +65,7 @@ lib.logobarra {
 		}
 		20 = IMAGE
 		20 {
-			file = EXT:bibliotecas_unal/Resources/Public/Images/iconos/general/logoUN.png
+			file = EXT:bibliotecas_bogota/Resources/Public/Images/iconos/general/logoUN.png
 			altText = Logotipo UN
 		}
 	}
