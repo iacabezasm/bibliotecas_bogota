@@ -23,34 +23,34 @@ page.cssInline {
     20 = CASE
     20 {
         key.data = leveluid:0
-        8 = TEXT
-        8.value.field = title
-        8.stdWrap.wrap = #buscadorBibliotecas .tituloSitio::after {content: "|"}
-        9 < .8
-        10 < .8
-        11 < .8
-        12 < .8
+        11 = TEXT
+        11.value.field = title
+        11.stdWrap.wrap = #buscadorBibliotecas .tituloSitio::after {content: "|"}
+        1 < .8
         13 < .8
         14 < .8
+        15 < .8
+        16 < .8
+        17 < .8
     }
     30 = CASE
     30 {
         key.data = leveluid:0
-        8 = TEXT
-        8.wrap = #buscadorBibliotecas .imagenSede {background: url("/typo3conf/ext/bibliotecas_bogota/Resources/Public/Bibliotecas/images/sedes/|.jpg"); background-position: 0 0; background-size: cover;}
-        8.value = amazonia
-        9 < .8
-        9.value = bogota
-        10 < .8
-        10.value = caribe
-        11 < .8
-        11.value = manizales
+        11 = TEXT
+        11.wrap = #buscadorBibliotecas .imagenSede {background: url("/typo3conf/ext/bibliotecas_bogota/Resources/Public/Bibliotecas/images/sedes/|.jpg"); background-position: 0 0; background-size: cover;}
+        11.value = amazonia
+        1 < .8
+        1.value = bogota
         12 < .8
-        12.value = medellin
+        12.value = caribe
         13 < .8
-        13.value = orinoquia
+        13.value = manizales
         14 < .8
-        14.value = palmira
+        14.value = medellin
+        15 < .8
+        15.value = orinoquia
+        16 < .8
+        16.value = palmira
     }
 }
 
