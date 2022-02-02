@@ -20,38 +20,10 @@ page.cssInline {
 [END]
 
 page.cssInline {
-    20 = CASE
-    20 {
-        key.data = leveluid:0
-        11 = TEXT
-        11.value.field = title
-        11.stdWrap.wrap = #buscadorBibliotecas .tituloSitio::after {content: "|"}
-        1 < .8
-        13 < .8
-        14 < .8
-        15 < .8
-        16 < .8
-        17 < .8
-    }
-    30 = CASE
-    30 {
-        key.data = leveluid:0
-        11 = TEXT
-        11.wrap = #buscadorBibliotecas .imagenSede {background: url("/typo3conf/ext/bibliotecas_bogota/Resources/Public/Bibliotecas/images/sedes/|.jpg"); background-position: 0 0; background-size: cover;}
-        11.value = amazonia
-        1 < .8
-        1.value = bogota
-        12 < .8
-        12.value = caribe
-        13 < .8
-        13.value = manizales
-        14 < .8
-        14.value = medellin
-        15 < .8
-        15.value = orinoquia
-        16 < .8
-        16.value = palmira
-    }
+    20 = TEXT
+    20.value = #buscadorBibliotecas .tituloSitio::after {content: "Sede Bogotá"}
+    30 = TEXT
+    30.value = #buscadorBibliotecas .imagenSede {background: url("/typo3conf/ext/bibliotecas_bogota/Resources/Public/Bibliotecas/images/sedes/bogota.jpg"); background-position: 0 0; background-size: cover;}
 }
 
 # 10 = TEXT
