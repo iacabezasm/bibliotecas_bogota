@@ -590,22 +590,26 @@ li.tarjeta:hover .texto {
 }
 
 #redesSociales ul.listaHorizontal li.redesBibliotecas:nth-child(2) a:hover {
-    color: #3ec5ed;
+    color: #6725aa;
 }
 
 #redesSociales ul.listaHorizontal li.redesBibliotecas:nth-child(3) a:hover {
-    color: #f51c0d;
+    color: #3ec5ed;
 }
 
 #redesSociales ul.listaHorizontal li.redesBibliotecas:nth-child(4) a:hover {
-    color: #94b43b;
+    color: #f51c0d;
 }
 
 #redesSociales ul.listaHorizontal li.redesBibliotecas:nth-child(5) a:hover {
-    color: #f78422;
+    color: #94b43b;
 }
 
 #redesSociales ul.listaHorizontal li.redesBibliotecas:nth-child(6) a:hover {
+    color: #f78422;
+}
+
+#redesSociales ul.listaHorizontal li.redesBibliotecas:nth-child(7) a:hover {
     color: #f8c21c;
 }
 

@@ -13,13 +13,11 @@ siun {
 	### CONFIGURACIÓN DE PÁGINAS ###
 
 	# cat=SIUN: basic/100/100; type=page; label=Servicios:ID de la página de Servicios
-	pagina.servicios = 5
-	# cat=SIUN: basic/100/110; type=page; label=Destacados:ID de la página de Destacados
-	pagina.destacados =
+	pagina.servicios = 6
 	# cat=SIUN: basic/100/120; type=page; label=Logo:Nombre de la imagen del Logo
-	pagina.dominio =
+	pagina.dominio = bibliotecasbogota.unal.edu.co
 	# cat=SIUN: basic/100/130; type=string; label=Url base del sitio
-	pagina.urlBase =
+	pagina.urlBase = https://bibliotecasbogota.unal.edu.co/
 
 	### INFORMACIÓN DE CONTACTO ###
 
@@ -67,19 +65,19 @@ siun {
 	# cat=SIUN: basic/170/100; type=page; label=Portafolio de servicios: Id de la página de Portafolio de servicios del sitio
 	tarjetas.portafolioServicios =
 	# cat=SIUN: basic/170/110; type=page; label=Anuncios, eventos y noticias: Id de la página de Anuncios, eventos y noticias del sitio
-	tarjetas.anunciosEventosNoticias = 113
+	tarjetas.anunciosEventosNoticias =
 	# cat=SIUN: basic/170/120; type=page; label=Agenda de formación: Id de la página de Agenda de formación de la sede
 	tarjetas.agendaFormacion =
 	# cat=SIUN: basic/170/130; type=page; label=Agenda cultural: Id de la página de Agenda cultural de la sede
 	tarjetas.agendaCultural =
 	# cat=SIUN: basic/170/140; type=page; label=Chat con el bibliotecario: Id de la página de Chat con el bibliotecario de la sede
-	tarjetas.chat = 44
+	tarjetas.chat =
 	# cat=SIUN: basic/170/150; type=page; label=Tarjeta 1
-	tarjetas.destacado1 = 246
+	tarjetas.destacado1 =
 	# cat=SIUN: basic/170/160; type=page; label=Tarjeta 2
-	tarjetas.destacado2 = 120
+	tarjetas.destacado2 =
 	# cat=SIUN: basic/170/170; type=page; label=Tarjeta 3
-	tarjetas.destacado3 = 121
+	tarjetas.destacado3 =
 	# cat=SIUN: basic/170/180; type=page; label=Tarjeta 4
-	tarjetas.destacado4 = 122
+	tarjetas.destacado4 =
 }
