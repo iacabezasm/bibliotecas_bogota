@@ -15,8 +15,8 @@ page.10.variables {
     redesSocialesEmail.value = {$siun.redesSociales.email}
     redesSocialesFacebook = TEXT
     redesSocialesFacebook.value = {$siun.redesSociales.facebook}
-    redesSocialesGoogle = TEXT
-    redesSocialesGoogle.value = {$siun.redesSociales.google}
+    redesSocialesInstagram = TEXT
+    redesSocialesInstagram.value = {$siun.redesSociales.instagram}
     redesSocialesLinkedin = TEXT
     redesSocialesLinkedin.value = {$siun.redesSociales.linkedin}
     redesSocialesRss = TEXT

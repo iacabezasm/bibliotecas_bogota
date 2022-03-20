@@ -6,9 +6,6 @@
 # customsubcategory=100=CONFIGURACIÓN DE PÁGINAS
 # customsubcategory=110=INFORMACIÓN DE CONTACTO
 # customsubcategory=120=REDES SOCIALES
-# customsubcategory=130=CÓDIGO GOOGLE ANALYTICS
-# customsubcategory=140=NOTICIAS
-# customsubcategory=150=ESTILO
 # customsubcategory=160=RSS
 # customsubcategory=170=TARJETAS
 
@@ -23,25 +20,21 @@ siun {
 	pagina.dominio =
 	# cat=SIUN: basic/100/130; type=string; label=Url base del sitio
 	pagina.urlBase =
-	# cat=SIUN: basic/100/140; type=string; label=Título en el logotipo ubicado en la barra del buscador
-	pagina.logoBarraTitulo = investigación
-	# cat=SIUN: basic/100/150; type=string; label=Subtítulo en el logotipo ubicado en la barra del buscador
-	pagina.logoBarraSubtitulo =
 
 	### INFORMACIÓN DE CONTACTO ###
 
 	# cat=SIUN: basic/110/100; type=string; label=Ciudad
 	contact.ciudad = Bogotá D.C., Colombia
 	# cat=SIUN: basic/110/110; type=string; label=Direccion
-	contact.direccion = Av. El Dorado 44A 40
+	contact.direccion = Carrera 30 # 45 - 03
 	# cat=SIUN: basic/110/120; type=string; label=Edificio
-	contact.edificio = Hemeroteca Nacional Universitaria
+	contact.edificio = Biblioteca Gabriel García Márquez
 	# cat=SIUN: basic/110/130; type=string; label=Teléfono
-	contact.telefono = (+57 1) 316 5000 Ext. 20 004
+	contact.telefono = (+57 1) 316 5000 Ext. 17 416
 	# cat=SIUN: basic/110/140; type=string; label=Webmaster:Correo electrónico del Webmaster
-	contact.webmaster = dirsinab@unal.edu.co
+	contact.webmaster = bibteca_bog@unal.edu.co
 	# cat=SIUN: basic/110/150; type=page; label=Acerca de:ID Página Acerca del sitio web
-	contact.acercaDe = 15
+	contact.acercaDe = 9
 
 	### REDES SOCIALES ###
 
@@ -49,8 +42,8 @@ siun {
 	redesSociales.email = dirsinab@unal.edu.co
 	# cat=SIUN: basic/120/110; type=string; label=Facebook
 	redesSociales.facebook = https://es-es.facebook.com/dirsinab
-	# cat=SIUN: basic/120/120; type=string; label=Google
-	redesSociales.google =
+	# cat=SIUN: basic/120/120; type=string; label=Instagram
+	redesSociales.instagram = https://twitter.com/unbogotabiblio
 	# cat=SIUN: basic/120/130; type=string; label=LinkedIn
 	redesSociales.linkedin =
 	# cat=SIUN: basic/120/140; type=string; label=RSS
@@ -59,23 +52,6 @@ siun {
 	redesSociales.twitter = https://twitter.com/dirsinab
 	# cat=SIUN: basic/120/160; type=string; label=YouTube
 	redesSociales.youtube = https://www.youtube.com/user/CanalSinab
-
-	### CÓDIGO GOOGLE ANALYTICS ###
-
-	# cat=SIUN: basic/130/100; type=string; label=Analytics: Código de Google Analytics. Por ejemplo: UA-58850047-1
-	analytics =
-
-	### NOTICIAS ###
-
-	# cat=SIUN: basic/140/100; type=string; label=Noticias externas: URL al canal RSS de noticias externas
-	noticias.externo = fileadmin/rss/agenciadenoticias.xml
-
-	### ESTILO ###
-
-	# cat=SIUN: basic/150/100; type=string; label=Color principal
-	estilo.color1 =
-	# cat=SIUN: basic/150/110; type=string; label=Color secundario
-	estilo.color2 =
 
 	### RSS ###
 
