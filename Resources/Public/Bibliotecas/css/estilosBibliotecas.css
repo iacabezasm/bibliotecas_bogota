@@ -533,18 +533,20 @@ li.tarjeta:hover .texto {
 
 #atajosBibliotecas ul.listaHorizontal li.atajoBibliotecas {
     margin: 0.5em;
+    display: flex;
 }
 
 #atajosBibliotecas ul.listaHorizontal li.atajoBibliotecas a {
-    width: 140px;
+    /* width: 140px; */
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-style: italic;
+    font-style: normal;
+    font-weight: bold;
 }
 
 #atajosBibliotecas ul.listaHorizontal li.atajoBibliotecas a img {
-    max-width: 48px;
+    max-width: 62px;
     height: auto;
     filter: url("#filtroGris");
 }
