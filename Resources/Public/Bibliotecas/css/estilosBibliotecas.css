@@ -146,22 +146,23 @@ li.tarjeta:hover .texto {
 }
 
 #buscadorBibliotecas .tituloSitio img {
-    max-width: 90px;
+    max-width: 145px;
     height: auto;
 }
 
 #buscadorBibliotecas .tituloSitio::after {
     position: absolute;
     bottom: 0.75em;
-    right: 90px;
+    right: 145px;
     text-align: right;
     text-transform: uppercase;
     color: #e15e42;
 }
 
 #buscadorBibliotecas .titulo {
-    font-family: "Ancizar serif";
-    font-style: italic;
+    font-family: "Ancizar sans";
+    font-style: normal;
+    font-weight: bold;
     font-size: 2.75em;
     color: #fff;
 }
