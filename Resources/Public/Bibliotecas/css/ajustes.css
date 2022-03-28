@@ -1,16 +1,3 @@
-#bloqueContenidosInteriores .ce-gallery .ce-row {
-    display: flex;
-}
-
-#bloqueContenidosInteriores .ce-gallery .ce-row figure.image {
-    text-align: center;
-}
-
-#bloqueContenidosInteriores .ce-gallery + .ce-bodytext,
-#bloqueContenidosInteriores .ce-bodytext + .ce-gallery {
-    margin-top: 1em;
-}
-
 /******************************************************/
 /***                 Manual de marca                ***/
 /******************************************************/

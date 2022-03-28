@@ -138,6 +138,52 @@ h6 {
     text-align: left;
 }
 
+/* Texto con imagen */
+
+#bloqueContenidosInteriores .ce-gallery + .ce-bodytext,
+#bloqueContenidosInteriores .ce-bodytext + .ce-gallery {
+    margin-top: 1em;
+}
+
+#bloqueContenidosInteriores .frame-type-textpic .ce-above.ce-center .ce-gallery .ce-row,
+#bloqueContenidosInteriores .frame-type-textpic .ce-below.ce-center .ce-gallery .ce-row {
+    display: flex;
+    justify-content: center;
+}
+
+#bloqueContenidosInteriores .frame-type-textpic .ce-above.ce-left .ce-gallery .ce-row,
+#bloqueContenidosInteriores .frame-type-textpic .ce-below.ce-left .ce-gallery .ce-row {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#bloqueContenidosInteriores .frame-type-textpic .ce-above.ce-right .ce-gallery .ce-row,
+#bloqueContenidosInteriores .frame-type-textpic .ce-below.ce-right .ce-gallery .ce-row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#bloqueContenidosInteriores .frame-type-textpic .ce-nowrap.ce-left,
+#bloqueContenidosInteriores .frame-type-textpic .ce-nowrap.ce-right {
+    display: flex;
+}
+
+#bloqueContenidosInteriores .frame-type-textpic .ce-nowrap.ce-left .ce-gallery {
+    order: 1;
+}
+
+#bloqueContenidosInteriores .frame-type-textpic .ce-nowrap.ce-left .ce-bodytext {
+    order: 2;
+}
+
+#bloqueContenidosInteriores .frame-type-textpic .ce-nowrap.ce-right .ce-gallery {
+    order: 2;
+}
+
+#bloqueContenidosInteriores .frame-type-textpic .ce-nowrap.ce-right .ce-bodytext {
+    order: 1;
+}
+
 /* Listas */
 
 #bloqueContenidosInteriores ul {
