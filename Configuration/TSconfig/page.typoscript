@@ -26,6 +26,8 @@ TCEFORM.tt_content {
     imagewidth.disabled = 1
     imageheight.disabled = 1
     section_frame.disabled = 1
+	# Disable img orientation
+	imageorient.removeItems = 9, 10
     # Limit column selection
     imagecols.keepItems = 1, 2, 3, 4
     imagecols.types.textpic.keepItems = 1, 2
