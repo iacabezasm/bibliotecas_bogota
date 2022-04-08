@@ -87,7 +87,7 @@ page {
 		20.value = <script src="https://unpkg.com/feather-icons"></script>
 		# 20 = Título de Noticias en Lib/Noticias.ts
 		30 = TEXT
-		30.value = <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53835955-1"></script>
+		30.value = <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFBYPFPPL0"></script>
 		40 = TEXT
 		40 {
 			value (
@@ -95,7 +95,7 @@ page {
 					window.dataLayer = window.dataLayer || [];
 					function gtag(){dataLayer.push(arguments);}
 					gtag('js', new Date());
-					gtag('config', 'UA-53835955-1');
+					gtag('config', 'G-CFBYPFPPL0');
 				</script>
 			)
 		}
