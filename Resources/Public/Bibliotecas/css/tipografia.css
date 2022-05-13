@@ -122,19 +122,23 @@ h6 {
     font-style: italic;
 }
 
-#bloqueContenidosInteriores .align-center {
-    text-align: center;
+#bloqueContenidosInteriores .align-center,
+#bloqueContenidosInteriores .text-center {
+text-align: center;
 }
 
-#bloqueContenidosInteriores .align-justify {
+#bloqueContenidosInteriores .align-justify,
+#bloqueContenidosInteriores .text-justify {
     text-align: justify;
 }
 
-#bloqueContenidosInteriores .align-right {
+#bloqueContenidosInteriores .align-right,
+#bloqueContenidosInteriores .text-right {
     text-align: right;
 }
 
-#bloqueContenidosInteriores .align-left {
+#bloqueContenidosInteriores .align-left,
+#bloqueContenidosInteriores .text-left {
     text-align: left;
 }
 
