@@ -124,22 +124,22 @@ h6 {
 
 #bloqueContenidosInteriores .align-center,
 #bloqueContenidosInteriores .text-center {
-text-align: center;
+    text-align: center !important;
 }
 
 #bloqueContenidosInteriores .align-justify,
 #bloqueContenidosInteriores .text-justify {
-    text-align: justify;
+    text-align: justify !important;
 }
 
 #bloqueContenidosInteriores .align-right,
 #bloqueContenidosInteriores .text-right {
-    text-align: right;
+    text-align: right !important;
 }
 
 #bloqueContenidosInteriores .align-left,
 #bloqueContenidosInteriores .text-left {
-    text-align: left;
+    text-align: left !important;
 }
 
 /* Texto con imagen */
