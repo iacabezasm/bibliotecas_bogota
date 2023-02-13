@@ -10,12 +10,10 @@ page {
 			key.override.field = backend_layout
 			default = TEXT
 			default.value = EXT:bibliotecas_bogota/Resources/Private/Templates/Bibliotecas/interior.html
-			1 = TEXT
-			1.value = EXT:bibliotecas_bogota/Resources/Private/Templates/Bibliotecas/sitio.html
+			1 =  TEXT
+			1.value = EXT:bibliotecas_bogota/Resources/Private/Templates/Bibliotecas/subsitio.html
 			2 =  TEXT
-			2.value = EXT:bibliotecas_bogota/Resources/Private/Templates/Bibliotecas/subsitio.html
-			3 =  TEXT
-			3.value = EXT:bibliotecas_bogota/Resources/Private/Templates/Bibliotecas/interior.html
+			2.value = EXT:bibliotecas_bogota/Resources/Private/Templates/Bibliotecas/interior.html
 		}
 		variables {
 			contenido < styles.content.get
