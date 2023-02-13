@@ -10,12 +10,12 @@ page {
 			key.override.field = backend_layout
 			default = TEXT
 			default.value = EXT:bibliotecas_bogota/Resources/Private/Templates/Bibliotecas/interior.html
-			# 1 = TEXT
-			# 1.value = EXT:bibliotecas_bogota/Resources/Private/Templates/Bibliotecas/sitio.html
-			1 =  TEXT
-			1.value = EXT:bibliotecas_bogota/Resources/Private/Templates/Bibliotecas/subsitio.html
+			1 = TEXT
+			1.value = EXT:bibliotecas_bogota/Resources/Private/Templates/Bibliotecas/sitio.html
 			2 =  TEXT
-			2.value = EXT:bibliotecas_bogota/Resources/Private/Templates/Bibliotecas/interior.html
+			2.value = EXT:bibliotecas_bogota/Resources/Private/Templates/Bibliotecas/subsitio.html
+			3 =  TEXT
+			3.value = EXT:bibliotecas_bogota/Resources/Private/Templates/Bibliotecas/interior.html
 		}
 		variables {
 			contenido < styles.content.get
@@ -50,11 +50,13 @@ page {
 	includeCSS {
 		# tipografia = EXT:bibliotecas_bogota/Resources/Public/CSS/generales/tipo.css
 		# Unal
-		unal1 = EXT:bibliotecas_bogota/Resources/Public/Unal/css/bootstrap.min.css
-		unal2 = EXT:bibliotecas_bogota/Resources/Public/Unal/css/bootstrap-theme.min.css
-		unal3 = EXT:bibliotecas_bogota/Resources/Public/Unal/css/printer.css
-		unal4 = EXT:bibliotecas_bogota/Resources/Public/Unal/css/reset.css
-		unal5 = EXT:bibliotecas_bogota/Resources/Public/Unal/css/unal.css
+		unal1 = EXT:bibliotecas_bogota/Resources/Public/Unal/css/frontend.css
+		unal2 = EXT:bibliotecas_bogota/Resources/Public/Unal/css/accesibilidad.css
+		unal3 = EXT:bibliotecas_bogota/Resources/Public/Unal/css/bootstrap.min.css
+		unal4 = EXT:bibliotecas_bogota/Resources/Public/Unal/css/bootstrap-theme.min.css
+		unal5 = EXT:bibliotecas_bogota/Resources/Public/Unal/css/reset.css
+		unal6 = EXT:bibliotecas_bogota/Resources/Public/Unal/css/unal.css
+		unal7 = EXT:bibliotecas_bogota/Resources/Public/Unal/css/printer.css
 		# Generales
 		# ajustes = EXT:bibliotecas_bogota/Resources/Public/CSS/generales/ajustes.css
 		# general1 = EXT:bibliotecas_bogota/Resources/Public/CSS/generales/general.css
@@ -75,6 +77,7 @@ page {
 		ajustes = EXT:bibliotecas_bogota/Resources/Public/Bibliotecas/css/ajustes.css
 		feather = EXT:bibliotecas_bogota/Resources/Public/Bibliotecas/css/feather.css
 		acordeon = EXT:bibliotecas_bogota/Resources/Public/Acordeon/css/acordeon.css
+		ancizar = EXT:bibliotecas_bogota/Resources/Public/Bibliotecas/css/ancizar.css
 	}
 	javascriptLibs {
 		# jQuery = 1
@@ -103,6 +106,9 @@ page {
 	includeJS {
 		# Librerías
 		unal1 = EXT:bibliotecas_bogota/Resources/Public/Unal/js/jquery.js
+		unal2 = EXT:bibliotecas_bogota/Resources/Public/Unal/js/unal.js
+		unal3 = EXT:bibliotecas_bogota/Resources/Public/Unal/js/accesibilidad.js
+		unal4 = EXT:bibliotecas_bogota/Resources/Public/Unal/js/bootstrap.bundle.min.js
 		# notas1 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/galeria-notas/responsiveslides.min.js
 		# medios1 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/FlexSlider/jquery.flexslider.js
 		# footer1 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/carrusel-destacados/jquery.bxslider.min.js
@@ -111,7 +117,6 @@ page {
 		# galeria1 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/galeria-eventos/jquery.slides.min.js
 		# Scripts
 		bibliotecas = EXT:bibliotecas_bogota/Resources/Public/JavaScript/bibliotecas.js
-		unal2 = EXT:bibliotecas_bogota/Resources/Public/Unal/js/unal.js
 		# lib = EXT:bibliotecas_bogota/Resources/Public/JavaScript/lib.js
 		# pestana = EXT:bibliotecas_bogota/Resources/Public/JavaScript/tabs.js
 		# noticiasBibliotecas = EXT:bibliotecas_bogota/Resources/Public/Bibliotecas/js/carruselNoticias.js

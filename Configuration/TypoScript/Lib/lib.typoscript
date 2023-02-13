@@ -64,7 +64,7 @@ lib.bannerTS {
 lib.servicios = CONTENT
 lib.servicios {
 	table = tt_content
-	wrap = <div id="services"><div class="indicator hidden-xs"></div><ul class="dropdown-menu">|</ul></div>
+	wrap = <div id="services"><div class="indicator d-none d-md-block"></div><ul class="dropdown-menu" id="servicios">|</ul></div>
 	select {
 		pidInList = {$siun.pagina.servicios}
 		orderBy = sorting
@@ -91,7 +91,8 @@ lib.servicios {
 				20 = TEXT
 				20 {
 					field = header
-					wrap = <p>|</p>
+					# wrap = <p>|</p>
+					wrap = |
 				}
 			}
 			stdWrap.typolink {

@@ -1,55 +1,117 @@
 <header id="unalTop">
 	<div class="logo">
 		<a href="http://unal.edu.co">
-		<!--[if (gte IE 9)|!(IE)]><!-->
+			<!--[if (gte IE 9)|!(IE)]><!-->
 			<svg width="93%" height="93%">
-				<image xlink:href="typo3conf/ext/bibliotecas_bogota/Resources/Public/Unal/images/escudoUnal.svg" width="100%" height="100%" class="hidden-print"></image>
+				<image xlink:href="typo3conf/ext/bibliotecas_unal/Resources/Public/Unal/images/escudoUnal.svg" width="100%" height="100%" class="hidden-print"></image>
 			</svg>
-		<!--<![endif]-->
-		<!--[if lt IE 9]>
+			<!--<![endif]-->
+			<!--[if lt IE 9]>
 			<img src="EXT:bibliotecas_bogota/Resources/Public/Unal/images/escudoUnal.png" width="93%" height="auto" alt="Escudo Universidad Nacional de Colombia" class="hidden-print"/>
-		<![endif]-->
-			<img src="EXT:bibliotecas_bogota/Resources/Public/Unal/images/escudoUnal_black.png" alt="Escudo Universidad Nacional de Colombia" class="visible-print">
+			<![endif]-->
+			<img src="EXT:bibliotecas_bogota/Resources/Public/Unal/images/escudoUnal_black.png" alt="Escudo Universidad Nacional de Colombia" class="d-none d-print-block">
 		</a>
 	</div>
 	<div class="seal">
-		<f:image class="hidden-print" alt="Escudo de la República de Colombia" src="EXT:bibliotecas_bogota/Resources/Public/Unal/images/sealColombia.png" width="66" height="66" title="Escudo de la República de Colombia"/>
-		<f:image class="visible-print" alt="Escudo de la República de Colombia" src="EXT:bibliotecas_bogota/Resources/Public/Unal/images/sealColombia_black.png" width="66" height="66" title="Escudo de la República de Colombia"/>
+		<f:image class="hidden-print" alt="Escudo de la República de Colombia" src="EXT:bibliotecas_bogota/Resources/Public/Unal/images/sealColombia.png" width="66" height="66" title="Escudo de la República de Colombia" />
+		<f:image class="d-none d-print-block" alt="Escudo de la República de Colombia" src="EXT:bibliotecas_bogota/Resources/Public/Unal/images/sealColombia_black.png" width="66" height="66" title="Escudo de la República de Colombia" />
 	</div>
-	<div class="firstMenu">
-		<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button>
-		<f:cObject typoscriptObjectPath="menu.idioma"/>
-		<ul class="socialLinks hidden-xs">
-			<li><a href="mailto:{redesSocialesEmail}" target="_blank" class="email" title="Correo electrónico oficial"></a></li>
-			<li><a href="{redesSocialesFacebook}" target="_blank" class="facebook" title="Cuenta oficial en Facebook"></a></li>
-			<f:if condition="{redesSocialesGoogle}">
-				<li><a href="{redesSocialesGoogle}" target="_blank" class="google" title="Cuenta oficial en Google+"></a></li>
-			</f:if>
-			<f:if condition="{redesSocialesLinkedin}">
-				<li><a href="{redesSocialesLinkedin}" target="_blank" class="linkedin" title="Cuenta oficial en LinkedIn"></a></li>
-			</f:if>
-			<li><a href="{redesSocialesRss}" target="_blank" class="rss" title="Suscripción a canales de información RSS"></a></li>
-			<li><a href="{redesSocialesTwitter}" target="_blank" class="twitter" title="Cuenta oficial en Twitter"></a></li>
-			<li><a href="{redesSocialesYoutube}" target="_blank" class="youtube" title="Canal oficial en YouTube"></a></li>
-		</ul>
-	</div>
-	<div id="bs-navbar" class="navbar-collapse collapse navigation">
-		<div class="site-url">
-			<f:cObject typoscriptObjectPath="lib.dominio"/>
+	<div class="firstMenu d-none d-md-block">
+		<div class="content-fluid">
+			<nav class="navbar navbar-expand-md nav navbar-dark">
+				<div class=" collapse navbar-collapse navbar-default" id="navbarSupportedContent">
+					<nav id="profiles">
+						<ul class="mr-auto nav justify-content-end">
+							<!-- <ul class="navbar-nav mr-auto nav justify-content-end"> -->
+							<li class="nav-item item_Aspirantes #>"><a href="http://aspirantes.unal.edu.co">Aspirantes</a></li>
+							<li class="nav-item item_Estudiantes #>"><a href="http://estudiantes.unal.edu.co">Estudiantes</a></li>
+							<li class="nav-item item_Egresados #>"><a href="http://egresados.unal.edu.co">Egresados</a></li>
+							<li class="nav-item item_Docentes #>"><a href="http://docentes.unal.edu.co">Docentes</a></li>
+							<li class="nav-item item_Administrativos #>"><a href="http://administrativos.unal.edu.co">Administrativos</a></li>
+						</ul>
+					</nav>
+				</div>
+				<ul class="socialLinks d-none d-md-block">
+					<li><a href="mailto:{redesSocialesEmail}" target="_blank" class="email" title="Correo electrónico oficial"></a></li>
+					<li><a href="{redesSocialesFacebook}" target="_blank" class="facebook" title="Cuenta oficial en Facebook"></a></li>
+					<f:if condition="{redesSocialesGoogle}"><li><a href="{redesSocialesGoogle}" target="_blank" class="google" title="Cuenta oficial en Google+"></a></li></f:if>
+					<f:if condition="{redesSocialesLinkedin}"><li><a href="{redesSocialesLinkedin}" target="_blank" class="linkedin" title="Cuenta oficial en LinkedIn"></a></li></f:if>
+					<li><a href="{redesSocialesRss}" target="_blank" class="rss" title="Suscripción a canales de información RSS"></a></li>
+					<li><a href="{redesSocialesTwitter}" target="_blank" class="twitter" title="Cuenta oficial en Twitter"></a></li>
+					<li><a href="{redesSocialesYoutube}" target="_blank" class="youtube" title="Canal oficial en YouTube"></a></li>
+				</ul>
+				<f:cObject typoscriptObjectPath="menu.idioma" />
+			</nav>
 		</div>
-		<div class="buscador">
+	</div>
+	<div id="bs-navbar" class="navigation d-none d-md-block">
+		<div class="site-url" id="subdominio">
+			<f:cObject typoscriptObjectPath="lib.dominio" />
+		</div>
+		<div class="buscador" id="buscador">
 			<div class="gcse-searchbox-only" data-resultsUrl="http://unal.edu.co/resultados-de-la-busqueda/" data-newWindow="true"></div>
 		</div>
-		<div class="mainMenu">
-			<f:cObject typoscriptObjectPath="menu.main"/>
-			<f:cObject typoscriptObjectPath="menu.siun"/>
+		<div class="navbar-dark mainMenu" id="main_menu_container">
+			<f:cObject typoscriptObjectPath="menu.main" />
+			<f:cObject typoscriptObjectPath="menu.siun" />
 		</div>
-		<div class="btn-group hidden-sm hidden-md hidden-lg hidden-print">
-			<div class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="unalOpenMenuServicios" data-target="#services">Servicios<span class="caret"></span></div>
+		<div class="btn-group d-none">
+			<div class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="navbarSupportedContent" data-target="#services">Servicios<span class="caret"></span></div>
+		</div>
+		<div class="btn-group d-none">
+			<div class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="navbarSupportedContent" data-target="#profiles">Perfiles<span class="caret"></span></div>
 		</div>
 	</div>
+	<nav class="navbar navbar-light light-blue lighten-4 main_menu">
+		<a class="navbar-brand d-block d-md-none" href="#"></a>
+		<button class="navbar-toggler collapsed d-block d-md-none" type="button" data-toggle="collapse" data-target="#navbar_content" aria-controls="navbar_content" aria-expanded="false" aria-label="Toggle navigation" id="btn_hamburguer"></button>
+		<div class="collapse navbar-collapse" id="navbar_content">
+			<div class="site-url" id="container_subdominio_mobil"></div>
+			<div class="buscador" id="container_buscador_mobil"></div>
+			<div id="container_mainmenu_mobil"></div>
+			<div class="btn-group d-block d-md-none hidden-print">
+				<div class="btn btn-default dropdown-toggle" data-toggle="collapse" data-target="#container_sedes_mobil" aria-controls="container_sedes_mobil">Sedes<span class="caret"> </span></div>
+			</div>
+			<div class="collapse" id="container_sedes_mobil"></div>
+			<div class="btn-group d-block d-md-none hidden-print">
+				<div class="btn btn-default dropdown-toggle" data-toggle="collapse" data-target="#container_servicios_mobil" aria-controls="container_servicios_mobil">Servicios<span class="caret"> </span></div>
+			</div>
+			<div class="collapse" id="container_servicios_mobil"></div>
+			<div class="btn-group d-block d-md-none hidden-print">
+				<div class="btn btn-default dropdown-toggle" data-toggle="collapse" data-target="#container_profiles_mobil" aria-controls="container_profiles_mobil">Perfiles<span class="caret"> </span></div>
+			</div>
+			<div class="collapse" id="container_profiles_mobil"></div>
+		</div>
+	</nav>
 </header>
+<div class="tx-unal-accesibilidad">
+	<div id="panel-accesibilidad" style="display:none" class="panel-content container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-3 ">
+						<h4>Tamaño letra</h4>
+						<button class="boton-panel" id="letra-disminuir" onclick="cambiarTamanioLetra('-')" type="submit" name="" value="">A<sup>-</sup></button>
+						<button class="boton-panel" id="letra-aumentar" onclick="cambiarTamanioLetra('+')" type="submit" name="" value="">A<sup>+</sup></button>
+						<input disabled="1" class="letras-porcentaje" id="letter-percent" type="text" name="" value="100%">
+					</div>
+					<div class="col-md-3 ">
+						<h4>Cambiar Contrastes</h4>
+						<button class="boton-panel" id="contraste-1" onclick="cambiarContrastes(1)" type="submit" name="" value="">1</button>
+						<button class="boton-panel" id="contraste-2" onclick="cambiarContrastes(2)" type="submit" name="" value="">2</button>
+						<button class="boton-panel" id="contrate-3" onclick="cambiarContrastes(3)" type="submit" name="" value="">3</button>
+					</div>
+					<div class="col-md-3 ">
+						<h4>Invertir colores</h4>
+						<button class="boton-panel" id="inversor" onclick="invertirColores()" type="submit" name="" value="">Aplicar</button>
+					</div>
+					<div class="col-md-3">
+						<h4>Restablecer ajustes</h4>
+						<button class="boton-panel" id="defaul-config" onclick="defaultConfig()" type="submit" name="" value="">Aplicar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="pestania-accesibilidad" class="">Panel de Accesibilidad</div>
+</div>

@@ -14,7 +14,7 @@ lib.contacto = TEXT
 lib.contacto.value (
 	{$siun.contact.direccion}<br/>
 	{$siun.contact.edificio}<br/>
-	{$siun.contact.ciudad}, Colombia<br/>
+	{$siun.contact.ciudad}<br/>
 	{$siun.contact.telefono}
 )
 

@@ -11,7 +11,7 @@ menu.main {
 		noBlur = 1
 		NO {
 			wrapItemAndSub = <div class="btn-group">|</div>
-			ATagParams = class="btn btn-default dropdown-toggle"
+			ATagParams = class="btn btn-default"
 		}
 		IFSUB = 1
 		IFSUB {
@@ -24,7 +24,8 @@ menu.main {
 	2 {
 		noBlur = 1
 		wrap = <ul class="dropdown-menu">|</ul>
-		NO.wrapItemAndSub = <li>|<span class="caret-right"></span></li>
+		NO.wrapItemAndSub = <li>|</li>
+		NO.ATagParams = class="dropdown-item"
 	}
 }
 
@@ -38,7 +39,7 @@ menu.siun {
 	}
 	renderObj = COA
 	renderObj {
-		wrap = <div class="btn-group">|</div>
+		wrap = <div class="btn-group menu_sedes">|</div>
 		10 = TEXT
 		10 {
 			field = header
@@ -50,8 +51,9 @@ menu.siun {
 			special.value.field = pages
 			1 = TMENU
 			1 {
-				wrap = <ul class="dropdown-menu dropItem-16">|</ul>
+				wrap = <ul class="dropdown-menu" id="sedes">|</ul>
 				NO.wrapItemAndSub = <li>|<span class="caret-right"></span></li>
+				NO.ATagParams = class="dropdown-item"
 				NO.ATagParams = target="_blank"
 			}
 		}
@@ -134,7 +136,7 @@ menu.miga {
 # Menú de idiomas
 menu.idioma = COA
 menu.idioma {
-	wrap = <div class="btn-group languageMenu hidden-xs">|</div>
+	wrap = <div class="collapse btn-group languageMenu d-none d-md-block">|</div>
 	10 = HMENU
 	10 {
 		special = language
@@ -163,7 +165,7 @@ menu.idioma {
 		}
 		1 = TMENU
 		1 {
-			wrap = <ul class="dropdown-menu">|</ul>
+			wrap = <ul class="dropdown-menu dropdown-menu-right">|</ul>
 			noBlur = 1
 			NO = 1
 			NO {

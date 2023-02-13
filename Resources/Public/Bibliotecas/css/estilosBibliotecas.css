@@ -112,6 +112,7 @@ li.tarjeta:hover .texto {
 #buscadorBibliotecas {
     width: 100%;
     height: 450px;
+    margin-top: -35px;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -181,12 +182,12 @@ li.tarjeta:hover .texto {
     width: 100%;
 }
 
-#buscadorBibliotecas .nav a:hover {
+#buscadorBibliotecas a:hover.nav-link  {
     background: none;
     border: 1px solid #ddd;
 }
 
-#buscadorBibliotecas .nav .active a {
+#buscadorBibliotecas a.nav-link.active {
     background: none;
     border: 1px solid #ddd;
 }
@@ -372,8 +373,8 @@ li.tarjeta:hover .texto {
     margin: 0.75em;
 }
 
-#sedesBibliotecas ul.listaHorizontal li.sedeBibliotecas a {
-}
+/* #sedesBibliotecas ul.listaHorizontal li.sedeBibliotecas a {
+} */
 
 #sedesBibliotecas ul.listaHorizontal li.sedeBibliotecas a .titulo {
     color: #888;
@@ -593,26 +594,22 @@ li.tarjeta:hover .texto {
 }
 
 #redesSociales ul.listaHorizontal li.redesBibliotecas:nth-child(2) a:hover {
-    color: #6725aa;
-}
-
-#redesSociales ul.listaHorizontal li.redesBibliotecas:nth-child(3) a:hover {
     color: #3ec5ed;
 }
 
-#redesSociales ul.listaHorizontal li.redesBibliotecas:nth-child(4) a:hover {
+#redesSociales ul.listaHorizontal li.redesBibliotecas:nth-child(3) a:hover {
     color: #f51c0d;
 }
 
-#redesSociales ul.listaHorizontal li.redesBibliotecas:nth-child(5) a:hover {
+#redesSociales ul.listaHorizontal li.redesBibliotecas:nth-child(4) a:hover {
     color: #94b43b;
 }
 
-#redesSociales ul.listaHorizontal li.redesBibliotecas:nth-child(6) a:hover {
+#redesSociales ul.listaHorizontal li.redesBibliotecas:nth-child(5) a:hover {
     color: #f78422;
 }
 
-#redesSociales ul.listaHorizontal li.redesBibliotecas:nth-child(7) a:hover {
+#redesSociales ul.listaHorizontal li.redesBibliotecas:nth-child(6) a:hover {
     color: #f8c21c;
 }
 
@@ -764,6 +761,7 @@ li.tarjeta:hover .texto {
 
 #barraBuscador {
     height: 120px;
+    margin-top: -35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
