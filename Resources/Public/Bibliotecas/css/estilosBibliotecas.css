@@ -168,28 +168,51 @@ li.tarjeta:hover .texto {
     color: #fff;
 }
 
-#buscadorBibliotecas .nav {
+#buscadorBibliotecas .selectorBuscador {
     margin: 0 0 1em;
+    display: flex;
+    justify-content: flex-start;
+    row-gap: 0.75em;
+    column-gap: 0.75em;
     align-self: flex-start;
+    border: none;
 }
 
-#buscadorBibliotecas .nav a {
+#buscadorBibliotecas .selectorBuscador button {
+    padding: 0.5em 1em;
     color: #ddd;
+    background: transparent;
     border: 1px solid #203b7e;
+    border-radius: 0.25em;
 }
 
-#buscadorBibliotecas .tab-content {
+#buscadorBibliotecas .selectorBuscador button:hover {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 0.25em;
+}
+
+#buscadorBibliotecas .selectorBuscador button.active {
+    background: none;
+    border: 1px solid #ddd;
+}
+
+#buscadorBibliotecas .contenedorBuscadores {
     width: 100%;
 }
 
-#buscadorBibliotecas a:hover.nav-link  {
-    background: none;
-    border: 1px solid #ddd;
+#buscadorBibliotecas .contenidoBuscador {
+    display: none;
+    animation: efectoFade 1s;
 }
 
-#buscadorBibliotecas a.nav-link.active {
-    background: none;
-    border: 1px solid #ddd;
+@keyframes efectoFade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#buscadorBibliotecas .contenidoBuscador.active {
+    display: block;
 }
 
 #buscadorBibliotecas .campoBusqueda {

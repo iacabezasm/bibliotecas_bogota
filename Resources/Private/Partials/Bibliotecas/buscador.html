@@ -3,15 +3,15 @@
 		<div class="titulo">Bibliotecas</div>
 		<f:image src="EXT:bibliotecas_bogota/Resources/Public/Bibliotecas/images/iconos/unNegativo.png" alt="Sistema Nacional de Bibliotecas Universidad Nacional de Colombia" title="Bibliotecas Universidad Nacional de Colombia"/>
 	</a>
-	<ul class="nav nav-pills" role="tablist">
-		<li class="nav-item" role="presentation"><a class="nav-link active" href="#descubridor" role="tab" data-toggle="tab" aria-controls="descubridor" aria-selected="true">Descubridor</a></li>
-		<li class="nav-item" role="presentation"><a class="nav-link" href="#catalogo" role="tab" data-toggle="tab" aria-controls="catalogo" aria-selected="false">Catálogo</a></li>
-		<!-- <li class="nav-item" role="presentation"><a class="nav-link" href="#recursos" role="tab" data-toggle="tab" aria-controls="recursos" aria-selected="false">Recursos electrónicos</a></li> -->
-		<li class="nav-item" role="presentation"><a class="nav-link" href="#revistas" role="tab" data-toggle="tab" aria-controls="revistas" aria-selected="false">Portal de revistas</a></li>
-		<li class="nav-item" role="presentation"><a class="nav-link" href="#repositorio" role="tab" data-toggle="tab" aria-controls="repositorio" aria-selected="false">Repositorio institucional</a></li>
-	</ul>
-	<div class="tab-content">
-		<div class="tab-pane active" id="descubridor" role="tabpanel" aria-labelledby="descubridor-tab">
+	<nav class="selectorBuscador">
+		<button id="descubridorBoton" class="pestanaBuscador active" onclick="seleccionBuscador('descubridor', 'ebscohostsearchtext')" title="Pulse para buscar en el Descubridor">Descubridor</button>
+		<button id="catalogoBoton" class="pestanaBuscador" onclick="seleccionBuscador('catalogo', 'catalogoBusqueda')" title="Pulse para buscar en el Catálogo">Catálogo</button>
+		<!-- <button id="recursosBoton" class="pestanaBuscador" onclick="seleccionBuscador('recursos', 'recursosBusqueda')" title="Pulse para buscar en los Recursos electrónicos">Recursos electrónicos</a></button> -->
+		<button id="revistasBoton" class="pestanaBuscador" onclick="seleccionBuscador('revistas', 'revistasBusqueda')" title="Pulse para buscar en el Portal de revistas">Portal de revistas</button>
+		<button id="repositorioBoton" class="pestanaBuscador" onclick="seleccionBuscador('repositorio', 'repositorioBusqueda')" title="Pulse para buscar en el Repositorio institucional">Repositorio institucional</button>
+	</nav>
+	<div class="contenedorBuscadores">
+		<div class="contenidoBuscador active" id="descubridor" role="tabpanel" aria-labelledby="descubridor-tab">
 			<form class="campoBusqueda" id="sbEDS" onsubmit="return ebscoHostSearchGo(this);" method="post" action="" target="_blank">
 				<input type="hidden" id="ebscohostwindow" name="ebscohostwindow" value="1"/>
 				<input type="hidden" id="ebscohosturl" name="ebscohosturl" value="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=0&custid=s1229929&groupid=main&profid=eds&mode=all&lang=es&authtype=ip,guest"/>
@@ -23,10 +23,10 @@
 				<button type="submit">Buscar</button>
 			</form>
 		</div>
-		<div class="tab-pane" id="catalogo" role="tabpanel" aria-labelledby="catalogo-tab">
+		<div class="contenidoBuscador" id="catalogo" role="tabpanel" aria-labelledby="catalogo-tab">
 			<form class="campoBusqueda" method="get" action="http://168.176.5.96/F/" target="_blank">
 				<input type="hidden" name="func" value="find-b">
-				<input type="text" name="request" placeholder="Busque en los recursos físicos disponibles">
+				<input id="catalogoBusqueda" type="text" name="request" placeholder="Busque en los recursos físicos disponibles">
 				<input type="hidden" name="find_code" value="WRD">
 				<input type="hidden" name="adjacent" value="N">
 				<button type="submit">Buscar</button>
@@ -42,21 +42,21 @@
 				<button type="submit">Buscar</button>
 			</form> -->
 		</div>
-		<!-- <div class="tab-pane" id="recursos" role="tabpanel" aria-labelledby="recursos-tab">
+		<!-- <div class="contenidoBuscador" id="recursos" role="tabpanel" aria-labelledby="recursos-tab">
 			<form class="campoBusqueda" method="post" action="http://bases.unal.edu.co/subjects/databases.php" target="_blank">
-				<input type="text" name="searchterm" placeholder="Busque en los recursos electrónicos suscritos, diccionarios, enciclopedias y herramientas bibliográficas disponibles">
+				<input id="recursosBusqueda" type="text" name="searchterm" placeholder="Busque en los recursos electrónicos suscritos, diccionarios, enciclopedias y herramientas bibliográficas disponibles">
 				<button type="submit">Buscar</button>
 			</form>
 		</div> -->
-		<div class="tab-pane" id="revistas" role="tabpanel" aria-labelledby="revistas-tab">
+		<div class="contenidoBuscador" id="revistas" role="tabpanel" aria-labelledby="revistas-tab">
 			<form class="campoBusqueda" method="post" action="https://revistas.unal.edu.co/index.php/index/search/search" target="_blank">
-				<input type="text" name="query" value=""  placeholder="Busque en las revistas académicas publicadas por la Universidad Nacional de Colombia"/>
+				<input id="revistasBusqueda" type="text" name="query" value=""  placeholder="Busque en las revistas académicas publicadas por la Universidad Nacional de Colombia"/>
 				<button type="submit">Buscar</button>
 			</form>
 		</div>
-		<div class="tab-pane" id="repositorio" role="tabpanel" aria-labelledby="repositorio-tab">
+		<div class="contenidoBuscador" id="repositorio" role="tabpanel" aria-labelledby="repositorio-tab">
 			<form class="campoBusqueda" method="get" action="https://repositorio.unal.edu.co/discover" target="_blank">
-				<input type="text" name="query" placeholder="Busque en los documentos de producción académica, científica y patrimonial de la Universidad Nacional de Colombia"/>
+				<input id="repositorioBusqueda" type="text" name="query" placeholder="Busque en los documentos de producción académica, científica y patrimonial de la Universidad Nacional de Colombia"/>
 				<button type="submit">Buscar</button>
 			</form>
 		</div>

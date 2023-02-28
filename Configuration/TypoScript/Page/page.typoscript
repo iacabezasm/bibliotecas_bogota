@@ -114,7 +114,8 @@ page {
 		# carrusel1 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/carrusel-eventos/owl.carousel.min.js
 		# galeria1 = EXT:bibliotecas_bogota/Resources/Public/JavaScript/galeria-eventos/jquery.slides.min.js
 		# Scripts
-		bibliotecas = EXT:bibliotecas_bogota/Resources/Public/JavaScript/bibliotecas.js
+		buscador = EXT:bibliotecas_bogota/Resources/Public/Bibliotecas/js/buscador.js
+		descubridor = EXT:bibliotecas_bogota/Resources/Public/Bibliotecas/js/descubridor.js
 		# lib = EXT:bibliotecas_bogota/Resources/Public/JavaScript/lib.js
 		# pestana = EXT:bibliotecas_bogota/Resources/Public/JavaScript/tabs.js
 		# noticiasBibliotecas = EXT:bibliotecas_bogota/Resources/Public/Bibliotecas/js/carruselNoticias.js
