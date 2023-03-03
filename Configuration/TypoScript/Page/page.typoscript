@@ -165,7 +165,7 @@ page {
 			key.data = field:uid
 			# página de resultados de la búsqueda
 			85 = TEXT
-			85.value = <script async src="https://cse.google.com/cse.js?cx=d1ce434b69ecd4f0a" data-resultsUrl="http://bibliotecasbogota.unal.edu.co/pagina-de-busqueda"></script>
+			85.value = <script async src="https://cse.google.com/cse.js?cx=d1ce434b69ecd4f0a"></script>
 			# página de búsqueda: home
 			87 < .85
 		}
