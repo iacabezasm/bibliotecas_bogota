@@ -172,6 +172,7 @@ li.tarjeta:hover .texto {
     margin: 0 0 1em;
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     row-gap: 0.75em;
     column-gap: 0.75em;
     align-self: flex-start;
@@ -179,7 +180,7 @@ li.tarjeta:hover .texto {
 }
 
 #buscadorBibliotecas .selectorBuscador button {
-    padding: 0.5em 1em;
+    padding: 0.33em 0.66em;
     color: #ddd;
     background: transparent;
     border: 1px solid #203b7e;
