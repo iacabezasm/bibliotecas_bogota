@@ -45,16 +45,19 @@
     border-bottom: 1px solid #ddd;
 }
 
-#___gcse_2 .gsc-control-cse.gsc-control-cse-es .gsc-wrapper .gsc-results.gsc-webResult .gsc-webResult.gsc-result 
-
-
-
-
-#___gcse_2 .gsc-control-cse.gsc-control-cse-es .gsc-wrapper .gsc-results.gsc-webResult .gsc-cursor-box.gs-bidi-start-align {
-    margin: 1.5em 0;
+#___gcse_2 .gsc-control-cse.gsc-control-cse-es .gsc-wrapper .gsc-results.gsc-webResult .gsc-webResult.gsc-result .gs-snippet {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
 }
 
-#___gcse_2 .gsc-control-cse.gsc-control-cse-es .gsc-wrapper .gsc-results.gsc-webResult .gsc-cursor-box.gs-bidi-start-align .gsc-cursor {
+#___gcse_2 .gsc-control-cse.gsc-control-cse-es .gsc-wrapper .gsc-results.gsc-webResult .gsc-cursor-box,
+#___gcse_2 .gsc-control-cse.gsc-control-cse-es .gsc-wrapper .gsc-results.gsc-webResult .gcsc-more-maybe-branding-root {
+    margin: 1.5em 0 0;
+}
+
+#___gcse_2 .gsc-control-cse.gsc-control-cse-es .gsc-wrapper .gsc-results.gsc-webResult .gsc-cursor-box .gsc-cursor {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -62,15 +65,15 @@
     row-gap: 1em;
 }
 
-#___gcse_2 .gsc-control-cse.gsc-control-cse-es .gsc-wrapper .gsc-results.gsc-webResult .gsc-cursor-box.gs-bidi-start-align .gsc-cursor .gsc-cursor-page {
+#___gcse_2 .gsc-control-cse.gsc-control-cse-es .gsc-wrapper .gsc-results.gsc-webResult .gsc-cursor-box .gsc-cursor .gsc-cursor-page {
     color: #2678bf;
     text-decoration: none;
     background: none;
     border: none;
 }
 
-#___gcse_2 .gsc-control-cse.gsc-control-cse-es .gsc-wrapper .gsc-results.gsc-webResult .gsc-cursor-box.gs-bidi-start-align .gsc-cursor .gsc-cursor-page.gsc-cursor-current-page,
-#___gcse_2 .gsc-control-cse.gsc-control-cse-es .gsc-wrapper .gsc-results.gsc-webResult .gsc-cursor-box.gs-bidi-start-align .gsc-cursor .gsc-cursor-page:hover {
+#___gcse_2 .gsc-control-cse.gsc-control-cse-es .gsc-wrapper .gsc-results.gsc-webResult .gsc-cursor-box .gsc-cursor .gsc-cursor-page.gsc-cursor-current-page,
+#___gcse_2 .gsc-control-cse.gsc-control-cse-es .gsc-wrapper .gsc-results.gsc-webResult .gsc-cursor-box .gsc-cursor .gsc-cursor-page:hover {
     color: #203b7e;
     text-decoration: none;
     background: none;
