@@ -9,7 +9,7 @@
 			<!--[if lt IE 9]>
 			<img src="EXT:bibliotecas_bogota/Resources/Public/Unal/images/escudoUnal.png" width="93%" height="auto" alt="Escudo Universidad Nacional de Colombia" class="hidden-print"/>
 			<![endif]-->
-			<img src="EXT:bibliotecas_bogota/Resources/Public/Unal/images/escudoUnal_black.png" alt="Escudo Universidad Nacional de Colombia" class="d-none d-print-block">
+			<img src="EXT:bibliotecas_bogota/Resources/Public/Unal/images/escudoUnal_black.png" alt="Escudo de la Universidad Nacional de Colombia" title="Escudo de la Universidad Nacional de Colombia" class="d-none d-print-block">
 		</a>
 	</div>
 	<div class="seal">
@@ -23,35 +23,32 @@
 					<nav id="profiles">
 						<ul class="mr-auto nav justify-content-end">
 							<!-- <ul class="navbar-nav mr-auto nav justify-content-end"> -->
-							<li class="nav-item item_Aspirantes #>"><a href="http://aspirantes.unal.edu.co">Aspirantes</a></li>
-							<li class="nav-item item_Estudiantes #>"><a href="http://estudiantes.unal.edu.co">Estudiantes</a></li>
-							<li class="nav-item item_Egresados #>"><a href="http://egresados.unal.edu.co">Egresados</a></li>
-							<li class="nav-item item_Docentes #>"><a href="http://docentes.unal.edu.co">Docentes</a></li>
-							<li class="nav-item item_Administrativos #>"><a href="http://administrativos.unal.edu.co">Administrativos</a></li>
+							<li class="nav-item item_Aspirantes #>"><a href="http://aspirantes.unal.edu.co" alt="aspirantes unal página ir" title="Página para aspirantes">Aspirantes</a></li>
+							<li class="nav-item item_Estudiantes #>"><a href="http://estudiantes.unal.edu.co" alt="estudiantes unal página ir" title="Página para estudiantes">Estudiantes</a></li>
+							<li class="nav-item item_Egresados #>"><a href="http://egresados.unal.edu.co" alt="egresados unal página ir" title="Página para egresados">Egresados</a></li>
+							<li class="nav-item item_Docentes #>"><a href="http://docentes.unal.edu.co" alt="docentes unal página ir" title="Página para docentes">Docentes</a></li>
+							<li class="nav-item item_Administrativos #>"><a href="http://administrativos.unal.edu.co" alt="administrativos unal página ir" title="Página para administrativos">Administrativos</a></li>
 						</ul>
 					</nav>
 				</div>
 				<ul class="socialLinks d-none d-md-block">
-					<li><a href="mailto:{redesSocialesEmail}" target="_blank" class="email" title="Correo electrónico oficial"></a></li>
-					<li><a href="{redesSocialesFacebook}" target="_blank" class="facebook" title="Cuenta oficial en Facebook"></a></li>
-					<f:if condition="{redesSocialesGoogle}"><li><a href="{redesSocialesGoogle}" target="_blank" class="google" title="Cuenta oficial en Google+"></a></li></f:if>
-					<f:if condition="{redesSocialesLinkedin}"><li><a href="{redesSocialesLinkedin}" target="_blank" class="linkedin" title="Cuenta oficial en LinkedIn"></a></li></f:if>
-					<li><a href="{redesSocialesRss}" target="_blank" class="rss" title="Suscripción a canales de información RSS"></a></li>
-					<li><a href="{redesSocialesTwitter}" target="_blank" class="twitter" title="Cuenta oficial en Twitter"></a></li>
-					<li><a href="{redesSocialesYoutube}" target="_blank" class="youtube" title="Canal oficial en YouTube"></a></li>
+					<li><a href="mailto:{redesSocialesEmail}" target="_blank" class="email" title="Correo electrónico oficial" alt="Correo electrónico Bibliotecas Bogotá crear"></a></li>
+					<li><a href="{redesSocialesFacebook}" target="_blank" class="facebook" title="Cuenta oficial en Facebook" alt="Facebook Bibliotecas Bogotá cuenta oficial ir"></a></li>
+					<f:if condition="{redesSocialesLinkedin}"><li><a href="{redesSocialesLinkedin}" target="_blank" class="linkedin" title="Cuenta oficial en LinkedIn" alt="LinkedIn Bibliotecas Bogotá cuenta oficial ir"></a></li></f:if>
+					<li><a href="{redesSocialesRss}" target="_blank" class="rss" title="Suscripción a canales de información RSS" alt="Canal de contenido RSS Bibliotecas Bogotá cuenta oficial ir"></a></li>
+					<li><a href="{redesSocialesTwitter}" target="_blank" class="twitter" title="Cuenta oficial en Twitter" alt="Twitter Bibliotecas Bogotá cuenta oficial ir"></a></li>
+					<li><a href="{redesSocialesYoutube}" target="_blank" class="youtube" title="Canal oficial en YouTube" alt="YouTube Bibliotecas Bogotá canal oficial ir"></a></li>
 				</ul>
 				<f:cObject typoscriptObjectPath="menu.idioma" />
 			</nav>
 		</div>
 	</div>
 	<div id="bs-navbar" class="navigation d-none d-md-block">
-		<div class="site-url" id="subdominio">
-			<f:cObject typoscriptObjectPath="lib.dominio" />
-		</div>
-		<div class="buscador" id="buscador">
+		<div class="site-url" id="subdominio"><f:cObject typoscriptObjectPath="lib.dominio" /></div>
+		<div class="buscador" id="buscador" aria-label="Buscar en sitio web de la Universidad Nacional">
 			<div class="gcse-searchbox-only" data-resultsUrl="http://unal.edu.co/resultados-de-la-busqueda/" data-newWindow="true"></div>
 		</div>
-		<div class="navbar-dark mainMenu" id="main_menu_container">
+		<div class="navbar-dark mainMenu" id="main_menu_container" aria-label="Menú principal">
 			<f:cObject typoscriptObjectPath="menu.main" />
 			<f:cObject typoscriptObjectPath="menu.siun" />
 		</div>
