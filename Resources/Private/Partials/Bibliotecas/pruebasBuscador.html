@@ -12,7 +12,7 @@
 		<button id="buscadorLocalBoton" class="pestanaBuscador" onclick="seleccionBuscador('buscadorLocal', 'buscadorLocalBusqueda')" title="Pulse para buscar en las páginas de este sitio web">Sede Bogotá</button>
 	</nav>
 	<div class="contenedorBuscadores">
-		<div class="contenidoBuscador active" id="descubridor" role="tabpanel" aria-labelledby="descubridor-tab">
+		<div class="contenidoBuscador active" id="descubridor">
 			<form class="campoBusqueda" id="sbEDS" onsubmit="return ebscoHostSearchGo(this);" method="post" action="" target="_blank">
 				<input type="hidden" id="ebscohostwindow" name="ebscohostwindow" value="1"/>
 				<input type="hidden" id="ebscohosturl" name="ebscohosturl" value="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=0&custid=s1229929&groupid=main&profid=eds&mode=all&lang=es&authtype=ip,guest"/>
@@ -24,7 +24,7 @@
 				<button type="submit">Buscar</button>
 			</form>
 		</div>
-		<div class="contenidoBuscador" id="catalogo" role="tabpanel" aria-labelledby="catalogo-tab">
+		<div class="contenidoBuscador" id="catalogo">
 			<form class="campoBusqueda" method="get" action="http://168.176.5.96/F/" target="_blank">
 				<input type="hidden" name="func" value="find-b">
 				<input id="catalogoBusqueda" type="text" name="request" placeholder="Busque en los recursos físicos disponibles">
@@ -43,26 +43,29 @@
 				<button type="submit">Buscar</button>
 			</form> -->
 		</div>
-		<!-- <div class="contenidoBuscador" id="recursos" role="tabpanel" aria-labelledby="recursos-tab">
+		<!-- <div class="contenidoBuscador" id="recursos">
 			<form class="campoBusqueda" method="post" action="http://bases.unal.edu.co/subjects/databases.php" target="_blank">
 				<input id="recursosBusqueda" type="text" name="searchterm" placeholder="Busque en los recursos electrónicos suscritos, diccionarios, enciclopedias y herramientas bibliográficas disponibles">
 				<button type="submit">Buscar</button>
 			</form>
 		</div> -->
-		<div class="contenidoBuscador" id="revistas" role="tabpanel" aria-labelledby="revistas-tab">
+		<div class="contenidoBuscador" id="revistas">
 			<form class="campoBusqueda" method="post" action="https://revistas.unal.edu.co/index.php/index/search/search" target="_blank">
 				<input id="revistasBusqueda" type="text" name="query" value=""  placeholder="Busque en las revistas académicas publicadas por la Universidad Nacional de Colombia"/>
 				<button type="submit">Buscar</button>
 			</form>
 		</div>
-		<div class="contenidoBuscador" id="repositorio" role="tabpanel" aria-labelledby="repositorio-tab">
+		<div class="contenidoBuscador" id="repositorio">
 			<form class="campoBusqueda" method="get" action="https://repositorio.unal.edu.co/discover" target="_blank">
 				<input id="repositorioBusqueda" type="text" name="query" placeholder="Busque en los documentos de producción académica, científica y patrimonial de la Universidad Nacional de Colombia"/>
 				<button type="submit">Buscar</button>
 			</form>
 		</div>
-		<div class="contenidoBuscador" id="buscadorLocal" role="tabpanel" aria-labelledby="buscadorLocal-tab">
-			<div class="gcse-searchbox-only" data-resultsUrl="http://bibliotecasbogota.unal.edu.co/resultados-de-la-busqueda"></div>
+		<div class="contenidoBuscador" id="buscadorLocal">
+			<form class="campoBusqueda" method="get" action="http://bibliotecasbogota.unal.edu.co/resultados-de-la-busqueda" target="_blank">
+				<input id="buscadorLocalBusqueda" type="text" name="q" placeholder="Busque en los contenidos de este sitio web"/>
+				<button type="submit">Buscar</button>
+			</form>
 		</div>
 	</div>
 </div>
